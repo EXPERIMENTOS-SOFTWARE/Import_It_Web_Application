@@ -14,7 +14,7 @@
     </mat-card-header>
 
     <!--(submit)="submitForm()" don't forget to add this in the form tag ⬇ -->
-    <form [formGroup]="loginForm">
+    <form [formGroup]="loginForm" (submit)="submitForm()">
       <mat-card-content>
         <mat-grid-list  cols="1" rowHeight="1:0.1">
 
@@ -54,6 +54,16 @@
 
         </mat-grid-list>
       </mat-card-content>
+
+      <!-- button -->
+      <mat-card-actions>
+        <button [disabled]="!loginForm.valid" mat-flat-button color="primary" type="submit">Login</button>
+      </mat-card-actions>
+
+      <!-- this part will be displayed, only if submitted is true -->
+      <ng-template [ngIf]="submitted">
+        <span>Form Submitted Successfully!</span>
+      </ng-template>
     </form>
 
   </mat-card>

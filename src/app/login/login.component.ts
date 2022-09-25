@@ -39,4 +39,8 @@ export class LoginComponent implements OnInit {
     // validates that the DNI input field only has numbers
     dniControl?.setValidators([Validators.pattern('^[0-9]*$'), Validators.required]);
   }
+
+  submitForm() {
+    this.submitted = true;
+  }
 }
