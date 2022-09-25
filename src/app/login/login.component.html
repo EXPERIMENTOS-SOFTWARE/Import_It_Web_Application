@@ -1,1 +1,42 @@
 <p>login works!</p>
+<main id="loginContainer">
+  <mat-card class="loginImgContainer">
+    <div id="loginImg">
+      <img mat-card-image [src]="loginImgSource" alt="traveling map">
+    </div>
+  </mat-card>
+
+  <mat-card id="loginForm">
+
+    <!-- Card Header -->
+    <mat-card-header>
+      <mat-card-title>
+        Login
+      </mat-card-title>
+    </mat-card-header>
+
+    <!--(submit)="submitForm()" don't forget to add this ⬇ -->
+    <form [formGroup]="loginForm">
+      <mat-card-content>
+        <mat-grid-list  cols="1" rowHeight="1:0.1">
+
+          <!-- DNI -->
+          <mat-grid-tile id="dniContainer">
+            <mat-form-field appereance="fill" class="full-width">
+
+              <mat-label>DNI</mat-label>
+              <input type="text" matInput formControlName="dni">
+
+              <mat-error *ngIf="dni?.errors?.['required']">DNI is <strong>required</strong></mat-error>
+
+              <mat-error *ngIf="dni?.errors?.['pattern'] && !dni?.errors?.['required']">Phone must have only <strong>numbers</strong></mat-error>
+
+            </mat-form-field>
+          </mat-grid-tile>
+
+        </mat-grid-list>
+      </mat-card-content>
+    </form>
+
+  </mat-card>
+</main>
