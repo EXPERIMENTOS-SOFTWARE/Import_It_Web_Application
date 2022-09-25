@@ -1,13 +1,12 @@
 <main id="loginContainer">
-  <mat-card id="loginImgContainer">
+  <mat-card id="loginImgCard">
       <img mat-card-image [src]="loginImgSource" alt="traveling map">
-
   </mat-card>
 
   <mat-card id="loginForm">
 
     <!-- Card Header -->
-    <mat-card-header>
+    <mat-card-header id="loginHeader">
       <mat-card-title>
         Login
       </mat-card-title>
@@ -46,8 +45,11 @@
             </mat-form-field>
           </mat-grid-tile>
 
-          <mat-grid-tile class="forgotPasswordSection">
-            <p id="forgotPassword"><strong>I forgot mi password</strong></p>
+          <mat-grid-tile id="forgotPasswordSection">
+            <a href="#" id="forgotPassword"><strong>I forgot mi password</strong></a>
+          </mat-grid-tile>
+
+          <mat-grid-tile id="signUpSection">
             <p id="signUp">You do not have an account? <strong><a href="" target="_blank">Sign Up</a></strong></p>
           </mat-grid-tile>
 
@@ -56,7 +58,7 @@
       </mat-card-content>
 
       <!-- button -->
-      <mat-card-actions>
+      <mat-card-actions id="loginButtonContainer">
         <button [disabled]="!loginForm.valid" mat-flat-button color="primary" type="submit">Login</button>
       </mat-card-actions>
 
