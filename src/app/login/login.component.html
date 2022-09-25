@@ -34,6 +34,26 @@
             </mat-form-field>
           </mat-grid-tile>
 
+          <!-- Password -->
+          <mat-grid-tile id="passwordContainer">
+            <mat-form-field appereance="fill" class="full-width">
+
+              <mat-label>Password</mat-label>
+              <input type="password" matInput formControlName="password">
+
+              <mat-error *ngIf="password?.errors?.['required']">Password is <strong>required</strong></mat-error>
+
+              <mat-error *ngIf="password?.errors?.['minlength'] && !password?.errors?.['required']">Password must be have at least <strong>8</strong> characters</mat-error>
+
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile class="forgotPasswordSection">
+            <p id="forgotPassword"><strong>I forgot mi password</strong></p>
+            <p id="signUp">You do not have an account? <strong><a href="" target="_blank">Sign Up</a></strong></p>
+          </mat-grid-tile>
+
+
         </mat-grid-list>
       </mat-card-content>
     </form>
