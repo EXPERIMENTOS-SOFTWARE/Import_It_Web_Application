@@ -1,9 +1,7 @@
-<p>login works!</p>
 <main id="loginContainer">
-  <mat-card class="loginImgContainer">
-    <div id="loginImg">
+  <mat-card id="loginImgContainer">
       <img mat-card-image [src]="loginImgSource" alt="traveling map">
-    </div>
+
   </mat-card>
 
   <mat-card id="loginForm">
@@ -15,7 +13,7 @@
       </mat-card-title>
     </mat-card-header>
 
-    <!--(submit)="submitForm()" don't forget to add this ⬇ -->
+    <!--(submit)="submitForm()" don't forget to add this in the form tag ⬇ -->
     <form [formGroup]="loginForm">
       <mat-card-content>
         <mat-grid-list  cols="1" rowHeight="1:0.1">

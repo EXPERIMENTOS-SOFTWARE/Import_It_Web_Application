@@ -1,4 +1,25 @@
-#loginImg {
-  width: 50%;
-  margin: auto;
+#loginContainer {
+  border: 5px solid lightseagreen;
+  display: flex;
+  justify-content: center;
 }
+
+#loginImgContainer {
+  width: 30%;
+  border: 5px solid firebrick;
+}
+
+#loginImgContainer img {
+}
+
+#loginImg {
+  width: 80%;
+  margin: auto;
+  border: 5px solid springgreen;
+}
+
+#loginForm {
+  border: 5px solid orange;
+  width: 40%;
+}
+
