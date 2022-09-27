@@ -18,8 +18,6 @@ export class ChangePasswordFormComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) { }
 
-
-
   ngOnInit(): void {
     //this.setPhoneValidation();
   }

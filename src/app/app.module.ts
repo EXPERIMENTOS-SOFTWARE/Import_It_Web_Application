@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
+import { ChangePasswordComponent } from './change-pasword-form/change-pasword-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
@@ -23,6 +24,7 @@ import { MatOptionModule } from '@angular/material/core';
   declarations: [
     AppComponent,
     SignUpFormComponent,
+    ChangePasswordFormComponent,
     LoginComponent
   ],
   imports: [
