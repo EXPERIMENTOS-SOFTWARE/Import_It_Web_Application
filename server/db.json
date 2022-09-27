@@ -1,0 +1,13 @@
+{
+    "users":[
+        {
+            "id": 1,
+            "photo": "Home",
+            "fist_name": "Rafael Adrian",
+            "second_name": "Urquiaga Rodriguez",
+            "email": "rafael@upc.edu.pe",
+            "phone":"456123789",
+            "password": "asdfghjkl"
+        }
+    ]
+}
