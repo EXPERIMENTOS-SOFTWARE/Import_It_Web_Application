@@ -3,7 +3,16 @@
         {
             "id": 1,
             "photo": "Home",
-            "fist_name": "Rafael Adrian",
+            "first_name": "Carlos",
+            "second_name": "Urquiaga Quesquen",
+            "email": "carlos@upc.edu.pe",
+            "phone":"456123789",
+            "password": "asdfghjkl"
+        },
+        {
+            "id": 2,
+            "photo": "Home",
+            "first_name": "Ana Perez",
             "second_name": "Urquiaga Rodriguez",
             "email": "rafael@upc.edu.pe",
             "phone":"456123789",

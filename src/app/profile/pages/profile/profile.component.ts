@@ -8,15 +8,15 @@ import { ProfileService } from '../../services/profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-/*
+
   profileData: User;
 
   constructor(private profilesService: ProfileService) { 
     this.profileData={} as User;
   }
-*/
+
   ngOnInit(): void {
-    /*this.getOneStudent();*/
+    this.getOneStudent();
   }
 
 /*
@@ -26,12 +26,13 @@ export class ProfileComponent implements OnInit {
     });
   }
 */
-/*
+
   getOneStudent(){
-    this.profilesService.getById(1).subscribe((response: User)=>{
-      this.profileData.fist_name = response.fist_name;
+    this.profilesService.getById(1).subscribe((response: any)=>{
+      /*this.profileData.first_name = response.first_name;*/
+      this.profileData = response;
     });
   }
-*/
+
 
 }

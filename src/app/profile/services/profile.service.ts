@@ -9,7 +9,7 @@ import { User } from '../model/user';
 export class ProfileService {
 
 //Students Endpoint
-basePath = 'http://localhost:3000/api/v1/students';
+basePath = 'http://localhost:3000/api/v1/users';
 
 httpOptions = {
 headers: new HttpHeaders({
