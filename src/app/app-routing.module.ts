@@ -6,11 +6,11 @@ import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 
 const routes: Routes = [
-  {path: 'profile', component: ProfileComponent},
-  {path: 'login', component:LoginComponent},
-  {path: 'change', component:ChangePasswordFormComponent},
-  {path: 'signUp', component:SignUpFormComponent},
-  {path: '', redirectTo: 'login', pathMatch: 'full'}
+  { path: 'profile', component: ProfileComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'change', component: ChangePasswordFormComponent },
+  { path: 'signUp', component: SignUpFormComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({

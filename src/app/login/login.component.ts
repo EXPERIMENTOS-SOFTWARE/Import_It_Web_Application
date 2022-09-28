@@ -21,8 +21,8 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup = this.formBuilder.group({
     // here, we specified the name of all the fields that our form has
     // in the html file, we define the name of the field in the formControlName attribute
-    dni: ['', { validators: [Validators.required], updateOn:'change'}],
-    password: ['', {validators: [Validators.required, Validators.minLength(8)], updateOn: 'change'}]
+    dni: ['', { validators: [Validators.required], updateOn: 'change' }],
+    password: ['', { validators: [Validators.required, Validators.minLength(8)], updateOn: 'change' }]
   })
 
   get dni() {
