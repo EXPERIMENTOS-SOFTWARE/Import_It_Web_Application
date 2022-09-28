@@ -14,9 +14,13 @@ export class ChangePasswordFormComponent implements OnInit {
     email: ['', {validators: [Validators.required, Validators.email], updatedOn: 'change'}],
     password: ['', { validators: [Validators.required, Validators.minLength(5)], updatedOn: 'change' }],
     confirmPassword: ['', {validators: [Validators.required, Validators.minLength(5)], updatedOn: 'change'}],
-  });
+  }, {
+    validator: this.MustMatch('password','confirmPassword')
+  }
+  );
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) {
+  }
 
   ngOnInit(): void {
     //this.setPhoneValidation();
@@ -36,6 +40,20 @@ export class ChangePasswordFormComponent implements OnInit {
         return this.changePasswordForm.get('confirmPassword');
       }
 
+  MustMatch(controlName: string, matchingControlName: string) {
+    return (formGroup: FormGroup) => {
+      const control = formGroup.controls[controlName];
+      const matchingControl = formGroup.controls[matchingControlName];
+ 
+      if (control.value !== matchingControl.value) {
+        matchingControl.setErrors({ MustMatch: true })
+      }
+      else {
+        matchingControl.setErrors(null);
+      }
+    }
+  }
+  
   submitForm(){ 
     console.log(this.changePasswordForm.valid);
     this.submitted = true;
