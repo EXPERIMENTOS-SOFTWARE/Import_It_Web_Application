@@ -46,11 +46,11 @@
           </mat-grid-tile>
 
           <mat-grid-tile id="forgotPasswordSection">
-            <a href="#" id="forgotPassword"><strong>I forgot mi password</strong></a>
+            <a  routerLink="/change" href="#" id="forgotPassword"><strong>I forgot my password</strong></a>
           </mat-grid-tile>
 
           <mat-grid-tile id="signUpSection">
-            <p id="signUp">You do not have an account? <strong><a href="" target="_blank">Sign Up</a></strong></p>
+            <p id="signUp">You do not have an account? <strong><a routerLink="/signUp" href="">Sign Up</a></strong></p>
           </mat-grid-tile>
 
 
@@ -59,7 +59,7 @@
 
       <!-- button -->
       <mat-card-actions id="loginButtonContainer">
-        <button [disabled]="!loginForm.valid" mat-flat-button color="primary" type="submit">Login</button>
+        <button routerLink="/profile" [disabled]="!loginForm.valid" mat-flat-button color="primary" type="submit">Login</button>
       </mat-card-actions>
 
       <!-- this part will be displayed, only if submitted is true -->

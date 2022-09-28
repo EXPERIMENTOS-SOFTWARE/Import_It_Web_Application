@@ -8,6 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent{
   title = 'ImportItWebApplication';
 
-  isSidenavOpen = true;
+  isSidenavOpen = false;
 
 }

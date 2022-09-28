@@ -108,7 +108,7 @@
                 </mat-grid-list>
             </mat-card-content>
             <mat-card-actions class="boton">
-                <button  [disabled]="!registerForm.valid" mat-flat-button color="primary" type="submit">Submit</button>
+                <button  routerLink="/profile" [disabled]="!registerForm.valid" mat-flat-button color="primary" type="submit">Submit</button>
             </mat-card-actions>
             <ng-template [ngIf]="submitted">
                 <span>Form Submitted Successfully !</span>
