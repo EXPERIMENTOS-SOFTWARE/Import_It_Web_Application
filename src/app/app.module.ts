@@ -21,6 +21,9 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { UsersComponent } from './users/pages/users/users.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ChangePasswordFormComponent,
     LoginComponent,
     LoginComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MatGridListModule,
     MatSelectModule,
     MatOptionModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
