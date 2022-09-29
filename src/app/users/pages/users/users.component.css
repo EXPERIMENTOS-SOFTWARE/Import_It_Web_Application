@@ -1,6 +1,17 @@
+.title{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
 .form-container{
     width: 60%;
     margin: auto;
+    text-align: center;
+}
+.dated{
+    width: 33%;
 }
 
 .form-radio-group{
@@ -16,9 +27,7 @@
 .full-width{
     width: 100%;
 }
-.pre-title{
-    text-align: center;
-}
+
 
 .boton{
     text-align: center;

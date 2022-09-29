@@ -16,7 +16,7 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getOneStudent();
+    this.getEspecificUser();
   }
 
 /*
@@ -27,7 +27,14 @@ export class ProfileComponent implements OnInit {
   }
 */
 
-  getOneStudent(){
+  getOneUser(){
+    this.profilesService.getById(1).subscribe((response: any)=>{
+      /*this.profileData.first_name = response.first_name;*/
+      this.profileData = response;
+    });
+  }
+
+  getEspecificUser(){
     this.profilesService.getById(1).subscribe((response: any)=>{
       /*this.profileData.first_name = response.first_name;*/
       this.profileData = response;

@@ -1,5 +1,7 @@
 import { Component, OnInit, } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { UsersService } from '../users/services/users.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +10,7 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router ) { }
 
   ngOnInit(): void {
     this.setDNIValidation();
@@ -41,7 +43,19 @@ export class LoginComponent implements OnInit {
   }
 
   submitForm() {
-    this.submitted = true;
+    //this.submitted = true;
+    this.usersService.getAll().subscribe(response=>{
+      const user = response.find((a:any)=>{
+        return a.dni === this.loginForm.value.dni && a.password === this.loginForm.value.password
+      });
+      if(user){
+        alert("Login Success!!");
+        this.loginForm.reset();
+        this.router.navigate(['profile']);
+      }else{
+        alert("user not found");
+      }
+    })
   }
 
 }
