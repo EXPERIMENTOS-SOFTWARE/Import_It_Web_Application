@@ -1,7 +1,7 @@
 <h1 class="title">New User Registration</h1>
 
 <div class="form-container">
-    <form (submit)="onSubmit()" #studentForm="ngForm" [formGroup]="registerForm">
+    <form (submit)="onSubmit()" #userForm="ngForm" [formGroup]="registerForm">
 
         <mat-card-content>
             <mat-grid-list cols="2" rowHeight="3:1">
@@ -114,13 +114,8 @@
 
 
         </mat-card-content>
-        <ng-container *ngIf="isEditMode; else elseTemplate">
-            <button mat-button color="primary">Update</button>
-            <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
-        </ng-container>
-        <ng-template #elseTemplate>
-            <button routerLink="/profile" mat-button color="primary">Submit</button>
-        </ng-template>
+
+        <button [disabled]="!userForm.valid" mat-flat-button color="primary" type="submit">Submit</button>
 
     </form>
 

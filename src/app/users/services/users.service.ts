@@ -4,6 +4,7 @@ import { Observable, throwError } from 'rxjs';
 import { User } from '../model/user';
 import { catchError, retry } from 'rxjs/operators';
 import { isNgContainer } from '@angular/compiler';
+import { AnyKindOfDictionary } from 'lodash';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +38,7 @@ export class UsersService {
   }
 
   //Create Student
-  create(item:any): Observable<User>{
+  create(item:User): Observable<User>{
     return this.http.post<User>(this.basePath, JSON.stringify(item), this.httpOptions)
     .pipe(retry(2),
     catchError(this.handleError));
@@ -53,12 +54,18 @@ export class UsersService {
     //id = 4
   }
   //Get All Students
-  getAll(): Observable<User>{
-    return this.http.get<User> (this.basePath, this.httpOptions)
+  getAll(): Observable<any>{
+    return this.http.get<any>(this.basePath, this.httpOptions)
     .pipe(retry(2),
     catchError(this.handleError));
   }
-
+/*
+  getForLogin(name:string, password:string): Observable<User>{
+    return this.http.get<any>(this.basePath,this.httpOptions).subscribe(res=>{
+      const user = res.find((a:any))
+    })
+  }
+*/
   //Update Student
   update(id: any, item:any): Observable<User>{
     return this.http.put<User>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)

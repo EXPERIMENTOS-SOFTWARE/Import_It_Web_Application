@@ -43,6 +43,19 @@
       "address": "Calle Picapanto",
       "password": "alpaca",
       "id": 4
+    },
+    {
+      "name": "Rodolfo el reno",
+      "phone": "123456789",
+      "dni": "12345678",
+      "month": "12",
+      "day": "27",
+      "year": "2012",
+      "email": "rodolfo@gmail.com",
+      "password": "narizroja",
+      "genre": "animal",
+      "address": "polo norte",
+      "id": 5
     }
   ]
 }
