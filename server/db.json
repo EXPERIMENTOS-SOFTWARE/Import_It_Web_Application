@@ -82,6 +82,19 @@
       "genre": "Male",
       "address": "Ciudad de México",
       "id": 7
+    },
+    {
+      "name": "Edgar Alexander Malca Rojas",
+      "phone": "999888777",
+      "dni": "45454545",
+      "month": "1",
+      "day": "1",
+      "year": "1",
+      "email": "edaea@dsda",
+      "password": "sssss",
+      "genre": "Male",
+      "address": "Cipriano ",
+      "id": 8
     }
   ]
 }

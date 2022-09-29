@@ -15,7 +15,7 @@
                         <mat-error *ngIf="dni?.errors?.['required']">DNI is <strong>required</strong></mat-error>
                         <mat-error
                             *ngIf="dni?.errors?.['minlength'] || dni?.errors?.['maxlength'] && !dni?.errors?.['required']">
-                            DNI must be <strong>8</strong> characters length
+                            DNI must be <strong>8 numbers</strong> length
                         </mat-error>
                     </mat-form-field>
                 </mat-grid-tile>
@@ -42,17 +42,26 @@
                     <mat-form-field appearance="fill" class="dated">
                         <input matInput placeholder="Month" name="month" formControlName="month" required
                             [(ngModel)]="userData.month" />
-                        <mat-error *ngIf="month?.errors?.['required']">Month is <strong>required</strong></mat-error>
+                            <mat-error *ngIf="month?.errors?.['required']">Month is <strong>required</strong></mat-error>
+                        <mat-error *ngIf="month?.errors?.['pattern'] && !month?.errors?.['required']">
+                           Month must have only <strong>numbers</strong>
+                        </mat-error>
                     </mat-form-field>
                     <mat-form-field appearance="fill" class="dated">
                         <input matInput placeholder="Day" name="day" formControlName="day" required
                             [(ngModel)]="userData.day" />
                         <mat-error *ngIf="day?.errors?.['required']">Day is <strong>required</strong></mat-error>
+                        <mat-error *ngIf="day?.errors?.['pattern'] && !day?.errors?.['required']">
+                            Day must have only <strong>numbers</strong>
+                        </mat-error>
                     </mat-form-field>
                     <mat-form-field appearance="fill" class="dated">
                         <input matInput placeholder="Year" name="year" formControlName="year" required
                             [(ngModel)]="userData.year" />
                         <mat-error *ngIf="year?.errors?.['required']">Year is <strong>required</strong></mat-error>
+                        <mat-error *ngIf="year?.errors?.['pattern'] && !year?.errors?.['required']">
+                            Year must have only <strong>numbers</strong>
+                        </mat-error>
                     </mat-form-field>
                 </mat-grid-tile>
             </mat-grid-list>
