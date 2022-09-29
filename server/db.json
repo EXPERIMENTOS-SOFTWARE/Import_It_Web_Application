@@ -56,6 +56,32 @@
       "genre": "animal",
       "address": "polo norte",
       "id": 5
+    },
+    {
+      "name": "Edgar Alexander Malca Rojas",
+      "phone": "987654123",
+      "dni": "45789856",
+      "month": "45",
+      "day": "23",
+      "year": "1235",
+      "email": "edgar@upc",
+      "password": "128965",
+      "genre": "Male",
+      "address": "Av. Manuel J. Clouthier, San Pedro Garza García",
+      "id": 6
+    },
+    {
+      "name": "Edgar Alexander Malca Rojas",
+      "phone": "548595",
+      "dni": "45454545",
+      "month": "12",
+      "day": "23",
+      "year": "1235",
+      "email": "Lima@s",
+      "password": "12344",
+      "genre": "Male",
+      "address": "Ciudad de México",
+      "id": 7
     }
   ]
 }

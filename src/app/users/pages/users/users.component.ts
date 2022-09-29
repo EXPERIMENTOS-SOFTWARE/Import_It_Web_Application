@@ -128,7 +128,7 @@ export class UsersComponent implements OnInit {
     });
   }
 */
-  addStudent(){
+  addUser(){
     /*
     this.usersService.create(this.userForm.value).subscribe((response: any)=>{
       this.dataSource.data.push({ ...response }); 
@@ -174,7 +174,7 @@ export class UsersComponent implements OnInit {
       console.log('Invalid data');
     }
     */
-    this.addStudent();
+    this.addUser();
   }
   
 
