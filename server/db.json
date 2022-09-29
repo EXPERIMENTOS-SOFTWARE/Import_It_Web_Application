@@ -95,6 +95,19 @@
       "genre": "Male",
       "address": "Cipriano ",
       "id": 8
+    },
+    {
+      "name": "Edgar Alexander Malca Rojas",
+      "phone": "885555555",
+      "dni": "45454545",
+      "month": "12",
+      "day": "23",
+      "year": "1235",
+      "email": "edafar@e",
+      "password": "12345",
+      "genre": "Male",
+      "address": "edadad",
+      "id": 9
     }
   ]
 }
