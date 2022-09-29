@@ -30,6 +30,19 @@
       "address": "sassssssssssssss",
       "password": "ssssssssssssssssssssss",
       "id": 3
+    },
+    {
+      "dni": "78945612",
+      "name": "Ana Perez",
+      "genre": "no binario",
+      "month": "12",
+      "day": "27",
+      "year": "2012",
+      "email": "ana@gmail",
+      "phone": "77777777",
+      "address": "Calle Picapanto",
+      "password": "alpaca",
+      "id": 4
     }
   ]
 }

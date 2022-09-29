@@ -19,7 +19,6 @@ import { AppComponent } from './app.component';
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
-import { SignUpFormComponent } from './sign-up-form/sign-up-form.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -29,7 +28,6 @@ import { MatTableModule } from '@angular/material/table';
   declarations: [
     AppComponent,
     ProfileComponent,
-    SignUpFormComponent,
     ChangePasswordFormComponent,
     LoginComponent,
     LoginComponent,
