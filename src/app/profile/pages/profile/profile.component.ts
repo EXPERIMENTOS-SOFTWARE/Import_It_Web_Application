@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../../model/user';
+
+import { User } from 'src/app/users/model/user';
 import { ProfileService } from '../../services/profile.service';
 
 @Component({
@@ -19,24 +20,16 @@ export class ProfileComponent implements OnInit {
     this.getEspecificUser();
   }
 
-/*
-  getAllStudents(){
-    this.profilesService.getAll().subscribe((response: any)=>{
-      this.dataSource.data = response;
-    });
-  }
-*/
+
 
   getOneUser(){
     this.profilesService.getById(1).subscribe((response: any)=>{
-      /*this.profileData.first_name = response.first_name;*/
       this.profileData = response;
     });
   }
 
   getEspecificUser(){
     this.profilesService.getById(1).subscribe((response: any)=>{
-      /*this.profileData.first_name = response.first_name;*/
       this.profileData = response;
     });
   }
