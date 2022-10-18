@@ -1,0 +1,15 @@
+<div class = "grid2c">
+<div class="dsc-card" *ngFor="let domesticShipment of domesticShipments">
+    <div class="dsc-image">
+        <img class="image" src="{{domesticShipment.imageProduct}}" alt="">
+    </div>
+    <div class="dsc-content">
+        <h2>{{domesticShipment.productName}}</h2>
+    <h4>Date: {{domesticShipment.date}}</h4>
+    <h4>Departure Time: {{domesticShipment.departureTime}}:00</h4>
+    </div>
+    <button [routerLink]="['/domestic-shipments-info', domesticShipment.id]"><span>Info</span></button>
+</div>
+</div>
+
+
