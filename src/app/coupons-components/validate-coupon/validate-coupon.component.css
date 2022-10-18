@@ -1,0 +1,58 @@
+.validate-style{
+    text-align: center;
+}
+
+.button-style{
+    background-color:dodgerblue;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.social-media ul li a{
+    display: block;
+    padding: 0 10px;
+    background: lightskyblue;
+    color: black;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.social-media ul li a:hover{
+    transform: translateY(.3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.social-media ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.social-media ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.social-media ul li .twitter:hover{
+    background: var(--twitter);
+}
+
+.social-media ul li .youtube:hover{
+    background: var(--youtube);
+}
+
+
+
