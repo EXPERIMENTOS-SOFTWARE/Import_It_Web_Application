@@ -23,6 +23,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
+import { WalletComponent } from './wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MatTableModule } from '@angular/material/table';
     LoginComponent,
     LoginComponent,
     WelcomeComponent,
-    UsersComponent
+    UsersComponent,
+    WalletComponent
   ],
   imports: [
     BrowserModule,

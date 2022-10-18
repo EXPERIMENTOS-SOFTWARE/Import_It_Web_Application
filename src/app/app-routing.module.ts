@@ -4,6 +4,7 @@ import { ChangePasswordFormComponent } from './change-password-form/change-passw
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { UsersComponent } from './users/pages/users/users.component';
+import { WalletComponent } from './wallet/wallet.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'change', component: ChangePasswordFormComponent },
   { path: 'signUp', component: UsersComponent },
+  { path: 'wallet', component: WalletComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' }
 ];
 
