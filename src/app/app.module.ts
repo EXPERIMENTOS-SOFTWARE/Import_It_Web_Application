@@ -23,6 +23,11 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
+import { DomesticShipmentComponent } from './domestic-shipment/domestic-shipment.component';
+import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domestic-shipments-info.component';
+import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
+import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
+import { CouponsComponent } from './coupons-components/coupons/coupons.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { MatTableModule } from '@angular/material/table';
     LoginComponent,
     LoginComponent,
     WelcomeComponent,
-    UsersComponent
+    UsersComponent,
+    DomesticShipmentComponent,
+    DomesticShipmentsInfoComponent,
+    EnterCouponComponent,
+    ValidateCouponComponent,
+    CouponsComponent
   ],
   imports: [
     BrowserModule,
