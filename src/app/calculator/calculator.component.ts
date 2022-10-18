@@ -12,4 +12,20 @@ export class CalculatorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  productCategories: string[] = [
+    "Technology",
+    "Home Decor",
+    "Perfumes",
+    "Furnitures",
+    "Clothing"
+  ]
+
+  getImgSrc() {
+    return "../../assets/images/Technology.png";
+  }
+
+  getApproximatedCost(subtotal: string, comission:string) {
+    return Number(subtotal) + Number(comission);
+  }
+
 }

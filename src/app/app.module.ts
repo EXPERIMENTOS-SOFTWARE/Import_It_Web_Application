@@ -24,6 +24,8 @@ import { UsersComponent } from './users/pages/users/users.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { CalculatorComponent } from './calculator/calculator.component';
     MatOptionModule,
     MatListModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    FlexLayoutModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
