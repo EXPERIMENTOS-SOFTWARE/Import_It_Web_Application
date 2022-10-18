@@ -1,0 +1,18 @@
+<div class = "grid2c">
+    <div class="dsc-card" *ngFor="let coupon of coupons">
+        <div>
+        <div class="discount-style">
+            <h1><strong>{{coupon.discount}}%</strong></h1><br>
+        </div>
+        <h2>Discount</h2>
+        </div>
+        <div class="dsc-content">
+            <div>
+                <h2>{{coupon.title}}</h2>
+            </div>
+            <h4>Code: {{coupon.code}}</h4>
+            <h4>Valid Until: {{coupon.validDate}}</h4>
+            <h4>{{coupon.description}}</h4>
+        </div>
+    </div>
+</div>
