@@ -1,0 +1,77 @@
+.page-container {
+  border: 3px solid #807fff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+
+.calculator-card {
+  border: 3px solid #807fff;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-card {
+  width: 70%;
+  padding: 2% 0;
+  border: 3px solid #2980B9;
+  border-radius: 1rem;
+  background-color: #F0F0F0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-row {
+  /*border: 3px solid orange;*/
+  width: 90%;
+  padding: 1%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.card-row + .card-row {
+  margin-top: 1%;
+}
+
+.calculator-field {
+  /*border: 3px solid orange;*/
+  width: 30%;
+  padding: 1%;
+}
+
+.input-field-container {
+  /*border: 3px solid mediumpurple;*/
+}
+
+.field-width {
+  width: 100%;
+}
+
+.comission-field {
+  /*border: 3px solid mediumpurple;*/
+  width: 100%;
+}
+
+.field-width {
+  width: 100%;
+}
+
+.img-container {
+  border: 3px solid #2980B9;
+  border-radius: 10px;
+  padding: 1%;
+  width: 25%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.disclaimer {
+  width: 30%;
+}

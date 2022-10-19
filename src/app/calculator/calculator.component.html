@@ -1,0 +1,77 @@
+<div class="page-container">
+  <div class="page-title" fxFlexAlign="center">
+    <h1><strong>Calculate the price before you buy!</strong></h1>
+  </div>
+
+  <mat-card class="calculator-card">
+    <form class="form-card" [formGroup]="calculatorForm">
+
+      <div class="card-row">
+        <div class="calculator-field">
+          <h2>Choose a category</h2>
+          <h3>Pick one of most common options</h3>
+
+          <mat-form-field class="field-width" appearance="outline">
+            <mat-label>Product Category</mat-label>
+            <mat-select formControlName="categoryName">
+              <mat-option *ngFor="let category of productCategories" [value]="category">{{category.name}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="calculator-field">
+          <h2>Subtotal</h2>
+          <h3>The cost before taxes or coupons</h3>
+
+          <div class="input-field-container" fxLayoutAlign="center center">
+
+            <mat-form-field class="field-width" appearance="outline">
+
+              <mat-label>Subtotal</mat-label>
+              <input #subtotal matInput type="text" value="">
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-row" fxLayout="row" fxLayoutAlign="center">
+        <div class="comission-field" fxLayout="column" fxLayoutAlign="center center">
+          <h2>Comission Range</h2>
+          <h3>Choose an amount you would be able to pay for the comission</h3>
+
+          <div class="" fxLayoutAlign="center center">
+
+            <mat-form-field class="field-width" appearance="outline">
+              <mat-label>Amount </mat-label>
+              <input #comissionAmount matInput type="text" value="">
+            </mat-form-field>
+          </div>
+
+          <mat-progress-bar mode="determinate" value="{{comissionAmount.value}}"></mat-progress-bar>
+        </div>
+      </div>
+
+      <div class="card-row" fxLayout="column" fxLayoutAlign="space-evenly">
+
+        <h2>Approximated Price</h2>
+        <div fxLayout="row" fxLayoutAlign="space-evenly center">
+          <div class="img-container">
+            <img alt="Product Category Image" [src]="imgURL">
+          </div>
+
+          <div class="price">
+            <h2>${{ getApproximatedCost(subtotal.value, comissionAmount.value) }}*</h2>
+            <h3>This is the approximated price</h3>
+          </div>
+
+          <div class="disclaimer">
+            <p>
+              **The price can vary depending on the final product ordered and based on the traveler’s peferred comission.
+              The final price can be around the approximated price shown at the right
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </mat-card>
+</div>

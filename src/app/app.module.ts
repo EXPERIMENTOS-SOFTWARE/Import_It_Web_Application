@@ -25,6 +25,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FastyComponent } from './fasty/fasty.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { FastyComponent } from './fasty/fasty.component';
     LoginComponent,
     WelcomeComponent,
     UsersComponent,
-    FastyComponent
+    FastyComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,8 @@ import { FastyComponent } from './fasty/fasty.component';
     MatListModule,
     MatFormFieldModule,
     MatTableModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

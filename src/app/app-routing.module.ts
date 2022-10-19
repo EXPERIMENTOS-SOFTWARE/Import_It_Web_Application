@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FastyComponent } from "./fasty/fasty.component";
+import {CalculatorComponent} from "./calculator/calculator.component";
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'signUp', component: UsersComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: 'fasty', component: FastyComponent },
+  { path: 'calculator', component: CalculatorComponent },
 ];
 
 @NgModule({
