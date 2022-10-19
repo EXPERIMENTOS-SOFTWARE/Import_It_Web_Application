@@ -4,15 +4,20 @@
 }
 
 .category-container {
-  margin: 0 5%;
   padding: 3%;
   background-color: #F0F0F0;
   border: 3px solid #2980B9;
   border-radius: 15px;
+  margin: 0 5% 25px 5%;
+  width: 70%;
 }
 
+.category-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 .product-list {
-  border: 3px solid #2980B9;
+  /*border: 3px solid #2980B9;*/
 }
 
 .single-product {
@@ -25,10 +30,16 @@
 .product-img {
   border: 2px solid #919AA9;
   border-radius: 10px;
-  width: 50%;
   overflow: hidden;
+  width: 70%;
 }
 
 .product-img img {
   width: 100%;
 }
+
+.product-name {
+  text-align: center;
+}
+
+

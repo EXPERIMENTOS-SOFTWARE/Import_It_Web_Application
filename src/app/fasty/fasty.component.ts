@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StoreProducts } from "./model/store-products";
+import { StoreProductsService } from "./services/store-products.service";
 
 @Component({
   selector: 'app-fasty',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FastyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private storeProductsService: StoreProductsService) { }
 
   ngOnInit(): void {
+    this.getAllProducts();
   }
 
+  storeProducts: Array<StoreProducts> = [];
+
+  getAllProducts() {
+    this.storeProductsService.getAll().subscribe((response: any) => {
+      this.storeProducts = response;
+      console.log(this.storeProducts);
+    });
+  }
 }
