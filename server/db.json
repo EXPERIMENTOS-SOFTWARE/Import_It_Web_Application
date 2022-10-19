@@ -5,6 +5,7 @@
       "photo": "Home",
       "first_name": "Carlos",
       "second_name": "Urquiaga Quesquen",
+      "name": "Carlos Urquiaga Quesquen",
       "email": "carlos@upc.edu.pe",
       "phone": "456123789",
       "password": "asdfghjkl"
@@ -14,6 +15,7 @@
       "photo": "Home",
       "first_name": "Ana Perez",
       "second_name": "Urquiaga Rodriguez",
+      "name": "Ana Perez Urquiaga Rodriguez",
       "email": "rafael@upc.edu.pe",
       "phone": "456123789",
       "password": "asdfghjkl"
@@ -95,6 +97,105 @@
       "genre": "Male",
       "address": "Cipriano ",
       "id": 8
+    }
+  ],
+  "domesticShipments": [
+    {
+      "id": 1,
+      "imageProduct": "https://img.freepik.com/vector-gratis/dispositivo-telefono-inteligente-realista_52683-29765.jpg?size=338&ext=jpg&ga=GA1.2.459603537.1666060327",
+      "userId": 1,
+      "productName": "Iphone 13",
+      "date": "09/09/09",
+      "departureTime": 8,
+      "shippingDate": "09/09/09",
+      "shippingManager": "olva courier",
+      "totalCost": 1289,
+      "trackingCode": "AWE458",
+      "destiny": "Chiclayo"
+    },
+    {
+      "id": 2,
+      "imageProduct": "https://img.freepik.com/psd-gratis/maqueta-psd-computadora-portatil-luz-led-degradada_53876-138283.jpg?size=626&ext=jpg&ga=GA1.2.459603537.1666060327",
+      "userId": 1,
+      "productName": "Macbook 14",
+      "date": "09/09/09",
+      "departureTime": 10,
+      "shippingDate": "09/09/09",
+      "shippingManager": "olva courier",
+      "totalCost": 1289,
+      "trackingCode": "AWE458",
+      "destiny": "Cusco"
+    },
+    {
+      "id": 3,
+      "imageProduct": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKzFknHBs52FBby5EgUUMnc96vdVt3qL5Ylw&usqp=CAU",
+      "userId": 2,
+      "productName": "Guess Watch",
+      "date": "09/09/09",
+      "departureTime": 7,
+      "shippingDate": "09/09/09",
+      "shippingManager": "olva courier",
+      "totalCost": 1289,
+      "trackingCode": "QQQ965",
+      "destiny": "Piura"
+    },
+    {
+      "id": 4,
+      "imageProduct": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gaYbIm9wrfg43NwHaVCwu7A7mn3HAaj-mw&usqp=CAU",
+      "userId": 3,
+      "productName": "Armani Perfume",
+      "date": "09/09/09",
+      "departureTime": 12,
+      "shippingDate": "09/09/09",
+      "shippingManager": "olva courier",
+      "totalCost": 1289,
+      "trackingCode": "ASD888",
+      "destiny": "Juliaca"
+    }
+  ],
+  "coupons2": [
+    {
+      "id": 1,
+      "title": "First Order",
+      "discount": 10,
+      "code": "ABC123",
+      "validDate": "09/09/09",
+      "situation": true,
+      "description": "*Coupons are not accumulative"
+    },
+    {
+      "id": 2,
+      "title": "Black Friday Week",
+      "discount": 50,
+      "code": "ACD090",
+      "validDate": "09/09/09",
+      "situation": true,
+      "description": "*Coupons are not accumulative. Only for travelers mode"
+    },
+    {
+      "id": 3,
+      "title": "ImportIt20",
+      "discount": 20,
+      "code": "ABT555",
+      "validDate": "09/09/09",
+      "situation": false,
+      "description": ""
+    }
+  ],
+  "coupons": [],
+  "chats": [
+    {
+      "id": 1,
+      "user1": {
+        "id": 1,
+        "message": "Hola",
+        "date": "09/09/09"
+      },
+      "user2": {
+        "id": 2,
+        "message": "Hola",
+        "date": "09/09/09"
+      }
     }
   ]
 }
