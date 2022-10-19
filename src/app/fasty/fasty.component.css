@@ -1,0 +1,34 @@
+.page-title {
+  margin: 1% 5% 0 5%;
+
+}
+
+.category-container {
+  margin: 0 5%;
+  padding: 3%;
+  background-color: #F0F0F0;
+  border: 3px solid #2980B9;
+  border-radius: 15px;
+}
+
+.product-list {
+  border: 3px solid #2980B9;
+}
+
+.single-product {
+  border: 3px solid #2980B9;
+  border-radius: 15px;
+  padding: 15px;
+  width: 25%;
+}
+
+.product-img {
+  border: 2px solid #919AA9;
+  border-radius: 10px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+}

@@ -23,6 +23,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { FastyComponent } from './fasty/fasty.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { MatTableModule } from '@angular/material/table';
     LoginComponent,
     LoginComponent,
     WelcomeComponent,
-    UsersComponent
+    UsersComponent,
+    FastyComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { MatTableModule } from '@angular/material/table';
     MatOptionModule,
     MatListModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
