@@ -1,0 +1,11 @@
+.container {
+    display: felx;
+    height: calc(10vh - 70 px);
+}
+
+.chat-list {
+    width: 40%;
+    margin: 16px;
+    background: #c5cae9;
+    border-radius: 16px;
+}
