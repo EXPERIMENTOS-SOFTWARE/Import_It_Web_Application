@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
+import { DirectionComponent } from './direction/direction.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
+import { RegisterdirectionComponent } from './registerdirection/registerdirection.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'change', component: ChangePasswordFormComponent },
   { path: 'signUp', component: UsersComponent },
   { path: 'wallet', component: WalletComponent },
+  { path: 'direction', component: DirectionComponent },
+  { path: 'direction/register', component: RegisterdirectionComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' }
 ];
 

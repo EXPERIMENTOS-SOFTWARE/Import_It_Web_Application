@@ -24,6 +24,8 @@ import { UsersComponent } from './users/pages/users/users.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { WalletComponent } from './wallet/wallet.component';
+import { DirectionComponent } from './direction/direction.component';
+import { RegisterdirectionComponent } from './registerdirection/registerdirection.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { WalletComponent } from './wallet/wallet.component';
     LoginComponent,
     WelcomeComponent,
     UsersComponent,
-    WalletComponent
+    WalletComponent,
+    DirectionComponent,
+    RegisterdirectionComponent
   ],
   imports: [
     BrowserModule,
