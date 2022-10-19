@@ -1,0 +1,31 @@
+.containerOrder {
+  display: flex;
+  align-items: center;
+  padding: 7% 0;
+}
+.cardpadding{
+  padding-left:18rem;
+ }
+
+ .buttonpadding{
+  padding-left:60rem;
+
+ }
+ .colum{
+   display:flex;
+   flex-direction: column;
+ }
+
+ .row{
+   display:flex;
+   flex-direction: row;
+ }
+
+ .paddingspace{
+   padding-left:2rem;
+ }
+
+ .paddinghigh{
+
+   padding-bottom:2rem;
+ }

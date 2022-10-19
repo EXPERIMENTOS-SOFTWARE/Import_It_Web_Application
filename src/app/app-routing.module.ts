@@ -5,6 +5,8 @@ import { DirectionComponent } from './direction/direction.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { RegisterdirectionComponent } from './registerdirection/registerdirection.component';
+import { UrlorderComponent } from './urlorder/urlorder.component';
+import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'wallet', component: WalletComponent },
   { path: 'direction', component: DirectionComponent },
   { path: 'direction/register', component: RegisterdirectionComponent },
+  { path: 'urlorder/generateorder', component: UrlorderComponent },
+  { path: 'urlorder', component: UrlordermainComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' }
 ];
 

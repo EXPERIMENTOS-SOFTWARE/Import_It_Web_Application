@@ -2,15 +2,14 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
-import { User } from '../model/user';
+import { Urlorder } from './urlorder';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UsersService {
+export class UrlorderService {
 
-  //Students Endpoint
-  basePath = "http://localhost:8000/users";
+  basePath = "http://localhost:8000/urlorder";
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -20,7 +19,6 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
 
-  //API Error Handling
   handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
       //Default error Handling
@@ -35,43 +33,33 @@ export class UsersService {
     return throwError('Something happened with request, please try again later');
   }
 
-  //Create Student
-  create(item: User): Observable<User> {
-    return this.http.post<User>(this.basePath, JSON.stringify(item), this.httpOptions)
+  create(item: Urlorder): Observable<Urlorder> {
+    return this.http.post<Urlorder>(this.basePath, JSON.stringify(item), this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
   }
 
-  //Get Student By Id
-  getById(id: any): Observable<User> {
-    return this.http.get<User>(`${this.basePath}/${id}`, this.httpOptions)
+  //get URLORDER by ID
+  getById(id: any): Observable<Urlorder> {
+    return this.http.get<Urlorder>(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
-    //http://localhost:3000/api/v1/users/4
-    //basePath = http://localhost:3000/api/v1/users
-    //id = 4
+
   }
-  //Get All Students
+
+  //get all URLORDER
   getAll(): Observable<any> {
     return this.http.get<any>(this.basePath, this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
   }
-  /*
-    getForLogin(name:string, password:string): Observable<User>{
-      return this.http.get<any>(this.basePath,this.httpOptions).subscribe(res=>{
-        const user = res.find((a:any))
-      })
-    }
-  */
-  //Update Student
-  update(id: any, item: any): Observable<User> {
-    return this.http.put<User>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
+  //update URLORDER
+  update(id: any, item: any): Observable<Urlorder> {
+    return this.http.put<Urlorder>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
   }
-
-  //Delete Students
+  //delete URLORDER
   delete(id: any) {
     return this.http.delete(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(retry(2),

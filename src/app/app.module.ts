@@ -26,6 +26,9 @@ import { MatTableModule } from '@angular/material/table';
 import { WalletComponent } from './wallet/wallet.component';
 import { DirectionComponent } from './direction/direction.component';
 import { RegisterdirectionComponent } from './registerdirection/registerdirection.component';
+import { UrlorderComponent } from './urlorder/urlorder.component';
+import { UrlordermainComponent } from './urlordermain/urlordermain.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { RegisterdirectionComponent } from './registerdirection/registerdirectio
     UsersComponent,
     WalletComponent,
     DirectionComponent,
-    RegisterdirectionComponent
+    RegisterdirectionComponent,
+    UrlorderComponent,
+    UrlordermainComponent
+
   ],
   imports: [
     BrowserModule,
