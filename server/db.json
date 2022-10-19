@@ -96,5 +96,37 @@
       "address": "Cipriano ",
       "id": 8
     }
+  ],
+  "productCategories": [
+    {
+      "name": "Technology",
+      "imageURL" : "../../assets/images/productCategories/Technology.png"
+    },
+    {
+      "name": "Home & Furniture",
+      "imageURL" : "../../assets/images/productCategories/Home and furniture.jpg"
+    },
+    {
+      "name": "Perfumes",
+      "imageURL" : "../../assets/images/productCategories/Perfumes.jpg"
+    },
+    {
+      "name": "Clothing",
+      "imageURL" : "../../assets/images/productCategories/Clothing.jpg"
+    }
+  ],
+  "storeProductsByCategory": [
+    {
+      "category": "Technology",
+      "productsAvailables": [
+        {
+          "name": "Samsung Smartwatch",
+          "price": 120,
+          "imgURL": "../../assets/images/Technology.png",
+          "productURL": "https://www.samsung.com/es/watches/galaxy-watch5/buy/"
+        }
+      ]
+
+    }
   ]
 }
