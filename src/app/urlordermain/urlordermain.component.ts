@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from "@angular/material/table";
 import { Urlorder } from '../urlorder/urlorder';
 import { UrlorderService } from '../urlorder/urlorder.service';
+
+
 
 @Component({
   selector: 'app-urlordermain',
@@ -10,6 +13,8 @@ import { UrlorderService } from '../urlorder/urlorder.service';
 export class UrlordermainComponent implements OnInit {
 
   urlorder: Urlorder[] = [];
+
+  dataSource = new MatTableDataSource();
 
   constructor(private urlorderService: UrlorderService) { }
 
@@ -22,8 +27,19 @@ export class UrlordermainComponent implements OnInit {
       this.urlorder = response;
     })
   }
-  deleteUrlorders() {
+  /*deleteUrlorders() {
+    this.urlorderService.delete(this.urlorder.id).subscribe((response: any) => {
+      this.urlorder = response;
+    })
+  }*/
 
+  deleteUrlorders(id: number): void {
+
+    this.urlorderService.delete(id).subscribe(() => {
+
+      this.dataSource.data = this.dataSource.data.filter((item: any) => item.id != id)
+    });
+    console.log(this.dataSource.data)
 
   }
 }

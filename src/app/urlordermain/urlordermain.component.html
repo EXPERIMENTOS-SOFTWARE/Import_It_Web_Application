@@ -4,7 +4,7 @@
       <mat-card class="row">
         <h1>My orders</h1>
         <mat-card-actions class="buttonpadding">
-          <button routerLink="/urlorder/generateorder" mat-flat-button color="primary" type="submit">New Order</button>
+          <button routerLink="/generateorder" mat-flat-button color="primary" type="submit">New Order</button>
         </mat-card-actions>
       </mat-card>
     </div>
@@ -17,6 +17,9 @@
         <h4>Price: {{urlorder.price}}$</h4>
         <h4>Comision: {{urlorder.comision}}$</h4>
         <h4>Weight:{{urlorder.weight}}</h4>
+        <a href="javascript:void(0)" (click)="deleteUrlorders(urlorder.id)">
+          <mat-icon>delete</mat-icon>
+        </a>
       </mat-card>
     </div>
   </div>

@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'wallet', component: WalletComponent },
   { path: 'direction', component: DirectionComponent },
   { path: 'direction/register', component: RegisterdirectionComponent },
-  { path: 'urlorder/generateorder', component: UrlorderComponent },
+  { path: 'generateorder', component: UrlorderComponent },
   { path: 'urlorder', component: UrlordermainComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' }
 ];
