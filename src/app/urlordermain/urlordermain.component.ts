@@ -22,5 +22,9 @@ export class UrlordermainComponent implements OnInit {
       this.urlorder = response;
     })
   }
+  deleteUrlorders() {
 
+
+  }
 }
+

@@ -73,6 +73,7 @@ export class UrlorderComponent implements OnInit {
   addUrlorder() {
     this.urlorderService.create(this.urlorderForm.value).subscribe(response => {
       this.urlorderForm.reset();
+      alert("Order registered");
       this.router.navigate(['urlorder']);
     });
   }

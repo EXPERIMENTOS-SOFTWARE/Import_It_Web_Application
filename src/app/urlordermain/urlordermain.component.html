@@ -11,12 +11,11 @@
     <div class="paddingcard">
 
       <mat-card *ngFor="let urlorder of urlorder" class="paddingcard">
-
         <h1><strong>{{urlorder.name}}</strong></h1><br>
         <h2>{{urlorder.tittle}}</h2>
-        <h4>{{urlorder.url}}</h4>
-        <h4>Price: {{urlorder.price}}</h4>
-        <h4>Comision: {{urlorder.comision}}</h4>
+        <h4><a href={{urlorder.url}}>{{urlorder.url}}</a></h4>
+        <h4>Price: {{urlorder.price}}$</h4>
+        <h4>Comision: {{urlorder.comision}}$</h4>
         <h4>Weight:{{urlorder.weight}}</h4>
       </mat-card>
     </div>
