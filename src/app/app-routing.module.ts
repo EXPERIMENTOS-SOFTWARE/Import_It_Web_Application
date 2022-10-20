@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CalculatorComponent } from "./calculator/calculator.component";
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
+import { FastyComponent } from "./fasty/fasty.component";
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { FastyComponent } from "./fasty/fasty.component";
-import {CalculatorComponent} from "./calculator/calculator.component";
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },

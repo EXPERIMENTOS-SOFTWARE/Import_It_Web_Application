@@ -1,7 +1,8 @@
-import { Component, OnInit, } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-import { UsersService } from '../users/services/users.service';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
+import { UsersService } from '../users/services/users.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router ) { }
+  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router, private authService: AuthService) { }
 
   ngOnInit(): void {
     this.setDNIValidation();
@@ -44,18 +45,29 @@ export class LoginComponent implements OnInit {
 
   submitForm() {
     //this.submitted = true;
-    this.usersService.getAll().subscribe(response=>{
-      const user = response.find((a:any)=>{
+
+    this.usersService.getAll().subscribe(response => {
+      const user = response.find((a: any) => {
         return a.dni === this.loginForm.value.dni && a.password === this.loginForm.value.password
       });
-      if(user){
+      if (user) {
         alert("Login Success!!");
-        this.loginForm.reset();
-        this.router.navigate(['profile']);
-      }else{
+        //this.loginForm.reset();
+        //this.router.navigate(['profile']);
+        this.authService
+          .login(this.loginForm.get('dni')?.value ?? '', this.loginForm.get('pasword')?.value)
+          .subscribe((response) => {
+            this.router.navigate(['profile']);
+          });
+      } else {
         alert("user not found");
       }
-    })
+    });
+    /*if (this.loginForm.valid) {
+      return;
+    }*/
+
+
   }
 
 }
