@@ -1,10 +1,20 @@
 <main class="containerDirection">
   <div class="cardpadding">
-    <h1 style="text-align:left">My Directions </h1>
-    <div routerLink="/direction/register">
-      <mat-card class="w-full">
-        <img mat-card-image [src]="directionImgSource" alt="add" routerLink="/directionregister">
-      </mat-card>
+
+    <h1 style="text-align:left"><b>My Directions </b></h1>
+
+    <div class="grid2c">
+      <img class="dsc-card" mat-card-image [src]="directionImgSource" alt="add" routerLink="/directionregister">
+      <div class="dsc-card" *ngFor="let direction of direction">
+        <div class="dsc-content">
+          <h4>{{direction.name}}</h4>
+          <h4>{{direction.lastname}}</h4>
+          <h4>{{direction.direction1}}</h4>
+          <h4>{{direction.phone}}</h4>
+          <h4>{{direction.departament}}</h4>
+        </div>
+        <img class="imageTall" src="https://i.imgur.com/weXt435.png">
+      </div>
     </div>
   </div>
 </main>
