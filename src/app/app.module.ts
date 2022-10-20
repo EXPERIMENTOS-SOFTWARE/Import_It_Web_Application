@@ -26,6 +26,7 @@ import { MatTableModule } from '@angular/material/table';
 import { WalletComponent } from './wallet/wallet.component';
 import { DirectionComponent } from './direction/direction.component';
 import { DirectionregisterComponent } from './directionregister/directionregister.component';
+import { DirectioninfoComponent } from './directioninfo/directioninfo.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { DirectionregisterComponent } from './directionregister/directionregiste
     UsersComponent,
     WalletComponent,
     DirectionComponent,
-    DirectionregisterComponent
+    DirectionregisterComponent,
+    DirectioninfoComponent
   ],
   imports: [
     BrowserModule,

@@ -104,19 +104,9 @@
       "phone": "924773421",
       "direction1": "av universitaria 6107",
       "district": "Comas",
-      "province": "Lima",
-      "departament": "Lima Province",
-      "id": 1
-    },
-    {
-      "name": "David Elias",
-      "lastname": "Condori Mendoza",
-      "phone": "9969203421",
-      "direction1": "av las flores 2489 ",
-      "district": "San Martin de porres",
-      "province": "Lima metropolitana",
+      "province": "Lima (Departamento)",
       "departament": "Lima",
-      "id": 2
+      "id": 1
     }
   ]
 }

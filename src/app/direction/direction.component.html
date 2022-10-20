@@ -15,6 +15,8 @@
           <h4>{{direction.departament}}</h4>
         </div>
         <img class="imageTall" src="https://i.imgur.com/weXt435.png">
+        <button [routerLink]="['/directioninfo', direction.id]" mat-flat-button color="primary" type="see more">see
+          more</button>
       </div>
     </div>
   </div>

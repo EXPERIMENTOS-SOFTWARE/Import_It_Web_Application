@@ -73,7 +73,7 @@ export class DirectionregisterComponent implements OnInit {
   addDirection() {
     this.directionregisterService.create(this.directionForm.value).subscribe(response => {
       this.directionForm.reset();
-      this.router.navigate(['profile']);
+      this.router.navigate(['direction']);
     });
   }
   onSubmit() {
