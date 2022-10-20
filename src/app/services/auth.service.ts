@@ -10,6 +10,7 @@ export class AuthService {
 
     private _isLoggedIn$ = new BehaviorSubject<boolean>(false);
     isLoggedIn$ = this._isLoggedIn$.asObservable();
+    currentID = 0;
 
     constructor(private apiService: ApiService) {
         const token = localStorage.getItem('importIt_auth');
@@ -17,11 +18,15 @@ export class AuthService {
     }
 
     login(dni: number, password: string) {
+        //this.currentDni = dni;
         return this.apiService.login(dni, password).pipe(
             tap((response: any) => {
                 this._isLoggedIn$.next(true);
                 localStorage.setItem('importIt_auth', response.token);
             })
         );
+    }
+    currentUserID() {
+        return this.currentID;
     }
 }

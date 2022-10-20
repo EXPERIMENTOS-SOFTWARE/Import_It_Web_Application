@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
 
     this.usersService.getAll().subscribe(response => {
       const user = response.find((a: any) => {
-        return a.dni === this.loginForm.value.dni && a.password === this.loginForm.value.password
+        return a.dni === this.loginForm.value.dni && a.password === this.loginForm.value.password;
       });
       if (user) {
         alert("Login Success!!");
@@ -59,6 +59,7 @@ export class LoginComponent implements OnInit {
           .subscribe((response) => {
             this.router.navigate(['profile']);
           });
+        this.authService.currentID = user.id;
       } else {
         alert("user not found");
       }
