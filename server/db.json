@@ -197,5 +197,78 @@
         "date": "09/09/09"
       }
     }
+  ],
+  "productCategories": [
+    {
+      "name": "Technology",
+      "imageURL": "../../assets/images/productCategories/Technology.png"
+    },
+    {
+      "name": "Home & Furniture",
+      "imageURL": "../../assets/images/productCategories/Home and furniture.jpg"
+    },
+    {
+      "name": "Perfumes",
+      "imageURL": "../../assets/images/productCategories/Perfumes.jpg"
+    },
+    {
+      "name": "Clothing",
+      "imageURL": "../../assets/images/productCategories/Clothing.jpg"
+    }
+  ],
+  "storeProductsByCategory": [
+    {
+      "category": "Technology",
+      "productsAvailables": [
+        {
+          "name": "Samsung Smartwatch",
+          "price": 120,
+          "imgURL": "../../assets/images/Technology.png",
+          "productURL": "https://www.samsung.com/es/watches/galaxy-watch5/buy/"
+        }
+      ]
+    }
+  ],
+  "store": [
+    {
+      "name": "Technology",
+      "productList": [
+        {
+          "name": "Samsung Smart Watch Series 3",
+          "imgURL": "../../assets/images/fastyProducts/Smart%20Watch.jpg",
+          "price": 120
+        },
+        {
+          "name": "Samsung Z Flip 3",
+          "imgURL": "../../assets/images/fastyProducts/Z%20Flip.jpg",
+          "price": 655
+        },
+        {
+          "name": "Iphone 13 Pro",
+          "imgURL": "../../assets/images/fastyProducts/Iphone%2013.jpg",
+          "price": 799
+        }
+      ]
+    },
+    {
+      "name": "Home and Furniture",
+      "productList": [
+        {
+          "name": "Luxury Sofa",
+          "imgURL": "../../assets/images/fastyProducts/sofa.jpg",
+          "price": 120
+        },
+        {
+          "name": "Bunch of chairs",
+          "imgURL": "../../assets/images/fastyProducts/chairs.jpg",
+          "price": 655
+        },
+        {
+          "name": "Beautiful Lamp",
+          "imgURL": "../../assets/images/fastyProducts/lamp.jpg",
+          "price": 799
+        }
+      ]
+    }
   ]
 }

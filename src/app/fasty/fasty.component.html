@@ -1,0 +1,34 @@
+<div class="page-container" fxLayout="column" fxLayoutAlign="center center">
+  <div class="page-title">
+    <h1><strong>Choose Product</strong></h1>
+  </div>
+
+  <div class="category-container" fxLayout="column"  *ngFor="let category of storeProducts">
+    <h2 class="category-title">{{category.name}}</h2>
+    <h3>Most frequently ordered {{category.name.toLowerCase()}} products</h3>
+
+    <section class="product-list" fxLayout="row" fxLayoutAlign="space-between center">
+
+      <div class="single-product" fxLayout="column" fxLayoutAlign="center center" *ngFor="let product of category.productList">
+
+        <div class="product-img">
+          <img alt="Product image" [src]="product.imgURL">
+        </div>
+
+        <div class="product-name">
+          <h2>{{product.name}}</h2>
+        </div>
+
+        <div class="product-price">
+          <h2>$ {{product.price}}</h2>
+        </div>
+
+        <div class="button-container">
+          <button mat-flat-button color="primary" type="submit">See more</button>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+</div>

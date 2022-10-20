@@ -57,7 +57,6 @@ export class UsersService {
       .pipe(retry(2),
         catchError(this.handleError));
   }
-
   /*
     getForLogin(name:string, password:string): Observable<User>{
       return this.http.get<any>(this.basePath,this.httpOptions).subscribe(res=>{

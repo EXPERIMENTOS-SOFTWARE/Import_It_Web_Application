@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <button mat-icon-button (click)="isSidenavOpen=!isSidenavOpen">
+        <button mat-icon-button (click)="isSidenavOpen=!isSidenavOpen" *ngIf="authService.isLoggedIn$ | async">
             <mat-icon>menu</mat-icon>
         </button>
         <a href="https://mirai-open-source-sw52-grupo-3.github.io/Landing-Page-Import-It/public/">
@@ -29,7 +29,7 @@
             <a mat-list-item>
                 <mat-icon>room</mat-icon> Directions
             </a>
-            <a mat-list-item>
+            <a mat-list-item [routerLink]="'/calculator'">
                 <mat-icon> monetization_on</mat-icon> Calculator
             </a>
             <a mat-list-item>
@@ -38,7 +38,7 @@
             <a mat-list-item>
                 <mat-icon> local_shipping</mat-icon> Domestic Shipments
             </a>
-            <a mat-list-item>
+            <a mat-list-item routerLink="/fasty">
                 <mat-icon> local_offer</mat-icon> Fasty
             </a>
             <a mat-list-item>
