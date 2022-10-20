@@ -25,7 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { WalletComponent } from './wallet/wallet.component';
 import { DirectionComponent } from './direction/direction.component';
-import { RegisterdirectionComponent } from './registerdirection/registerdirection.component';
+import { DirectionregisterComponent } from './directionregister/directionregister.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { RegisterdirectionComponent } from './registerdirection/registerdirectio
     UsersComponent,
     WalletComponent,
     DirectionComponent,
-    RegisterdirectionComponent
+    DirectionregisterComponent
   ],
   imports: [
     BrowserModule,

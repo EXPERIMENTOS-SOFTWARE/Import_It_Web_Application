@@ -96,5 +96,17 @@
       "address": "Cipriano ",
       "id": 8
     }
+  ],
+  "direction": [
+    {
+      "name": "Sebastian Alejandro",
+      "lastname": "Montes Molina",
+      "phone": "924773421",
+      "direction1": "av universitaria 6107",
+      "district": "Comas",
+      "province": "Lima",
+      "departament": "Lima Province",
+      "id": 1
+    }
   ]
 }

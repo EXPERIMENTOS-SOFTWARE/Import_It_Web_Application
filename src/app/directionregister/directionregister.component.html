@@ -1,0 +1,68 @@
+<div class="form-container">
+  <form (submit)="onSubmit()" #directionForm="ngForm" [formGroup]="registerForm">
+
+    <mat-card-content>
+      <mat-grid-list cols="2" rowHeight="3:1">
+        <mat-card-title class="pre-title paddingtopTittle">New Direction</mat-card-title>
+        <div>
+
+          <mat-card>
+
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Name" name="name" formControlName="name" required
+                [(ngModel)]="directionData.name" />
+              <mat-error *ngIf="name?.errors?.['required']"> Full Name is<strong>required</strong></mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Lastname" name="lastname" formControlName="lastname" required
+                [(ngModel)]="directionData.lastname" />
+              <mat-error *ngIf="lastname?.errors?.['required']"> Full Lastname is<strong>required</strong></mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="full-width">
+              <input type="text" matInput formControlName="phone" placeholder="phone ex. 964258795" required
+                [(ngModel)]="directionData.phone" />
+              <mat-error *ngIf="phone?.errors?.['required']">Phone is <strong>required</strong> </mat-error>
+              <mat-error *ngIf="phone?.errors?.['pattern'] && !phone?.errors?.['required']">
+                Phone must have only <strong>numbers</strong>
+              </mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Direction" name="direction1" formControlName="direction1" required
+                [(ngModel)]="directionData.direction1" />
+              <mat-error *ngIf="direction1?.errors?.['required']"> Direction is<strong>required</strong></mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="District" name="district" formControlName="district" required
+                [(ngModel)]="directionData.district" />
+              <mat-error *ngIf="district?.errors?.['required']"> District Name is<strong>required</strong></mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Province" name="province" formControlName="province" required
+                [(ngModel)]="directionData.province" />
+              <mat-error *ngIf="province?.errors?.['required']"> District Name is<strong>required</strong></mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Departament" name="departament" formControlName="departament" required
+                [(ngModel)]="directionData.departament" />
+              <mat-error *ngIf="departament?.errors?.['required']"> Departament Name is<strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+
+          </mat-card>
+        </div>
+      </mat-grid-list>
+    </mat-card-content>
+
+    <button [disabled]="!directionForm.valid" mat-flat-button color="primary" type="submit">Submit</button>
+
+  </form>
+</div>
