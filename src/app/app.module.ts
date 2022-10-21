@@ -44,7 +44,7 @@ import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 
 import {MatTabsModule} from '@angular/material/tabs';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
-import { ProductWholesaleDetailComponent } from './product-wholesale/services/product-wholesale-detail/product-wholesale-detail.component';
+import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
 
 
