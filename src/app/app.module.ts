@@ -42,6 +42,9 @@ import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 
+import {MatTabsModule} from '@angular/material/tabs';
+
+
 
 @NgModule({
   declarations: [
@@ -94,6 +97,7 @@ import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
     MatTableModule,
     MatProgressBarModule,
     AngularMaterialModule,
+    MatTabsModule
     //FlexLayoutModule
   ],
   providers: [FakeBackendProvider],
