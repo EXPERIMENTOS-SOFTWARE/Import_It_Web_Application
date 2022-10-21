@@ -1,0 +1,58 @@
+/*html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.form-container {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+
+    background: #eceff1;
+    padding: 48px;
+    border-radius: 16px;
+}
+
+.form-container mat-form-field {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.margin-top {
+    margin-top: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+*/
+.container {
+    display: flex;
+    height: calc(100vh - 70 px);
+}
+
+.chat-list {
+    width: 40%;
+    margin: 16px;
+    background: #c5cae9;
+    border-radius: 16px;
+}
+
+.messages {
+    width: 60%;
+    margin: 16px;
+    border-radius: 16px;
+}
+
+.search-input {
+    margin: 24px;
+}

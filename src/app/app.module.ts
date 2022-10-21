@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatOptionModule } from '@angular/material/core';
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
+import { ChatsComponent } from './chats/chats.component';
 import { CouponsComponent } from './coupons-components/coupons/coupons.component';
 import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
 import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
@@ -63,7 +65,8 @@ import { WalletComponent } from './wallet/wallet.component';
     DirectionregisterComponent,
     DirectioninfoComponent,
     UrlorderComponent,
-    UrlordermainComponent
+    UrlordermainComponent,
+    ChatsComponent
   ],
   imports: [
     BrowserModule,
@@ -92,7 +95,7 @@ import { WalletComponent } from './wallet/wallet.component';
     MatTableModule,
     MatProgressBarModule,
     AngularMaterialModule,
-    //FlexLayoutModule
+    MatAutocompleteModule
   ],
   providers: [FakeBackendProvider],
   bootstrap: [AppComponent]

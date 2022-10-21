@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from "./calculator/calculator.component";
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
+import { ChatsComponent } from './chats/chats.component';
 import { CouponsComponent } from './coupons-components/coupons/coupons.component';
 import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
 import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'change', component: ChangePasswordFormComponent },
   { path: 'signUp', component: UsersComponent },
+  { path: 'chats', component: ChatsComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: 'fasty', component: FastyComponent },
   { path: 'calculator', component: CalculatorComponent },
@@ -39,6 +41,7 @@ const routes: Routes = [
   { path: 'directioninfo/:id', component: DirectioninfoComponent },
   { path: 'generateorder', component: UrlorderComponent },
   { path: 'urlorder', component: UrlordermainComponent },
+  { path: 'chats', component: ChatsComponent },
 ];
 
 @NgModule({
