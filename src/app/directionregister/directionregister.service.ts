@@ -1,26 +1,25 @@
-import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
+import { Direction } from './direction';
 import { catchError, retry } from 'rxjs/operators';
-import { User } from '../model/user';
+import { isNgContainer } from '@angular/compiler';
+import { AnyKindOfDictionary } from 'lodash';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class UsersService {
+export class DirectionregisterService {
 
-  //Students Endpoint
-  basePath = "http://localhost:8000/users";
+  basePath = "http://localhost:8000/direction"
 
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
     })
   }
-
   constructor(private http: HttpClient) { }
-
-  //API Error Handling
   handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
       //Default error Handling
@@ -34,47 +33,31 @@ export class UsersService {
     //Return Observable with Error Messafe to Client
     return throwError('Something happened with request, please try again later');
   }
-
-  //Create Student
-  create(item: User): Observable<User> {
-    return this.http.post<User>(this.basePath, JSON.stringify(item), this.httpOptions)
+  create(item: Direction): Observable<Direction> {
+    return this.http.post<Direction>(this.basePath, JSON.stringify(item), this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
   }
-
-  //Get Student By Id
-  getById(id: any): Observable<User> {
-    return this.http.get<User>(`${this.basePath}/${id}`, this.httpOptions)
+  getById(id: any): Observable<Direction> {
+    return this.http.get<Direction>(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
-    //http://localhost:3000/api/v1/users/4
-    //basePath = http://localhost:3000/api/v1/users
-    //id = 4
   }
-  //Get All Students
   getAll(): Observable<any> {
     return this.http.get<any>(this.basePath, this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
   }
-  /*
-    getForLogin(name:string, password:string): Observable<User>{
-      return this.http.get<any>(this.basePath,this.httpOptions).subscribe(res=>{
-        const user = res.find((a:any))
-      })
-    }
-  */
-  //Update Student
-  update(id: any, item: any): Observable<User> {
-    return this.http.put<User>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
+  update(id: any, item: any): Observable<Direction> {
+    return this.http.put<Direction>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
   }
-
-  //Delete Students
   delete(id: any) {
     return this.http.delete(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(retry(2),
         catchError(this.handleError));
   }
+
+
 }

@@ -100,19 +100,19 @@
   "productCategories": [
     {
       "name": "Technology",
-      "imageURL" : "../../assets/images/productCategories/Technology.png"
+      "imageURL": "../../assets/images/productCategories/Technology.png"
     },
     {
       "name": "Home & Furniture",
-      "imageURL" : "../../assets/images/productCategories/Home and furniture.jpg"
+      "imageURL": "../../assets/images/productCategories/Home and furniture.jpg"
     },
     {
       "name": "Perfumes",
-      "imageURL" : "../../assets/images/productCategories/Perfumes.jpg"
+      "imageURL": "../../assets/images/productCategories/Perfumes.jpg"
     },
     {
       "name": "Clothing",
-      "imageURL" : "../../assets/images/productCategories/Clothing.jpg"
+      "imageURL": "../../assets/images/productCategories/Clothing.jpg"
     }
   ],
   "storeProductsByCategory": [
@@ -126,7 +126,6 @@
           "productURL": "https://www.samsung.com/es/watches/galaxy-watch5/buy/"
         }
       ]
-
     }
   ],
   "store": [
@@ -225,7 +224,6 @@
       "destiny": "Juliaca"
     }
   ],
-
   "coupons2": [
     {
       "id": 1,
@@ -255,7 +253,16 @@
       "description": ""
     }
   ],
-  
-  "coupons": [
-  ]
-}
+  "coupons": [],
+  "direction": [
+    {
+      "name": "Sebastian Alejandro",
+      "lastname": "Montes Molina",
+      "phone": "924773421",
+      "direction1": "av universitaria 6107",
+      "district": "Comas",
+      "province": "Lima (Departamento)",
+      "departament": "Lima",
+      "id": 1
+    }
+  }

@@ -22,18 +22,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
+import { CouponsComponent } from './coupons-components/coupons/coupons.component';
+import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
+import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
+import { DomesticShipmentComponent } from './domestic-shipment/domestic-shipment.component';
+import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domestic-shipments-info.component';
 import { FakeBackendProvider } from './fake-backend.interceptor';
 import { FastyComponent } from './fasty/fasty.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { DomesticShipmentComponent } from './domestic-shipment/domestic-shipment.component';
-import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domestic-shipments-info.component';
-import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
-import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
-import { CouponsComponent } from './coupons-components/coupons/coupons.component';
 //import { FlexLayoutModule } from "@angular/flex-layout";
+import { DirectionComponent } from './direction/direction.component';
+import { DirectioninfoComponent } from './directioninfo/directioninfo.component';
+import { DirectionregisterComponent } from './directionregister/directionregister.component';
+import { WalletComponent } from './wallet/wallet.component';
 
 
 @NgModule({
@@ -51,7 +55,11 @@ import { CouponsComponent } from './coupons-components/coupons/coupons.component
     DomesticShipmentsInfoComponent,
     EnterCouponComponent,
     ValidateCouponComponent,
-    CouponsComponent
+    CouponsComponent,
+    WalletComponent,
+    DirectionComponent,
+    DirectionregisterComponent,
+    DirectioninfoComponent
   ],
   imports: [
     BrowserModule,

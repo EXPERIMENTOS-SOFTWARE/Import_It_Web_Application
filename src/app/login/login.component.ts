@@ -27,7 +27,9 @@ export class LoginComponent implements OnInit {
     dni: ['', { validators: [Validators.required], updateOn: 'change' }],
     password: ['', { validators: [Validators.required, Validators.minLength(8)], updateOn: 'change' }]
   })
-
+  grabar_localstorage() {
+    localStorage.setItem('dni', this.loginForm.value.dni);
+  }
   get dni() {
     return this.loginForm.get('dni');
   }
@@ -52,14 +54,9 @@ export class LoginComponent implements OnInit {
       });
       if (user) {
         alert("Login Success!!");
-        //this.loginForm.reset();
-        //this.router.navigate(['profile']);
-        this.authService
-          .login(this.loginForm.get('dni')?.value ?? '', this.loginForm.get('pasword')?.value)
-          .subscribe((response) => {
-            this.router.navigate(['profile']);
-          });
-        this.authService.currentID = user.id;
+        this.grabar_localstorage();
+        this.loginForm.reset();
+        this.router.navigate(['profile']);
       } else {
         alert("user not found");
       }
