@@ -1,0 +1,70 @@
+/* :::::::::::::::::::::::::::::::::::: */
+/* :::::: Code of payment method :::::: */
+/* :::::::::::::::::::::::::::::::::::: */
+
+.example-particular-card {
+    /*width: max-content;*/
+    /*border: 1px solid red;*/
+    /*border: 1px solid blue;*/
+    width: 80%;
+    margin: 20px auto;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+mat-icon{
+    vertical-align: middle;
+}
+
+.body-payment-process{
+    margin: 10px 30px;
+}
+
+.row-payment-process{
+    /*border: 1px solid blue;*/
+    display: flex;
+}
+
+.row-payment-process .first-section{
+    /*border: 1px solid red;*/
+    width: 70%;
+    margin-right: 20px;
+}
+
+.mat-form-field-large{
+    /*border: 1px solid green;*/
+    width: 100%;
+}
+
+.row-payment-process .third-section{
+    /*border: 1px solid red;*/
+    /*margin-right: 20px;*/
+    /*width: 25%;*/
+    margin-right: 20px;
+}
+
+.row-cost{
+    display: flex;
+}
+
+.name-cost{
+    width: 50%;
+}
+
+.value-cost{
+    width: 50%;
+    text-align: end;
+}
+
+.button-pay{
+    text-align: end;
+}
+
+@media (max-width: 600px) {
+    .row-payment-process{
+        display: block;
+    }
+  }
