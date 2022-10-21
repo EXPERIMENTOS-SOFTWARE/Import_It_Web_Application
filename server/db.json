@@ -452,5 +452,51 @@
       "dni": "72372975",
       "id": 3
     }
+  ],
+  "productsWholesale": [
+    {
+      "name": "IPHONE 11 PRO MAX",
+      "quantity": 10,
+      "price": 5749,
+      "picture": "https://ripleype.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fimagenes-sellers-mercado-ripley%2F2022%2F01%2F20185223%2FLD0005886467_1_0005886512_0005886538.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=90d19f0e13418fbeb9656f4e7661d1fb",
+      "description": "DIMENSIONES Y PESO: 160,8 x 78,1 x 7,6 mm 238 gramos PANTALLA: Super Retina XDR 6,7 pulgadas ProMotion 120 Hz 2.778 x 1.284 px, 458 ppp 1.000 nits, contraste 2.000.000:1 PROCESADOR: Apple A15 Bionic RAM: 6GB. ALMACENAMIENTO: 128GB/1 TB CÁMARAS TRASERAS Telefoto: 12 MP f/2.8, 77mm, 3x óptico Ultrawide: 12 MP f/1.8, 6P, 120º Principal: 12 MP f/1.5, 1,9um CÁMARA FRONTAL: 12 MP f/2.2 BATERÍA: Carga rápida 20 W Carga MagSafe de 15 W Carga Qi de 7,5 W SISTEMA OPERATIVO: iOS 15 CONECTIVIDAD: 5G (sub-6 GHz) LTE Gigabit con MIMO 4x4 y LAA Wifi 802.11ax (6.ª gen.) con MIMO 2x2 Bluetooth 5.0 Chip de banda ultraancha NFC OTROS IP68 Sonido estéreo FaceID NO INCLUYE CARGADOR",
+      "principalFeature1": "DIMENSIONES: 160,8 x 78,1 x 7,6 mm",
+      "principalFeature2": "PESO: 238 gramos",
+      "principalFeature3": "ALMACENAMIENTO: 128GB/1 TB",
+      "id": 1
+    },
+    {
+      "name": "Laptop Hp",
+      "quantity": 10,
+      "price": 1500,
+      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2004293408701/2004293408701-1.jpg",
+      "description": "Diseñada para tu productividad y entretenimiento desde cualquier lugar. Procesador Intel Core i3-1115G4. Batería de larga duración. Pantalla HD de 1366 x 768 px de resolución. Almacenamiento: 512GB SSD. Diseño delgado y portable con pantalla de micro borde.",
+      "principalFeature1": "Procesador: Intel Core i3",
+      "principalFeature2": "Memoria RAM: 4GB",
+      "principalFeature3": "Disco duro: 128GB",
+      "id": 2
+    },
+    {
+      "name": "MANDO GAMER PARA CELULAR",
+      "quantity": 8,
+      "price": 150,
+      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2065281206808/2065281206808-6.jpg",
+      "description": "Función telescópica: Para diferentes tamaños de dispositivos. Longitud horizontal ajustable: De 13.5 a 25 cm. Función de Turbo: Velocidad de 2 a 3 veces mayor que los estándar. El controlador derecho es desmontable. El controlador izquierdo se puede utilizar como game pad de una sola mano. Conectividad Bluetooth v4.0. Compatibilidad: Android 6.0 o superior / iOS 11 o superior. Batería de litio incorporada. Tiempo de carga: 3 horas. Duración de la batería: Hasta 15 horas.",
+      "principalFeature1": "Tiempo de carga: 3 horas.",
+      "principalFeature2": "Duración de la batería: Hasta 15 horas.",
+      "principalFeature3": "El controlador derecho es desmontable.",
+      "id": 3
+    },
+    {
+      "name": "AUDIFONOS INALÁMBRICOS PULSE 3D (PS5)",
+      "quantity": 3,
+      "price": 520,
+      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2031255300407/2031255300407_2.jpg",
+      "description": "No esperes más y adquiere los mejores accesorios para Playstation 5 en Ripley.com. Disfruta de una experiencia sonora perfecta con estos audífonos ajustados para audio 3D en las consolas PS5. Los auriculares inalámbricos PULSE 3D tienen un diseño elegante con micrófonos dobles con reducción de ruido, carga a través de USB Type-C® y una variedad de controles de fácil acceso.",
+      "principalFeature1": "Modelo 3D Wireless Headset",
+      "principalFeature2": "Peso: 0.60 kg",
+      "principalFeature3": "Micrófono integrado",
+      "id": 4
+    }
   ]
 }
