@@ -40,6 +40,7 @@ import { DirectionregisterComponent } from './directionregister/directionregiste
 import { UrlorderComponent } from './urlorder/urlorder.component';
 import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { WalletComponent } from './wallet/wallet.component';
+import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { WalletComponent } from './wallet/wallet.component';
     DirectionregisterComponent,
     DirectioninfoComponent,
     UrlorderComponent,
-    UrlordermainComponent
+    UrlordermainComponent,
+    BuyWholesaleComponent
   ],
   imports: [
     BrowserModule,
