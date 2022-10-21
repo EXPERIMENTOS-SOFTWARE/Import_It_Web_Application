@@ -1,7 +1,7 @@
-import { Component, OnInit, } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-import { UsersService } from '../users/services/users.service';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
+import { UsersService } from '../users/services/users.service';
 
 @Component({
   selector: 'app-login',
@@ -10,10 +10,13 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router ) { }
+  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router) {
+    this.reset_login();
+  }
 
   ngOnInit(): void {
     this.setDNIValidation();
+
   }
 
   loginImgSource: string = "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80";
@@ -34,6 +37,12 @@ export class LoginComponent implements OnInit {
   get password() {
     return this.loginForm.get('password');
   }
+  reset_login() {
+    localStorage.clear();
+  }
+  grabar_localstorage() {
+    localStorage.setItem('dni', this.loginForm.value.dni);
+  }
 
   setDNIValidation() {
     const dniControl = this.loginForm.get('dni');
@@ -44,15 +53,16 @@ export class LoginComponent implements OnInit {
 
   submitForm() {
     //this.submitted = true;
-    this.usersService.getAll().subscribe(response=>{
-      const user = response.find((a:any)=>{
+    this.usersService.getAll().subscribe(response => {
+      const user = response.find((a: any) => {
         return a.dni === this.loginForm.value.dni && a.password === this.loginForm.value.password
       });
-      if(user){
+      if (user) {
         alert("Login Success!!");
+        this.grabar_localstorage();
         this.loginForm.reset();
         this.router.navigate(['profile']);
-      }else{
+      } else {
         alert("user not found");
       }
     })

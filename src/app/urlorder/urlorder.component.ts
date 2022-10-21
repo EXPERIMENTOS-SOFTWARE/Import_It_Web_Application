@@ -15,11 +15,13 @@ export class UrlorderComponent implements OnInit {
   urlorderData: Urlorder;
   sumbitted: boolean = false;
   isEditMode: boolean = false;
+  dniData: string = '';
 
   @ViewChild('urlorderForm', { static: false })
   urlorderForm!: NgForm;
 
   registerForm: FormGroup = this.formBuilder.group({
+
     url: ['', { validators: [Validators.required], updateOn: 'change' }],
     name: ['', { validators: [Validators.required], updatedOn: 'change' }],
     tittle: ['', { validators: [Validators.required], updatedOn: 'change' }],
@@ -33,10 +35,19 @@ export class UrlorderComponent implements OnInit {
 
   constructor(private urlorderService: UrlorderService, private formBuilder: FormBuilder, private router: Router) {
     this.urlorderData = {} as Urlorder;
+    this.recuperar_localstorage();
+
   }
 
   ngOnInit(): void {
+
   }
+
+  recuperar_localstorage() {
+    this.dniData = localStorage.getItem('dni') ?? '';
+    console.log(this.dniData);
+  }
+
 
   editItem(element: Urlorder) {
     this.urlorderData = _.cloneDeep(element);
@@ -46,6 +57,7 @@ export class UrlorderComponent implements OnInit {
     this.isEditMode = false;
     this.urlorderForm.resetForm();
   }
+
   get url() {
     return this.registerForm.get('url');
   }
@@ -71,7 +83,9 @@ export class UrlorderComponent implements OnInit {
     return this.registerForm.get('comision');
   }
   addUrlorder() {
-    this.urlorderService.create(this.urlorderForm.value).subscribe(response => {
+    const formBody: Urlorder = this.urlorderForm.value;
+    formBody.dni = this.dniData;
+    this.urlorderService.create(formBody).subscribe(response => {
       this.urlorderForm.reset();
       alert("Order registered");
       this.router.navigate(['urlorder']);

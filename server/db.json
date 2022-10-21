@@ -1,24 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "photo": "Home",
-      "first_name": "Carlos",
-      "second_name": "Urquiaga Quesquen",
-      "email": "carlos@upc.edu.pe",
-      "phone": "456123789",
-      "password": "asdfghjkl"
-    },
-    {
-      "id": 2,
-      "photo": "Home",
-      "first_name": "Ana Perez",
-      "second_name": "Urquiaga Rodriguez",
-      "email": "rafael@upc.edu.pe",
-      "phone": "456123789",
-      "password": "asdfghjkl"
-    },
-    {
       "dni": "45454545",
       "name": "Edgar Alexander Malca Rojas",
       "genre": "Male",
@@ -32,19 +14,6 @@
       "id": 3
     },
     {
-      "dni": "78945612",
-      "name": "Ana Perez",
-      "genre": "no binario",
-      "month": "12",
-      "day": "27",
-      "year": "2012",
-      "email": "ana@gmail",
-      "phone": "77777777",
-      "address": "Calle Picapanto",
-      "password": "alpaca",
-      "id": 4
-    },
-    {
       "name": "Rodolfo el reno",
       "phone": "123456789",
       "dni": "12345678",
@@ -56,75 +25,44 @@
       "genre": "animal",
       "address": "polo norte",
       "id": 5
-    },
-    {
-      "name": "Edgar Alexander Malca Rojas",
-      "phone": "987654123",
-      "dni": "45789856",
-      "month": "45",
-      "day": "23",
-      "year": "1235",
-      "email": "edgar@upc",
-      "password": "128965",
-      "genre": "Male",
-      "address": "Av. Manuel J. Clouthier, San Pedro Garza García",
-      "id": 6
-    },
-    {
-      "name": "Edgar Alexander Malca Rojas",
-      "phone": "548595",
-      "dni": "45454545",
-      "month": "12",
-      "day": "23",
-      "year": "1235",
-      "email": "Lima@s",
-      "password": "12344",
-      "genre": "Male",
-      "address": "Ciudad de México",
-      "id": 7
-    },
-    {
-      "name": "Edgar Alexander Malca Rojas",
-      "phone": "999888777",
-      "dni": "45454545",
-      "month": "1",
-      "day": "1",
-      "year": "1",
-      "email": "edaea@dsda",
-      "password": "sssss",
-      "genre": "Male",
-      "address": "Cipriano ",
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "name": "rodolfo el reno",
-      "phone": "924773421",
-      "dni": "12345678",
-      "month": "08",
-      "day": "08",
-      "year": "1999",
-      "email": "samm85299@gmail.com",
-      "password": "narizroja",
-      "genre": "masculino",
-      "address": "samm85299@gmail.com",
-      "id": 10
-    },
-    {
-      "name": "BellLarson",
-      "phone": "924773421",
-      "dni": "72372975",
-      "month": "29",
-      "day": "08",
-      "year": "1999",
-      "email": "sammm@gmail.com",
-      "password": "1234567",
-      "genre": "masculino",
-      "address": "av univsitaria 6107",
-      "id": 11
     }
   ],
-  "urlorder": []
+  "urlorder": [
+    {
+      "url": "https://www.ebay.com/itm/275345450431?_trkparms=amclksrc%3DITM%26aid%3D777008%26algo%3DPERSONAL.TOPIC%26ao%3D1%26asc%3D20220725101321%26meid%3D0d745e6a7312470c8fda4af18eb2a468%26pid%3D101251%26rk%3D1%26rkt%3D1%26itm%3D275345450431%26pmt%3D1%26noa%3D1%26pg%3D2380057%26algv%3DPersonalizedTopicsV2WithTopicMLR%26brand%3DApple&_trksid=p2380057.c101251.m47269&_trkparms=pageci%3Ac49594e1-50c5-11ed-ad8b-1ebdc27dc5f8%7Cparentrq%3Af77e2f031830a9d9447b9677fffffbfc%7Ciid%3A1",
+      "name": "Sebastian",
+      "tittle": "Buy iphone 13 please",
+      "weight": "20",
+      "amount": "12",
+      "price": "300",
+      "status": "new",
+      "comision": "60",
+      "dni": "45454545",
+      "id": 1
+    },
+    {
+      "url": "https://www.amazon.com/Receive-Smartwatch-Fitness-Smartwatches-Activity/dp/B0BC9881GT/ref=sr_1_1_sspa?keywords=activity+trackers+and+smartwatches&pd_rd_r=414c855b-f82d-4fa9-a59d-c81072a94e56&pd_rd_w=oIZpa&pd_rd_wg=NT0EM&pf_rd_p=33f8f65b-b95c-44af-8b89-e59e69e79828&pf_rd_r=ZA26GFPZW6CKMHA1FBM1&qid=1666305731&qu=eyJxc2MiOiI1LjQzIiwicXNhIjoiNC40MCIsInFzcCI6IjEuNTkifQ%3D%3D&sr=8-1-spons&psc=1",
+      "name": "APPLEWATCH",
+      "tittle": "Please help for my buy",
+      "weight": "150g",
+      "amount": "1",
+      "price": "300",
+      "status": "new",
+      "comision": "50",
+      "dni": "12345678",
+      "id": 2
+    },
+    {
+      "url": "https://tiendamia.com/pe/producto?amz=B07PXGQC1Q&pName=Apple-AirPods-2nd-Generation-Wireless-Earbuds-with",
+      "name": "AIR PODS",
+      "tittle": "Please help for my buy air pods",
+      "weight": "0.01",
+      "amount": "3",
+      "price": "2500",
+      "status": "new",
+      "comision": "120",
+      "dni": "45454545",
+      "id": 3
+    }
+  ]
 }

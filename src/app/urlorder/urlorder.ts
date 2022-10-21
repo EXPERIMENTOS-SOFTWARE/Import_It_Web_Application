@@ -1,5 +1,6 @@
 export interface Urlorder {
   id: number;
+  dni: string;
   url: string;
   name: string;
   tittle: string;
@@ -7,5 +8,5 @@ export interface Urlorder {
   amount: number;
   price: number;
   status: string;
-  comision: number;
+  comision: string;
 }

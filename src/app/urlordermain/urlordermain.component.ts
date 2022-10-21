@@ -13,18 +13,22 @@ import { UrlorderService } from '../urlorder/urlorder.service';
 export class UrlordermainComponent implements OnInit {
 
   urlorder: Urlorder[] = [];
+  dniData: string = '';
 
   dataSource = new MatTableDataSource();
 
-  constructor(private urlorderService: UrlorderService) { }
+  constructor(private urlorderService: UrlorderService) {
+    this.recuperar_localstorage();
+    this.getAllUrlorders();
+  }
 
   ngOnInit(): void {
-    this.getAllUrlorders();
   }
 
   getAllUrlorders() {
     this.urlorderService.getAll().subscribe((response: any) => {
       this.urlorder = response;
+      this.urlorder = this.urlorder.filter(x => x.dni === this.dniData)
     })
   }
   /*deleteUrlorders() {
@@ -32,6 +36,11 @@ export class UrlordermainComponent implements OnInit {
       this.urlorder = response;
     })
   }*/
+
+  recuperar_localstorage() {
+    this.dniData = localStorage.getItem('dni') ?? '';
+    console.log(this.dniData);
+  }
 
   deleteUrlorders(id: number): void {
 
