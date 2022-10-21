@@ -1,0 +1,13 @@
+/* :::::::::::::::::::::::::::::::::::: */
+/* ::::: Code of list of products ::::: */
+/* :::::::::::::::::::::::::::::::::::: */
+
+.example-card {
+    width: 300px;
+}
+
+.mat-grid-list-products{
+    overflow: hidden;
+}
+
+
