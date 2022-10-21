@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h1>My coupons</h1>
+<div class="nav-back">
+    <mat-icon [routerLink]="'/enter-coupon'">keyboard_arrow_left</mat-icon>
+</div>
+<div class="validate-style">
+    <h1 class="title-style">Enter Coupon</h1>
+    <h2>Import It offers coupons to its customers through</h2>
+    <h2>email or through your main social networks.</h2>
+<br>
+    <h2>If you have a coupon code, enter the</h2>
+    <h2>characters in the box below to validate its validity.</h2>
+    <form [formGroup]="couponCheck" (submit)="validateCoupon()">
+        <mat-card-content>
+            <mat-grid-list  cols="1" rowHeight="1:0.1">
+              <mat-grid-tile id="couponContainer">
+                <mat-form-field  appearance="outline" >
+                  <mat-label>Coupon</mat-label>
+                  <input matInput type="text" formControlName="coupon">
+                  <mat-error *ngIf="coupon?.errors?.['required']">coupon is <strong>required</strong></mat-error>
+                </mat-form-field>
+              </mat-grid-tile>    
+            </mat-grid-list>
+          </mat-card-content>
+
+          <mat-card-actions id="couponButtonContainer">
+            <button class="button-style" [disabled]="!couponCheck.valid" mat-flat-button type="submit">Continue</button>
+          </mat-card-actions>
+
+          <br>
+          <br>
+          <h2>If you do not have a code, visit our social networks</h2>
+          <div class="social-media">
+            <ul>
+                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                
+            </ul>
+            </div>
+    </form>
+</div>

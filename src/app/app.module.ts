@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
-import { FlexLayoutModule } from "@angular/flex-layout";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
@@ -29,6 +28,12 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { DomesticShipmentComponent } from './domestic-shipment/domestic-shipment.component';
+import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domestic-shipments-info.component';
+import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
+import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
+import { CouponsComponent } from './coupons-components/coupons/coupons.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
     WelcomeComponent,
     UsersComponent,
     FastyComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    DomesticShipmentComponent,
+    DomesticShipmentsInfoComponent,
+    EnterCouponComponent,
+    ValidateCouponComponent,
+    CouponsComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +77,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MatListModule,
     MatFormFieldModule,
     MatTableModule,
-    FlexLayoutModule,
     MatProgressBarModule,
     AngularMaterialModule
   ],

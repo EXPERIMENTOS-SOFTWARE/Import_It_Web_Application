@@ -1,0 +1,30 @@
+<div  *ngIf="domestic$ | async as DomesticShipment">
+    <h1>My domestic Shipments</h1>
+    <div class="nav-back">
+        <mat-icon [routerLink]="'/domestic-shipment'">keyboard_arrow_left</mat-icon>
+        
+      </div>
+      <div class="card">
+<div class="dsc-card">
+    <div class="dsc-image">
+        <img class="image" src="{{DomesticShipment.imageProduct}}" alt="">
+    </div>
+    <div >
+        <div class="dsc-content">
+        <h2><strong>{{DomesticShipment.productName}}</strong></h2>
+        <h4><strong>Date:</strong> {{DomesticShipment.date}}</h4>
+        <h4><strong>Departure Time:</strong> {{DomesticShipment.departureTime}}:00</h4>
+        <h4><strong>Shipping Date:</strong> {{DomesticShipment.shippingDate}}</h4>
+        <h4><strong>Total Cost:</strong> {{DomesticShipment.totalCost}}</h4>
+        <h4><strong>Tracking Code: </strong>{{DomesticShipment.trackingCode}}</h4>
+        <h4><strong>Destiny:</strong> {{DomesticShipment.destiny}}</h4>
+        <div class="center-button">
+        <button mat-raised-button class="card-button" onclick="location.href='https://tracking.olvaexpress.pe/'">Follow shipment in OLVA</button>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+<h3>In case of problems with the shipment, contact +51 964287514</h3>
+    <h3> or write to importit@gmail.com</h3>
+</div>
