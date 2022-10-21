@@ -16,31 +16,32 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
+/*import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { UsersComponent } from './users/pages/users/users.component';
+import { UsersComponent } from './users/pages/users/users.component';*/
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
+import {MatTabsModule} from '@angular/material/tabs';
 import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent,
-    ChangePasswordFormComponent,
-    LoginComponent,
-    LoginComponent,
-    WelcomeComponent,
-    UsersComponent,
     BuyWholesaleComponent,
     ProductWholesaleComponent,
     ProductWholesaleDetailComponent,
     ProductWholesalePaymentComponent
+    /*ProfileComponent,
+    ChangePasswordFormComponent,
+    LoginComponent,
+    LoginComponent,
+    WelcomeComponent,
+    UsersComponent*/
   ],
   imports: [
     BrowserModule,
@@ -66,7 +67,8 @@ import { ProductWholesalePaymentComponent } from './product-wholesale-payment/pr
     MatOptionModule,
     MatListModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
