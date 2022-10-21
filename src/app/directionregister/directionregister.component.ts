@@ -16,7 +16,7 @@ export class DirectionregisterComponent implements OnInit {
   directionData: Direction;
   sumbitted: boolean = false;
   isEditMode: boolean = false;
-
+  dniData: string = '';
   @ViewChild('directionForm', { static: false })
   directionForm!: NgForm;
 
@@ -36,6 +36,7 @@ export class DirectionregisterComponent implements OnInit {
   constructor(private directionregisterService: DirectionregisterService, private formBuilder: FormBuilder, private router: Router) {
     this.directionData = {} as Direction;
     //this.dataSource = new MatTableDataSource<any>();
+    this.recuperar_localstorage();
   }
   editItem(element: Direction) {
     this.directionData = _.cloneDeep(element);
@@ -44,6 +45,10 @@ export class DirectionregisterComponent implements OnInit {
   cancelEdit() {
     this.isEditMode = false;
     this.directionForm.resetForm();
+  }
+  recuperar_localstorage() {
+    this.dniData = localStorage.getItem('dni') ?? '';
+    console.log(this.dniData);
   }
 
 
@@ -71,7 +76,9 @@ export class DirectionregisterComponent implements OnInit {
   }
 
   addDirection() {
-    this.directionregisterService.create(this.directionForm.value).subscribe(response => {
+    const formBody: Direction = this.registerForm.value;
+    formBody.dni = this.dniData;
+    this.directionregisterService.create(formBody).subscribe(response => {
       this.directionForm.reset();
       this.router.navigate(['direction']);
     });

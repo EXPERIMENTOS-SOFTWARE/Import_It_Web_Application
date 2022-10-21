@@ -1,7 +1,7 @@
-import { Component, OnInit, } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-import { UsersService } from '../users/services/users.service';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
+import { UsersService } from '../users/services/users.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router ) { }
+  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
     this.setDNIValidation();
@@ -26,7 +26,9 @@ export class LoginComponent implements OnInit {
     dni: ['', { validators: [Validators.required], updateOn: 'change' }],
     password: ['', { validators: [Validators.required, Validators.minLength(8)], updateOn: 'change' }]
   })
-
+  grabar_localstorage() {
+    localStorage.setItem('dni', this.loginForm.value.dni);
+  }
   get dni() {
     return this.loginForm.get('dni');
   }
@@ -44,15 +46,16 @@ export class LoginComponent implements OnInit {
 
   submitForm() {
     //this.submitted = true;
-    this.usersService.getAll().subscribe(response=>{
-      const user = response.find((a:any)=>{
+    this.usersService.getAll().subscribe(response => {
+      const user = response.find((a: any) => {
         return a.dni === this.loginForm.value.dni && a.password === this.loginForm.value.password
       });
-      if(user){
+      if (user) {
         alert("Login Success!!");
+        this.grabar_localstorage();
         this.loginForm.reset();
         this.router.navigate(['profile']);
-      }else{
+      } else {
         alert("user not found");
       }
     })

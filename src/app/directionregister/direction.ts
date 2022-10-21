@@ -1,5 +1,6 @@
 export interface Direction {
   id: number;
+  dni: string;
   name: string;
   lastname: string;
   phone: number;
