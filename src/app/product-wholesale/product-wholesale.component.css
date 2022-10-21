@@ -1,0 +1,24 @@
+/* :::::::::::::::::::::::::::::::::::: */
+/* ::::: Code of list of products ::::: */
+/* :::::::::::::::::::::::::::::::::::: */
+
+mat-grid-tile{
+    /*border: 1px solid blue;*/
+}
+
+.example-card {
+    /*max-width: 400px;*/
+    /*width: 600px;*/
+    /*height: 480px;
+    width: 550px;*/
+    /*margin: 20px;*/
+    /*height: 90%;*/
+    /*border: 1px solid red;*/
+    width: 300px;
+}
+
+.mat-grid-list-products{
+    overflow: hidden;
+}
+
+
