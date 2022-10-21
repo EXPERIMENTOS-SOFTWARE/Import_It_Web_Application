@@ -19,6 +19,11 @@ import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
+import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
+import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
+import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
+
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -41,6 +46,17 @@ const routes: Routes = [
   { path: 'directioninfo/:id', component: DirectioninfoComponent },
   { path: 'generateorder', component: UrlorderComponent },
   { path: 'urlorder', component: UrlordermainComponent },
+  {
+    path: 'buy-wholesale',
+    component: BuyWholesaleComponent,
+    children: [
+      { path: 'product-wholesale', component: ProductWholesaleComponent },
+      { path: 'product-wholesale-detail/:id', component: ProductWholesaleDetailComponent },
+      { path: 'product-wholesale-payment/:id', component: ProductWholesalePaymentComponent },
+      { path: 'product-wholesale-type/:type', component: ProductWholesaleComponent },
+      { path: '', component: ProductWholesaleComponent },
+    ]
+  },
   { path: 'chats', component: ChatsComponent },
 ];
 

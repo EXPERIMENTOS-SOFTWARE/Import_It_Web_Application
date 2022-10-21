@@ -42,6 +42,13 @@ import { DirectionregisterComponent } from './directionregister/directionregiste
 import { UrlorderComponent } from './urlorder/urlorder.component';
 import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { WalletComponent } from './wallet/wallet.component';
+import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
+
+import {MatTabsModule} from '@angular/material/tabs';
+import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
+import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
+import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
+
 
 
 @NgModule({
@@ -66,6 +73,10 @@ import { WalletComponent } from './wallet/wallet.component';
     DirectioninfoComponent,
     UrlorderComponent,
     UrlordermainComponent,
+    BuyWholesaleComponent,
+    ProductWholesaleComponent,
+    ProductWholesaleDetailComponent,
+    ProductWholesalePaymentComponent,
     ChatsComponent
   ],
   imports: [
@@ -95,6 +106,7 @@ import { WalletComponent } from './wallet/wallet.component';
     MatTableModule,
     MatProgressBarModule,
     AngularMaterialModule,
+    MatTabsModule,
     MatAutocompleteModule
   ],
   providers: [FakeBackendProvider],
