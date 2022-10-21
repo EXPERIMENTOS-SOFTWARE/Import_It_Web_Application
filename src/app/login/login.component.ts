@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 import { UsersService } from '../users/services/users.service';
 
 @Component({
@@ -10,8 +11,9 @@ import { UsersService } from '../users/services/users.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router) {
+  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router, private authService: AuthService) {
     this.reset_login();
+    this.authService._isLoggedIn$.next(false);
   }
 
   ngOnInit(): void {
@@ -63,7 +65,7 @@ export class LoginComponent implements OnInit {
       if (user) {
         alert("Login Success!!");
         this.grabar_localstorage();
-        this.loginForm.reset();
+        //this.loginForm.reset();
         //this.router.navigate(['profile']);
         this.authService
           .login(this.loginForm.get('dni')?.value ?? '', this.loginForm.get('pasword')?.value)

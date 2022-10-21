@@ -8,7 +8,7 @@ import { ApiService } from "./api.service";
 })
 export class AuthService {
 
-    private _isLoggedIn$ = new BehaviorSubject<boolean>(false);
+    public _isLoggedIn$ = new BehaviorSubject<boolean>(false);
     isLoggedIn$ = this._isLoggedIn$.asObservable();
     currentID = 0;
 

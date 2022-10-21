@@ -44,7 +44,7 @@
       <a mat-list-item routerLink="/generateorder">
         <mat-icon>code</mat-icon> URL Order
       </a>
-      <a mat-list-item routerLink="/login">
+      <a mat-list-item routerLink="/login" (click)="isSidenavOpen=!isSidenavOpen">
         <mat-icon>power_settings_new</mat-icon> log out
       </a>
     </mat-nav-list>
