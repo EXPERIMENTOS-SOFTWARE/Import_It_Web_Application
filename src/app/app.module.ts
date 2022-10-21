@@ -33,6 +33,7 @@ import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domest
 import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
 import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
 import { CouponsComponent } from './coupons-components/coupons/coupons.component';
+//import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 @NgModule({
@@ -78,7 +79,8 @@ import { CouponsComponent } from './coupons-components/coupons/coupons.component
     MatFormFieldModule,
     MatTableModule,
     MatProgressBarModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    //FlexLayoutModule
   ],
   providers: [FakeBackendProvider],
   bootstrap: [AppComponent]
