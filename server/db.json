@@ -264,6 +264,17 @@
       "province": "Lima (Departamento)",
       "departament": "Lima",
       "id": 1
+    },
+    {
+      "name": "dfasdf",
+      "lastname": "asgasdfg",
+      "phone": "987654321",
+      "direction1": "asdgfasdfg",
+      "district": "asdgasdgf",
+      "province": "asdgfasdfg",
+      "departament": "asdgasdfgas",
+      "dni": "45454545",
+      "id": 2
     }
   ]
 }

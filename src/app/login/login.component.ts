@@ -56,7 +56,13 @@ export class LoginComponent implements OnInit {
         alert("Login Success!!");
         this.grabar_localstorage();
         this.loginForm.reset();
-        this.router.navigate(['profile']);
+        //this.router.navigate(['profile']);
+        this.authService
+          .login(this.loginForm.get('dni')?.value ?? '', this.loginForm.get('pasword')?.value)
+          .subscribe((response) => {
+            this.router.navigate(['profile']);
+          });
+        this.authService.currentID = user.id;
       } else {
         alert("user not found");
       }
