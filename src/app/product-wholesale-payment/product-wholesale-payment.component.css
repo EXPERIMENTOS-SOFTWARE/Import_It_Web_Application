@@ -3,9 +3,6 @@
 /* :::::::::::::::::::::::::::::::::::: */
 
 .example-particular-card {
-    /*width: max-content;*/
-    /*border: 1px solid red;*/
-    /*border: 1px solid blue;*/
     width: 80%;
     margin: 20px auto;
 }
@@ -24,25 +21,19 @@ mat-icon{
 }
 
 .row-payment-process{
-    /*border: 1px solid blue;*/
     display: flex;
 }
 
 .row-payment-process .first-section{
-    /*border: 1px solid red;*/
     width: 70%;
     margin-right: 20px;
 }
 
 .mat-form-field-large{
-    /*border: 1px solid green;*/
     width: 100%;
 }
 
 .row-payment-process .third-section{
-    /*border: 1px solid red;*/
-    /*margin-right: 20px;*/
-    /*width: 25%;*/
     margin-right: 20px;
 }
 
@@ -51,12 +42,10 @@ mat-icon{
 }
 
 .name-cost{
-    /*border: 1px solid green;*/
     width: 50%;
 }
 
 .value-cost{
-    /*border: 1px solid green;*/
     width: 50%;
     text-align: end;
 }
