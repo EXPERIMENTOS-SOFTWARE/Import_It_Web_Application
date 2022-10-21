@@ -13,6 +13,8 @@ import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domest
 import { FastyComponent } from "./fasty/fasty.component";
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
+import { UrlorderComponent } from './urlorder/urlorder.component';
+import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -35,6 +37,8 @@ const routes: Routes = [
   { path: 'direction', component: DirectionComponent },
   { path: 'directionregister', component: DirectionregisterComponent },
   { path: 'directioninfo/:id', component: DirectioninfoComponent },
+  { path: 'generateorder', component: UrlorderComponent },
+  { path: 'urlorder', component: UrlordermainComponent },
 ];
 
 @NgModule({

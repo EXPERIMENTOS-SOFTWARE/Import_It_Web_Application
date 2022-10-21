@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
-import { AuthService } from '../services/auth.service';
 import { UsersService } from '../users/services/users.service';
 
 @Component({
@@ -11,10 +10,13 @@ import { UsersService } from '../users/services/users.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router, private authService: AuthService) { }
+  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router) {
+    this.reset_login();
+  }
 
   ngOnInit(): void {
     this.setDNIValidation();
+
   }
 
   loginImgSource: string = "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80";
@@ -27,15 +29,21 @@ export class LoginComponent implements OnInit {
     dni: ['', { validators: [Validators.required], updateOn: 'change' }],
     password: ['', { validators: [Validators.required, Validators.minLength(8)], updateOn: 'change' }]
   })
-  grabar_localstorage() {
+  /*grabar_localstorage() {
     localStorage.setItem('dni', this.loginForm.value.dni);
-  }
+  }*/
   get dni() {
     return this.loginForm.get('dni');
   }
 
   get password() {
     return this.loginForm.get('password');
+  }
+  reset_login() {
+    localStorage.clear();
+  }
+  grabar_localstorage() {
+    localStorage.setItem('dni', this.loginForm.value.dni);
   }
 
   setDNIValidation() {

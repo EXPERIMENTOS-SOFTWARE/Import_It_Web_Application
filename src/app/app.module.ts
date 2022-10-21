@@ -37,6 +37,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { DirectionComponent } from './direction/direction.component';
 import { DirectioninfoComponent } from './directioninfo/directioninfo.component';
 import { DirectionregisterComponent } from './directionregister/directionregister.component';
+import { UrlorderComponent } from './urlorder/urlorder.component';
+import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { WalletComponent } from './wallet/wallet.component';
 
 
@@ -59,7 +61,9 @@ import { WalletComponent } from './wallet/wallet.component';
     WalletComponent,
     DirectionComponent,
     DirectionregisterComponent,
-    DirectioninfoComponent
+    DirectioninfoComponent,
+    UrlorderComponent,
+    UrlordermainComponent
   ],
   imports: [
     BrowserModule,

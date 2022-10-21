@@ -1,0 +1,66 @@
+.containerOrder {
+  display: flex;
+  align-items: center;
+  padding: 7% 0;
+}
+.cardpadding{
+  padding-left:5rem;
+ }
+
+ .buttonpadding{
+  padding-left:60rem;
+
+ }
+ .colum{
+   display:flex;
+   flex-direction: column;
+ }
+
+ .row{
+   display:flex;
+   flex-direction: row;
+ }
+
+ .paddingspace{
+   padding-left:2rem;
+ }
+
+ .paddinghigh{
+
+   padding-bottom:2rem;
+ }
+
+.paddingcard{
+
+ height: 350px;
+ width:1100px;
+ padding-left:3rem;
+ padding-top:1rem;
+}
+.paddingprincipal{
+
+  height: 400px;
+  width:1200px;
+ }
+
+
+ .colum{
+  display:flex;
+  flex-direction: column;
+}
+.row{
+  display:flex;
+  flex-direction: row;
+}
+.w-full{
+  width: 100%;
+}
+.padimg{
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  padding-right: 10rem;
+  padding-top:2rem;
+
+}
+
