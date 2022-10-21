@@ -25,6 +25,32 @@
       "genre": "animal",
       "address": "polo norte",
       "id": 5
+    },
+    {
+      "name": "Bell Larson",
+      "phone": "924773421",
+      "dni": "72372975",
+      "month": "29",
+      "day": "08",
+      "year": "1999",
+      "email": "samm99@gmail.com",
+      "password": "Sakurasou9#",
+      "genre": "masculino",
+      "address": "av universitaria 6107 comas lima",
+      "id": 6
+    },
+    {
+      "name": "Sprint3",
+      "phone": "72372975",
+      "dni": "95730358",
+      "month": "29",
+      "day": "08",
+      "year": "1999",
+      "email": "45454545@gmail.com",
+      "password": "123123123123",
+      "genre": "masculino",
+      "address": "924773421",
+      "id": 7
     }
   ],
   "urlorder": [
@@ -39,18 +65,6 @@
       "comision": "60",
       "dni": "45454545",
       "id": 1
-    },
-    {
-      "url": "https://www.amazon.com/Receive-Smartwatch-Fitness-Smartwatches-Activity/dp/B0BC9881GT/ref=sr_1_1_sspa?keywords=activity+trackers+and+smartwatches&pd_rd_r=414c855b-f82d-4fa9-a59d-c81072a94e56&pd_rd_w=oIZpa&pd_rd_wg=NT0EM&pf_rd_p=33f8f65b-b95c-44af-8b89-e59e69e79828&pf_rd_r=ZA26GFPZW6CKMHA1FBM1&qid=1666305731&qu=eyJxc2MiOiI1LjQzIiwicXNhIjoiNC40MCIsInFzcCI6IjEuNTkifQ%3D%3D&sr=8-1-spons&psc=1",
-      "name": "APPLEWATCH",
-      "tittle": "Please help for my buy",
-      "weight": "150g",
-      "amount": "1",
-      "price": "300",
-      "status": "new",
-      "comision": "50",
-      "dni": "12345678",
-      "id": 2
     },
     {
       "url": "https://tiendamia.com/pe/producto?amz=B07PXGQC1Q&pName=Apple-AirPods-2nd-Generation-Wireless-Earbuds-with",
@@ -75,6 +89,18 @@
       "comision": "asdf",
       "dni": "45454545",
       "id": 4
+    },
+    {
+      "url": "https://www.amazon.com/READYSALTED-Platform-Chelsea-Fashion-LILU40-BK/dp/B09J1LHCD3/ref=sr_1_1_sspa?crid=N8Q4E6PC9UAG&keywords=Fashion+boots&pd_rd_r=959a2830-2ac3-4b62-925d-8ac8fac4fa94&pd_rd_w=A1ZZ5&pd_rd_wg=h6f8l&pf_rd_p=078c7c43-0e67-4d5d-8e12-deb801ac7912&pf_rd_r=C8ZFK2NNBGN9BRSQXS2W&qid=1666334937&qu=eyJxc2MiOiI5LjY2IiwicXNhIjoiOC44MiIsInFzcCI6IjYuODAifQ%3D%3D&sprefix=fashion+boots%2Caps%2C177&sr=8-1-spons&psc=1",
+      "name": "Footshoes NEW",
+      "tittle": "Please help for my SHOES",
+      "weight": "2",
+      "amount": "2",
+      "price": "380",
+      "status": "new",
+      "comision": "30",
+      "dni": "72372975",
+      "id": 5
     }
   ],
   "productCategories": [
@@ -152,45 +178,6 @@
   ],
   "domesticShipments": [
     {
-      "id": 1,
-      "imageProduct": "https://img.freepik.com/vector-gratis/dispositivo-telefono-inteligente-realista_52683-29765.jpg?size=338&ext=jpg&ga=GA1.2.459603537.1666060327",
-      "userId": 1,
-      "productName": "Iphone 13",
-      "date": "09/09/09",
-      "departureTime": 8,
-      "shippingDate": "09/09/09",
-      "shippingManager": "olva courier",
-      "totalCost": 1289,
-      "trackingCode": "AWE458",
-      "destiny": "Chiclayo"
-    },
-    {
-      "id": 2,
-      "imageProduct": "https://img.freepik.com/psd-gratis/maqueta-psd-computadora-portatil-luz-led-degradada_53876-138283.jpg?size=626&ext=jpg&ga=GA1.2.459603537.1666060327",
-      "userId": 1,
-      "productName": "Macbook 14",
-      "date": "09/09/09",
-      "departureTime": 10,
-      "shippingDate": "09/09/09",
-      "shippingManager": "olva courier",
-      "totalCost": 1289,
-      "trackingCode": "AWE458",
-      "destiny": "Cusco"
-    },
-    {
-      "id": 3,
-      "imageProduct": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKzFknHBs52FBby5EgUUMnc96vdVt3qL5Ylw&usqp=CAU",
-      "userId": 2,
-      "productName": "Guess Watch",
-      "date": "09/09/09",
-      "departureTime": 7,
-      "shippingDate": "09/09/09",
-      "shippingManager": "olva courier",
-      "totalCost": 1289,
-      "trackingCode": "QQQ965",
-      "destiny": "Piura"
-    },
-    {
       "id": 4,
       "imageProduct": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gaYbIm9wrfg43NwHaVCwu7A7mn3HAaj-mw&usqp=CAU",
       "userId": 3,
@@ -255,6 +242,17 @@
       "departament": "asdgasdfgas",
       "dni": "45454545",
       "id": 2
+    },
+    {
+      "name": "Sebastian ",
+      "lastname": "Montes",
+      "phone": "924773421",
+      "direction1": "av universitaria 6107",
+      "district": "Comas",
+      "province": "Lima metropolitana",
+      "departament": "Lima",
+      "dni": "72372975",
+      "id": 3
     }
   ]
 }

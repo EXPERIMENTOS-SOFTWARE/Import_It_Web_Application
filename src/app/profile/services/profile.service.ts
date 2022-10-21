@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, retry, throwError } from 'rxjs';
-import { User } from '../model/user';
+import { Userprofile } from '../model/userprofile';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { User } from '../model/user';
 export class ProfileService {
 
   //Students Endpoint
-  basePath = 'http://localhost:3000/api/v1/users';
+  basePath = 'http://localhost:3000/api/v1/userprofile';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -32,19 +32,19 @@ export class ProfileService {
     return throwError('Something happend with request, please try again later');
   }
 
-  getAll(): Observable<User> {
-    return this.http.get<User>(this.basePath, this.httpOptions)
+  getAll(): Observable<Userprofile> {
+    return this.http.get<Userprofile>(this.basePath, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
   //Get user By Id
-  getById(id: number): Observable<User> {
-    return this.http.get<User>(`${this.basePath}/${id}`, this.httpOptions)
+  getById(id: number): Observable<Userprofile> {
+    return this.http.get<Userprofile>(`${this.basePath}/${id}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
   //Update user
-  update(id: number, item: any): Observable<User> {
-    return this.http.put<User>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
+  update(id: number, item: any): Observable<Userprofile> {
+    return this.http.put<Userprofile>(`${this.basePath}/${id}`, JSON.stringify(item), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
