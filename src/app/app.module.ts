@@ -43,6 +43,7 @@ import { WalletComponent } from './wallet/wallet.component';
 import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 
 import {MatTabsModule} from '@angular/material/tabs';
+import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
 
 
 
@@ -68,7 +69,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     DirectioninfoComponent,
     UrlorderComponent,
     UrlordermainComponent,
-    BuyWholesaleComponent
+    BuyWholesaleComponent,
+    ProductWholesaleComponent
   ],
   imports: [
     BrowserModule,
