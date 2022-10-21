@@ -1,1 +1,76 @@
-<p>product-wholesale-detail works!</p>
+<mat-card class="example-particular-card" *ngIf="detail$ | async as ProductWholesale">
+    <a routerLink="/buy-wholesale/product-wholesale"><mat-icon>keyboard_arrow_left</mat-icon>Back</a>
+        <mat-grid-list [cols]="numberOfColumns" rowHeight="700px" (window:resize)="onResize($event)">
+            <mat-grid-tile class="mat-grid-tile-first">
+                <img class="image-particular-card"
+                    src={{ProductWholesale.picture}}
+                    alt="Photo of a IPHONE 13 PRO MAX -128GB-GOLD">
+            </mat-grid-tile>
+    
+            <mat-grid-tile class="mat-grid-tile-second">
+                <div class="div-particular-card">
+                    <mat-card-header class="header-particular-card">
+                        <mat-card-title>{{ProductWholesale.name}}</mat-card-title>
+                        <mat-card-subtitle>Small interval</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content class="content-particular-card">
+                        <mat-card-title>Description</mat-card-title>
+                        <p>{{ProductWholesale.description}}</p>
+    
+                        <br>
+    
+                        <mat-card-title>Colors</mat-card-title>
+                        <span class="dot" style="background-color: black;"></span>
+                        <span class="dot" style="background-color: yellow;"></span>
+                        <span class="dot" style="background-color: blueviolet;"></span>
+                        <span class="dot" style="background-color: springgreen;"></span>
+                        <br>
+                        <br>
+    
+                        <mat-card-title>Quantity</mat-card-title>
+                        <mat-form-field class="example-margin">
+                            
+                            <input matInput type="number" value="0" placeholder="Quantity of products" (ngModel)="0">
+                        </mat-form-field>
+                    </mat-card-content>
+                </div>
+            </mat-grid-tile>
+    
+            <mat-grid-tile class="mat-grid-tile-third">
+                <div class="div-particular-card">
+                    <mat-card-header class="header-particular-card">
+                        <mat-card-title>Detail</mat-card-title>
+                        <mat-card-subtitle>Invoice of the product</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content class="content-particular-card">
+                        <div class="row">
+                            <p>Product Price</p>
+                            <p>${{ProductWholesale.price}}</p>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <p>Tax</p>
+                            <p>${{tax}}</p>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <p>Transportation Commission</p>
+                            <p>${{transportationCommission}}</p>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <p>Import It Service</p>
+                            <p>${{importItService}}</p>
+                            <hr style="border: 2px solid black;">
+                        </div>
+                        <div class="row">
+                            <p>Total: ${{tax + transportationCommission + importItService + ProductWholesale.price}}</p>
+                            <hr style="border: 2px solid black;">
+                        </div>
+                        <button mat-flat-button color="primary" [routerLink]="['/buy-wholesale/product-wholesale-payment', productParticularId]">Buy</button>
+                    </mat-card-content>
+                </div>
+            </mat-grid-tile>
+    
+        </mat-grid-list>
+    </mat-card>

@@ -1,1 +1,101 @@
-<p>product-wholesale-payment works!</p>
+<mat-card class="example-particular-card" *ngIf="payment$ | async as ProductWholesale">
+    <a [routerLink]="['/buy-wholesale/product-wholesale-detail', productParticularId]"><mat-icon>keyboard_arrow_left</mat-icon>Back</a>
+    <form #userForm="ngForm" [formGroup]="registerForm">
+        <div class="body-payment-process">
+            
+            <h2>Choose your Payment method</h2>
+            <div class="row-payment-process">
+                <mat-form-field appearance="fill">
+                    <mat-label>Payment method</mat-label>
+                    <mat-select [(ngModel)]="selectedValue" name="financialInstitution" formControlName="paymentMethod" required>
+                        <mat-option *ngFor="let financialInstitution of financialInstitutions"
+                            [value]="financialInstitution.value">
+                            {{financialInstitution.viewValue}}
+                        </mat-option>
+                        
+                    </mat-select>
+                    <mat-error *ngIf="paymentMethod?.errors?.['required']">paymentMethod is <strong>required</strong></mat-error>
+                </mat-form-field>
+                
+            </div>
+
+            <h2>Card Information</h2>
+            <div class="row-payment-process">
+                <div class="first-section">
+                    <mat-form-field appearance="fill"  class="mat-form-field-large">
+                        <mat-label>Card Number</mat-label>
+                        <input matInput placeholder="Ex. 1111222233334444" formControlName="cardNumber" required>
+                        <mat-error *ngIf="cardNumber?.errors?.['required']">cardNumber is <strong>required</strong></mat-error>
+                        <mat-error *ngIf="cardNumber?.errors?.['minlength']">DNI must be <strong>12 numbers</strong> length</mat-error>
+                        <mat-error *ngIf="cardNumber?.errors?.['maxlength']">DNI must be <strong>12 numbers</strong> length</mat-error>
+                        <mat-error *ngIf="cardNumber?.errors?.['pattern']">cardNumber must have only <strong>numbers</strong></mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div class="second-section">
+                    <mat-form-field appearance="fill" class="mat-form-field-large">
+                        <mat-label>CCV</mat-label>
+                        <input matInput placeholder="Ex. 123" formControlName="cvv" required>
+                        <mat-error *ngIf="cvv?.errors?.['required']">cvv is <strong>required</strong></mat-error>
+                        <mat-error *ngIf="cvv?.errors?.['minlength']">cvv must be <strong>12 numbers</strong> length</mat-error>
+                        <mat-error *ngIf="cvv?.errors?.['maxlength']">cvv must be <strong>12 numbers</strong> length</mat-error>
+                        <mat-error *ngIf="cvv?.errors?.['pattern']">cvv must have only <strong>numbers</strong></mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row-payment-process">
+                <div class="third-section">
+                    <mat-form-field appearance="fill" class="mat-form-field-large">
+                        <mat-label>Expiry Month</mat-label>
+                        <mat-select [(ngModel)]="selectedValue" name="month" formControlName="expiryMonth" required>
+                            <mat-option *ngFor="let month of months"
+                                [value]="month.value">
+                                {{month.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="expiryMonth?.errors?.['required']">expiryMonth is <strong>required</strong></mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div class="fourth-section">
+                    <mat-form-field appearance="fill" class="mat-form-field-large">
+                        <mat-label>Expiry Year</mat-label>
+                        <input matInput maxlength="3" placeholder="Ex. 123" formControlName="expiryYear" required>
+                        <mat-error *ngIf="expiryYear?.errors?.['required']">Year is <strong>required</strong></mat-error>
+                        <mat-error *ngIf="expiryYear?.errors?.['minlength']">Year must be <strong>4 numbers</strong> length</mat-error>
+                        <mat-error *ngIf="expiryYear?.errors?.['maxlength']">Year must be <strong>4 numbers</strong> length</mat-error>
+                        <mat-error *ngIf="expiryYear?.errors?.['pattern']">expiryYear must have only <strong>numbers</strong></mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="resume-invoice">
+                <div class="row-cost">
+                    <div class="name-cost"><p>Tax</p></div>
+                    <div class="value-cost"><p>$ {{tax}}</p></div>
+                </div>
+                <div class="row-cost">
+                    <div class="name-cost"><p>Transportation Commission</p></div>
+                    <div class="value-cost"><p>$ {{transportationCommission}}</p></div>
+                </div>
+                <div class="row-cost">
+                    <div class="name-cost"><p>Import It Service</p></div>
+                    <div class="value-cost"><p>$ {{importItService}}</p></div>
+                </div>
+                <div class="row-cost">
+                    <div class="name-cost"><p>Total</p></div>
+                    <div class="value-cost"><p>$ {{tax + transportationCommission + importItService + ProductWholesale.price}}</p></div>
+                </div>
+
+            </div>
+            
+            <div class="button-pay">
+                <button mat-flat-button color="primary" routerLink="/buy-wholesale/product-wholesale">Pay</button>
+            </div>
+            
+        </div>
+
+    </form>
+
+</mat-card>
