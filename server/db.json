@@ -257,6 +257,24 @@
       ]
     }
   ],
+  "productCategories": [
+    {
+      "name": "Technology",
+      "imageURL" : "../../assets/images/productCategories/Technology.png"
+    },
+    {
+      "name": "Home & Furniture",
+      "imageURL" : "../../assets/images/productCategories/Home and furniture.jpg"
+    },
+    {
+      "name": "Perfumes",
+      "imageURL" : "../../assets/images/productCategories/Perfumes.jpg"
+    },
+    {
+      "name": "Clothing",
+      "imageURL" : "../../assets/images/productCategories/Clothing.jpg"
+    }
+  ],
   "productsWholesale": [
     {
       "name": "IPHONE 11 PRO MAX",
