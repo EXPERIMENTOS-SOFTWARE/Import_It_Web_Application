@@ -1,0 +1,21 @@
+.section-container{
+    text-align: center;
+}
+.icon-style{
+    height: 300px;
+}
+
+.mat-icon{
+    transform: scale(10);
+    padding-top: 25px;
+}
+
+.text-style{
+    font-size: 30px;
+    color:rgb(138, 198, 251);
+    padding-bottom: 10px;
+}
+
+.button-style{
+    background-color:dodgerblue;
+}

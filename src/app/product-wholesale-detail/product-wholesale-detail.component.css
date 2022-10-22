@@ -1,0 +1,55 @@
+/* :::::::::::::::::::::::::::::::::::: */
+/* :::: Code of particular product :::: */
+/* :::::::::::::::::::::::::::::::::::: */
+
+.example-particular-card {
+    width: 80%;
+    margin: 20px auto;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+mat-icon{
+    vertical-align: middle;
+}
+
+.image-particular-card {
+    width:99%;
+    height: 80%;
+    margin: 0px;
+    padding: 0px;
+    border-radius:25px;
+}
+
+.mat-grid-tile-second{
+    border-left: 1px solid black; 
+    border-right: 1px solid black;
+}
+
+.div-particular-card {
+    width: 100%;
+    height: 99%;
+}
+
+.content-particular-card {
+    padding-left: 15px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 5px
+}
+
+@media (max-width: 1000px) {
+    .mat-grid-tile-second{
+        border-color: white;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+  }

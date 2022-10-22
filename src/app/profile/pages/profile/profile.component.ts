@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AuthService } from 'src/app/services/auth.service';
 import { User } from 'src/app/users/model/user';
+import { UsersService } from 'src/app/users/services/users.service';
+import { Userprofile } from '../../model/userprofile';
 import { ProfileService } from '../../services/profile.service';
 
 @Component({
@@ -10,26 +12,55 @@ import { ProfileService } from '../../services/profile.service';
 })
 export class ProfileComponent implements OnInit {
 
-  profileData: User;
+  profileData: Userprofile;
+  user: User[] = [];
+  dniData: string = '';
 
-  constructor(private profilesService: ProfileService) { 
-    this.profileData={} as User;
+  constructor(private profilesService: ProfileService, private authService: AuthService, private userService: UsersService) {
+    this.profileData = {} as Userprofile;
+    this.recuperar_localstorage();
+    this.getAllUser();
   }
 
   ngOnInit(): void {
-    this.getEspecificUser();
+    //this.getEspecificUser();
+    this.getEspecificUser(this.authService.currentUserID());
   }
+  getAllUser() {
+    this.userService.getAll().subscribe((response: any) => {
+      this.user = response;
+      this.user = this.user.filter(x => x.dni === this.dniData)
+    })
+  }
+  recuperar_localstorage() {
+    this.dniData = localStorage.getItem('dni') ?? '';
+    console.log(this.dniData);
+  }
+  /*
+    getAllStudents(){
+      this.profilesService.getAll().subscribe((response: any)=>{
+        this.dataSource.data = response;
+      });
+    }
+  */
 
-
-
-  getOneUser(){
-    this.profilesService.getById(1).subscribe((response: any)=>{
+  getOneUser() {
+    this.profilesService.getById(1).subscribe((response: any) => {
+      //this.profileData.first_name = response.first_name;
       this.profileData = response;
     });
   }
-
-  getEspecificUser(){
-    this.profilesService.getById(1).subscribe((response: any)=>{
+  /*
+    getOneUserByDNI(dni: number) {
+      this.profilesService.getByDni(dni).subscribe((response: any) => {
+        //this.profileData.first_name = response.first_name;
+        this.profileData = response;
+      });
+    }
+    */
+  getEspecificUser(id: number) {
+    this.profilesService.getById(id).subscribe((response: any) => {
+      /*this.profileData.first_name = response.first_name;*/
       this.profileData = response;
     });
   }

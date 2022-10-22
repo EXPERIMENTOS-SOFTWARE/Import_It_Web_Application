@@ -1,0 +1,95 @@
+.walletContainer {
+  display: flex;
+  align-items: center;
+  padding: 7% 0;
+}
+
+.cardpadding{
+
+ padding-left:9rem;
+}
+
+.buttonpadding{
+ padding-left:40rem;
+
+}
+.colum{
+  display:flex;
+  flex-direction: column;
+}
+
+.row{
+  display:flex;
+  flex-direction: row;
+
+}
+
+.paddingspace{
+  padding-left:2rem;
+}
+
+.paddinghigh{
+
+  padding-bottom:2rem;
+}
+.html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.ul {
+  font-size: 1.5rem;
+}
+
+.li{
+  line-height: 1.5;
+}
+
+
+/*--------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic);
+
+body{
+  padding-top:15px;
+  font-family: 'Open Sans', sans-serif;
+	font-size:13px;
+}
+
+.tabla {
+  margin: 0 auto;
+}
+.tabla thead {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .2);
+}
+.tabla thead tr th {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.tabla thead tr th span {
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 55%;
+}
+.tabla thead tr th.headerSortUp,
+.tabla thead tr th.headerSortDown {
+  background: rgba(0, 0, 0, .2);
+}
+.tabla thead tr th.headerSortUp span {
+  background-image: url('http://tablesorter.com/themes/blue/asc.gif');
+}
+.tabla thead tr th.headerSortDown span {
+  background-image: url('http://tablesorter.com/themes/blue/desc.gif');
+}
+.tabla tbody tr td {
+  text-align: center;
+  padding: 10px 20px;
+}
+.tabla tbody tr td.align-left {
+  text-align: left;
+}
+

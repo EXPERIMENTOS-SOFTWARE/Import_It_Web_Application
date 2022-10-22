@@ -1,6 +1,6 @@
 <main id="loginContainer">
   <mat-card id="loginImgCard">
-      <img mat-card-image [src]="loginImgSource" alt="traveling map">
+    <img mat-card-image [src]="loginImgSource" alt="traveling map">
   </mat-card>
 
   <mat-card id="loginForm">
@@ -15,7 +15,7 @@
     <!--(submit)="submitForm()" don't forget to add this in the form tag ⬇ -->
     <form [formGroup]="loginForm" (submit)="submitForm()">
       <mat-card-content>
-        <mat-grid-list  cols="1" rowHeight="1:0.1">
+        <mat-grid-list cols="1" rowHeight="1:0.1">
 
           <!-- DNI -->
           <mat-grid-tile id="dniContainer">
@@ -26,7 +26,9 @@
 
               <mat-error *ngIf="dni?.errors?.['required']">DNI is <strong>required</strong></mat-error>
 
-              <mat-error *ngIf="dni?.errors?.['pattern'] && !dni?.errors?.['required']">Phone must have only <strong>numbers</strong></mat-error>
+              <mat-error *ngIf="dni?.errors?.['pattern'] && !dni?.errors?.['required']">Phone must have only
+                <strong>numbers</strong>
+              </mat-error>
 
             </mat-form-field>
           </mat-grid-tile>
@@ -40,13 +42,14 @@
 
               <mat-error *ngIf="password?.errors?.['required']">Password is <strong>required</strong></mat-error>
 
-              <mat-error *ngIf="password?.errors?.['minlength'] && !password?.errors?.['required']">Password must be have at least <strong>8</strong> characters</mat-error>
+              <mat-error *ngIf="password?.errors?.['minlength'] && !password?.errors?.['required']">Password must be
+                have at least <strong>8</strong> characters</mat-error>
 
             </mat-form-field>
           </mat-grid-tile>
 
           <mat-grid-tile id="forgotPasswordSection">
-            <a  routerLink="/change" href="#" id="forgotPassword"><strong>I forgot my password</strong></a>
+            <a routerLink="/change" href="#" id="forgotPassword"><strong>I forgot my password</strong></a>
           </mat-grid-tile>
 
           <mat-grid-tile id="signUpSection">

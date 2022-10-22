@@ -1,0 +1,22 @@
+<mat-grid-list [cols]="numberOfColumns" rowHeight="600px" class="mat-grid-list-products"
+    (window:resize)="onResize($event)">
+        <mat-grid-tile *ngFor="let productWholesale of productsWholesale">
+            <mat-card class="example-card" [routerLink]="['/buy-wholesale/product-wholesale-detail', productWholesale.id]">
+                <mat-card-header>
+                    <mat-card-title>{{productWholesale.name}}</mat-card-title>
+                    <mat-card-subtitle>Small interval</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src={{productWholesale.picture}} alt="Photo of a IPHONE 13 PRO MAX -128GB-GOLD">
+                <mat-card-content>
+                    <ul>
+                        <li>{{productWholesale.principalFeature1}}</li>
+                        <li>{{productWholesale.principalFeature2}}</li>
+                        <li>{{productWholesale.principalFeature3}}</li>
+                    </ul>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button>Buy S/{{productWholesale.price}}</button>
+                </mat-card-actions>
+            </mat-card>
+        </mat-grid-tile>
+</mat-grid-list>

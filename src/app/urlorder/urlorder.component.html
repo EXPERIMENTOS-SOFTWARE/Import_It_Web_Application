@@ -1,0 +1,92 @@
+<div class="form-container">
+  <form (submit)="onSubmit()" #urlorderForm="ngForm" [formGroup]="registerForm">
+
+    <mat-card-title class="highclass">Order Register</mat-card-title>
+    <mat-card>
+
+      <mat-card-content>
+        <mat-grid-list cols="2" rowHeight="3:1">
+
+          <mat-grid-tile>
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="URL" name="url" formControlName="url" required
+                [(ngModel)]="urlorderData.url" />
+              <mat-error *ngIf="url?.errors?.['required']">URL is <strong>required</strong></mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Name product" name="name" formControlName="name" required
+                [(ngModel)]="urlorderData.name" />
+              <mat-error *ngIf="name?.errors?.['required']">name is <strong>required</strong></mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Tittle product" name="tittle" formControlName="tittle" required
+                [(ngModel)]="urlorderData.tittle" />
+              <mat-error *ngIf="tittle?.errors?.['required']">tittle is <strong>required</strong></mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+
+          <mat-grid-tile>
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Weight in kg" name="weight" formControlName="weight" required
+                [(ngModel)]="urlorderData.weight" />
+              <mat-error *ngIf="weight?.errors?.['required']">Weight is <strong>required</strong></mat-error>
+              <mat-error
+                *ngIf="weight?.errors?.['minlength'] || weight?.errors?.['maxlength'] && !weight?.errors?.['required']">
+                Weight max <strong>5 numbers</strong> length
+              </mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+
+          <mat-grid-tile>
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Amount" name="amount" formControlName="amount" required
+                [(ngModel)]="urlorderData.amount" />
+              <mat-error *ngIf="amount?.errors?.['required']">Amount is <strong>required</strong></mat-error>
+              <mat-error
+                *ngIf="amount?.errors?.['minlength'] || amount?.errors?.['maxlength'] && !amount?.errors?.['required']">
+                Amount max <strong>2 numbers</strong> length
+              </mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+
+          <mat-grid-tile>
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Price product" name="price" formControlName="price" required
+                [(ngModel)]="urlorderData.price" />
+              <mat-error *ngIf="price?.errors?.['required']">price is <strong>required</strong></mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="status product" name="status" formControlName="status" required
+                [(ngModel)]="urlorderData.status" />
+              <mat-error *ngIf="status?.errors?.['required']">status is <strong>required</strong></mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <mat-form-field appearance="fill" class="full-width">
+              <input matInput placeholder="Comision product" name="comision" formControlName="comision" required
+                [(ngModel)]="urlorderData.comision" />
+              <mat-error *ngIf="comision?.errors?.['required']">comision is <strong>required</strong></mat-error>
+            </mat-form-field>
+          </mat-grid-tile>
+
+        </mat-grid-list>
+      </mat-card-content>
+      <button [disabled]="!urlorderForm.valid" mat-flat-button color="primary" type="submit">Registred</button>
+      <button routerLink="/urlorder" mat-flat-button color="primary" type="submit">Cancel</button>
+    </mat-card>
+  </form>
+
+</div>
