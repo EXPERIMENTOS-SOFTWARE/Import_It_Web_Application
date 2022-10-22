@@ -343,6 +343,17 @@
       "province": "Lima (Departamento)",
       "departament": "Lima",
       "id": 1
+    },
+    {
+      "name": "Edgar Alexander",
+      "lastname": "Malca Rojas",
+      "phone": "987456123",
+      "direction1": "los jazmines 1258 ",
+      "district": "san miguel",
+      "province": "Municipalidad Metropolitana de Lima",
+      "departament": "lima",
+      "dni": "12345678",
+      "id": 2
     }
   ]
 }
