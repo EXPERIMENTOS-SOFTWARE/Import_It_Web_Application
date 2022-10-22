@@ -101,6 +101,18 @@
       "comision": "30",
       "dni": "72372975",
       "id": 5
+    },
+    {
+      "url": "https://amazon/iphone13.com",
+      "name": "iphone 13",
+      "tittle": "please buy iphone",
+      "weight": "0.01",
+      "amount": "1",
+      "price": "250",
+      "status": "new",
+      "comision": "50",
+      "dni": "12345678",
+      "id": 6
     }
   ],
   "domesticShipments": [
@@ -260,19 +272,19 @@
   "productCategories": [
     {
       "name": "Technology",
-      "imageURL" : "../../assets/images/productCategories/Technology.png"
+      "imageURL": "../../assets/images/productCategories/Technology.png"
     },
     {
       "name": "Home & Furniture",
-      "imageURL" : "../../assets/images/productCategories/Home and furniture.jpg"
+      "imageURL": "../../assets/images/productCategories/Home and furniture.jpg"
     },
     {
       "name": "Perfumes",
-      "imageURL" : "../../assets/images/productCategories/Perfumes.jpg"
+      "imageURL": "../../assets/images/productCategories/Perfumes.jpg"
     },
     {
       "name": "Clothing",
-      "imageURL" : "../../assets/images/productCategories/Clothing.jpg"
+      "imageURL": "../../assets/images/productCategories/Clothing.jpg"
     }
   ],
   "productsWholesale": [
@@ -319,6 +331,18 @@
       "principalFeature2": "Peso: 0.60 kg",
       "principalFeature3": "Micrófono integrado",
       "id": 4
+    }
+  ],
+  "direction": [
+    {
+      "name": "Sebastian Alejandro",
+      "lastname": "Montes Molina",
+      "phone": "924773421",
+      "direction1": "av universitaria 6107",
+      "district": "Comas",
+      "province": "Lima (Departamento)",
+      "departament": "Lima",
+      "id": 1
     }
   ]
 }
