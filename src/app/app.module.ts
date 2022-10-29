@@ -3,31 +3,53 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatOptionModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatIconModule } from "@angular/material/icon";
 import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from '@angular/material/list';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-/*import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
+import { ChatsComponent } from './chats/chats.component';
+import { CouponsComponent } from './coupons-components/coupons/coupons.component';
+import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
+import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
+import { DomesticShipmentComponent } from './domestic-shipment/domestic-shipment.component';
+import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domestic-shipments-info.component';
+import { FakeBackendProvider } from './fake-backend.interceptor';
+import { FastyComponent } from './fasty/fasty.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
+import { UsersComponent } from './users/pages/users/users.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { UsersComponent } from './users/pages/users/users.component';*/
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatTableModule } from '@angular/material/table';
+//import { FlexLayoutModule } from "@angular/flex-layout";
+import { DirectionComponent } from './direction/direction.component';
+import { DirectioninfoComponent } from './directioninfo/directioninfo.component';
+import { DirectionregisterComponent } from './directionregister/directionregister.component';
+import { UrlorderComponent } from './urlorder/urlorder.component';
+import { UrlordermainComponent } from './urlordermain/urlordermain.component';
+import { WalletComponent } from './wallet/wallet.component';
 import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
-import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
+
 import {MatTabsModule} from '@angular/material/tabs';
+import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
 import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
+
+
 
 @NgModule({
   declarations: [
@@ -41,7 +63,25 @@ import { ProductWholesalePaymentComponent } from './product-wholesale-payment/pr
     LoginComponent,
     LoginComponent,
     WelcomeComponent,
-    UsersComponent*/
+    UsersComponent,
+    FastyComponent,
+    CalculatorComponent,
+    DomesticShipmentComponent,
+    DomesticShipmentsInfoComponent,
+    EnterCouponComponent,
+    ValidateCouponComponent,
+    CouponsComponent,
+    WalletComponent,
+    DirectionComponent,
+    DirectionregisterComponent,
+    DirectioninfoComponent,
+    UrlorderComponent,
+    UrlordermainComponent,
+    BuyWholesaleComponent,
+    ProductWholesaleComponent,
+    ProductWholesaleDetailComponent,
+    ProductWholesalePaymentComponent,
+    ChatsComponent
   ],
   imports: [
     BrowserModule,
@@ -68,10 +108,12 @@ import { ProductWholesalePaymentComponent } from './product-wholesale-payment/pr
     MatListModule,
     MatFormFieldModule,
     MatTableModule,
-    MatTabsModule
+    MatProgressBarModule,
+    AngularMaterialModule,
+    MatTabsModule,
+    MatAutocompleteModule
   ],
-  providers: [],
+  providers: [FakeBackendProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-

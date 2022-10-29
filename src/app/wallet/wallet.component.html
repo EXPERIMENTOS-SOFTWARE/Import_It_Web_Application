@@ -1,0 +1,54 @@
+<main class="walletContainer">
+  <div class="cardpadding">
+    <h1 style="text-align:left">My Wallet </h1>
+    <div class="colum" class="paddinghigh">
+      <mat-card class="row">
+        <h1>Movements</h1>
+        <mat-card-actions class="buttonpadding">
+          <button mat-flat-button color="primary" type="submit">In process</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div>
+      <mat-card>
+        <table cellspacing="0" cellpadding="0" id="mi-tabla" class="tabla">
+          <div *ngFor="let urlorder of urlorder">
+            <div *ngFor="let user of user">
+              <thead>
+                <tr>
+                  <th>AMONUT</th>
+                  <th>PRODUCT</th>
+                  <th>PRICE</th>
+                  <th>COMISION</th>
+                  <th>WEIGHT</th>
+                  <th>USER</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+
+                  <td class="align-left">{{urlorder.amount}}</td>
+                  <td>{{urlorder.name}}</td>
+                  <td>{{urlorder.price}}$</td>
+                  <td>{{urlorder.comision}}$</td>
+                  <td>{{urlorder.weight}} Kg</td>
+                  <td> {{user.name}} </td>
+
+
+                </tr>
+              </tbody>
+            </div>
+          </div>
+
+        </table>
+
+
+
+
+
+
+
+      </mat-card>
+    </div>
+  </div>
+</main>
