@@ -23,6 +23,7 @@ import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
+import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
 
 
 const routes: Routes = [
@@ -58,6 +59,7 @@ const routes: Routes = [
     ]
   },
   { path: 'chats', component: ChatsComponent },
+  { path: 'customer-orders', component: CustomerOrdersComponent},
 ];
 
 @NgModule({
