@@ -73,6 +73,7 @@ export class LoginComponent implements OnInit {
             this.router.navigate(['profile']);
           });
         this.authService.currentID = user.id;
+        this.authService.currentName = user.name;
       } else {
         alert("user not found");
       }

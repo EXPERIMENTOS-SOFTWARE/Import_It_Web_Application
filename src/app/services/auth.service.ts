@@ -11,6 +11,7 @@ export class AuthService {
     public _isLoggedIn$ = new BehaviorSubject<boolean>(false);
     isLoggedIn$ = this._isLoggedIn$.asObservable();
     currentID = 0;
+    currentName = "";
 
     constructor(private apiService: ApiService) {
         const token = localStorage.getItem('importIt_auth');
@@ -28,5 +29,8 @@ export class AuthService {
     }
     currentUserID() {
         return this.currentID;
+    }
+    currentUserName() {
+        return this.currentName;
     }
 }

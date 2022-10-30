@@ -48,6 +48,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
 import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
+import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
 
 
 
@@ -81,7 +82,8 @@ import { ProductWholesalePaymentComponent } from './product-wholesale-payment/pr
     ProductWholesaleComponent,
     ProductWholesaleDetailComponent,
     ProductWholesalePaymentComponent,
-    ChatsComponent
+    ChatsComponent,
+    CustomerOrdersComponent
   ],
   imports: [
     BrowserModule,

@@ -101,6 +101,18 @@
       "comision": "30",
       "dni": "72372975",
       "id": 5
+    },
+    {
+      "url": "https://amazon/iphone13.com",
+      "name": "iphone 13",
+      "tittle": "please buy iphone",
+      "weight": "0.01",
+      "amount": "1",
+      "price": "250",
+      "status": "new",
+      "comision": "50",
+      "dni": "12345678",
+      "id": 6
     }
   ],
   "domesticShipments": [
@@ -200,123 +212,6 @@
         "message": "Hola",
         "date": "09/09/09"
       }
-    }
-  ],
-  "domesticShipments": [
-    {
-      "id": 1,
-      "imageProduct": "https://img.freepik.com/vector-gratis/dispositivo-telefono-inteligente-realista_52683-29765.jpg?size=338&ext=jpg&ga=GA1.2.459603537.1666060327",
-      "userId": 1,
-      "productName": "Iphone 13",
-      "date": "09/09/09",
-      "departureTime": 8,
-      "shippingDate": "09/09/09",
-      "shippingManager": "olva courier",
-      "totalCost": 1289,
-      "trackingCode": "AWE458",
-      "destiny": "Chiclayo"
-    },
-    {
-      "id": 2,
-      "imageProduct": "https://img.freepik.com/psd-gratis/maqueta-psd-computadora-portatil-luz-led-degradada_53876-138283.jpg?size=626&ext=jpg&ga=GA1.2.459603537.1666060327",
-      "userId": 1,
-      "productName": "Macbook 14",
-      "date": "09/09/09",
-      "departureTime": 10,
-      "shippingDate": "09/09/09",
-      "shippingManager": "olva courier",
-      "totalCost": 1289,
-      "trackingCode": "AWE458",
-      "destiny": "Cusco"
-    },
-    {
-      "id": 3,
-      "imageProduct": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKzFknHBs52FBby5EgUUMnc96vdVt3qL5Ylw&usqp=CAU",
-      "userId": 2,
-      "productName": "Guess Watch",
-      "date": "09/09/09",
-      "departureTime": 7,
-      "shippingDate": "09/09/09",
-      "shippingManager": "olva courier",
-      "totalCost": 1289,
-      "trackingCode": "QQQ965",
-      "destiny": "Piura"
-    },
-    {
-      "id": 4,
-      "imageProduct": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gaYbIm9wrfg43NwHaVCwu7A7mn3HAaj-mw&usqp=CAU",
-      "userId": 3,
-      "productName": "Armani Perfume",
-      "date": "09/09/09",
-      "departureTime": 12,
-      "shippingDate": "09/09/09",
-      "shippingManager": "olva courier",
-      "totalCost": 1289,
-      "trackingCode": "ASD888",
-      "destiny": "Juliaca"
-    }
-  ],
-  "coupons2": [
-    {
-      "id": 1,
-      "title": "First Order",
-      "discount": 10,
-      "code": "ABC123",
-      "validDate": "09/09/09",
-      "situation": true,
-      "description": "*Coupons are not accumulative"
-    },
-    {
-      "id": 2,
-      "title": "Black Friday Week",
-      "discount": 50,
-      "code": "ACD090",
-      "validDate": "09/09/09",
-      "situation": true,
-      "description": "*Coupons are not accumulative. Only for travelers mode"
-    },
-    {
-      "id": 3,
-      "title": "ImportIt20",
-      "discount": 20,
-      "code": "ABT555",
-      "validDate": "09/09/09",
-      "situation": false,
-      "description": ""
-    }
-  ],
-  "coupons": [],
-  "chats": [
-    {
-      "id": 1,
-      "user1": {
-        "id": 1,
-        "message": "Hola",
-        "date": "09/09/09"
-      },
-      "user2": {
-        "id": 2,
-        "message": "Hola",
-        "date": "09/09/09"
-      }
-    }
-  ],
-  "productCategories": [
-    {
-      "name": "Technology",
-      "imageURL": "../../assets/images/productCategories/Technology.png"
-    },
-    {
-      "name": "Home & Furniture",
-      "imageURL": "../../assets/images/productCategories/Home and furniture.jpg"
-    },
-    {
-      "name": "Perfumes",
-      "imageURL": "../../assets/images/productCategories/Perfumes.jpg"
-    },
-    {
-      "name": "Clothing",
-      "imageURL": "../../assets/images/productCategories/Clothing.jpg"
     }
   ],
   "storeProductsByCategory": [
@@ -374,51 +269,70 @@
       ]
     }
   ],
-  "domesticShipments": [
+  "productCategories": [
     {
-      "id": 4,
-      "imageProduct": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gaYbIm9wrfg43NwHaVCwu7A7mn3HAaj-mw&usqp=CAU",
-      "userId": 3,
-      "productName": "Armani Perfume",
-      "date": "09/09/09",
-      "departureTime": 12,
-      "shippingDate": "09/09/09",
-      "shippingManager": "olva courier",
-      "totalCost": 1289,
-      "trackingCode": "ASD888",
-      "destiny": "Juliaca"
-    }
-  ],
-  "coupons2": [
-    {
-      "id": 1,
-      "title": "First Order",
-      "discount": 10,
-      "code": "ABC123",
-      "validDate": "09/09/09",
-      "situation": true,
-      "description": "*Coupons are not accumulative"
+      "name": "Technology",
+      "imageURL": "../../assets/images/productCategories/Technology.png"
     },
     {
-      "id": 2,
-      "title": "Black Friday Week",
-      "discount": 50,
-      "code": "ACD090",
-      "validDate": "09/09/09",
-      "situation": true,
-      "description": "*Coupons are not accumulative. Only for travelers mode"
+      "name": "Home & Furniture",
+      "imageURL": "../../assets/images/productCategories/Home and furniture.jpg"
     },
     {
-      "id": 3,
-      "title": "ImportIt20",
-      "discount": 20,
-      "code": "ABT555",
-      "validDate": "09/09/09",
-      "situation": false,
-      "description": ""
+      "name": "Perfumes",
+      "imageURL": "../../assets/images/productCategories/Perfumes.jpg"
+    },
+    {
+      "name": "Clothing",
+      "imageURL": "../../assets/images/productCategories/Clothing.jpg"
     }
   ],
-  "coupons": [],
+  "productsWholesale": [
+    {
+      "name": "IPHONE 11 PRO MAX",
+      "quantity": 10,
+      "price": 5749,
+      "picture": "https://ripleype.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fimagenes-sellers-mercado-ripley%2F2022%2F01%2F20185223%2FLD0005886467_1_0005886512_0005886538.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=90d19f0e13418fbeb9656f4e7661d1fb",
+      "description": "DIMENSIONES Y PESO: 160,8 x 78,1 x 7,6 mm 238 gramos PANTALLA: Super Retina XDR 6,7 pulgadas ProMotion 120 Hz 2.778 x 1.284 px, 458 ppp 1.000 nits, contraste 2.000.000:1 PROCESADOR: Apple A15 Bionic RAM: 6GB. ALMACENAMIENTO: 128GB/1 TB CÁMARAS TRASERAS Telefoto: 12 MP f/2.8, 77mm, 3x óptico Ultrawide: 12 MP f/1.8, 6P, 120º Principal: 12 MP f/1.5, 1,9um CÁMARA FRONTAL: 12 MP f/2.2 BATERÍA: Carga rápida 20 W Carga MagSafe de 15 W Carga Qi de 7,5 W SISTEMA OPERATIVO: iOS 15 CONECTIVIDAD: 5G (sub-6 GHz) LTE Gigabit con MIMO 4x4 y LAA Wifi 802.11ax (6.ª gen.) con MIMO 2x2 Bluetooth 5.0 Chip de banda ultraancha NFC OTROS IP68 Sonido estéreo FaceID NO INCLUYE CARGADOR",
+      "principalFeature1": "DIMENSIONES: 160,8 x 78,1 x 7,6 mm",
+      "principalFeature2": "PESO: 238 gramos",
+      "principalFeature3": "ALMACENAMIENTO: 128GB/1 TB",
+      "id": 1
+    },
+    {
+      "name": "Laptop Hp",
+      "quantity": 10,
+      "price": 1500,
+      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2004293408701/2004293408701-1.jpg",
+      "description": "Diseñada para tu productividad y entretenimiento desde cualquier lugar. Procesador Intel Core i3-1115G4. Batería de larga duración. Pantalla HD de 1366 x 768 px de resolución. Almacenamiento: 512GB SSD. Diseño delgado y portable con pantalla de micro borde.",
+      "principalFeature1": "Procesador: Intel Core i3",
+      "principalFeature2": "Memoria RAM: 4GB",
+      "principalFeature3": "Disco duro: 128GB",
+      "id": 2
+    },
+    {
+      "name": "MANDO GAMER PARA CELULAR",
+      "quantity": 8,
+      "price": 150,
+      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2065281206808/2065281206808-6.jpg",
+      "description": "Función telescópica: Para diferentes tamaños de dispositivos. Longitud horizontal ajustable: De 13.5 a 25 cm. Función de Turbo: Velocidad de 2 a 3 veces mayor que los estándar. El controlador derecho es desmontable. El controlador izquierdo se puede utilizar como game pad de una sola mano. Conectividad Bluetooth v4.0. Compatibilidad: Android 6.0 o superior / iOS 11 o superior. Batería de litio incorporada. Tiempo de carga: 3 horas. Duración de la batería: Hasta 15 horas.",
+      "principalFeature1": "Tiempo de carga: 3 horas.",
+      "principalFeature2": "Duración de la batería: Hasta 15 horas.",
+      "principalFeature3": "El controlador derecho es desmontable.",
+      "id": 3
+    },
+    {
+      "name": "AUDIFONOS INALÁMBRICOS PULSE 3D (PS5)",
+      "quantity": 3,
+      "price": 520,
+      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2031255300407/2031255300407_2.jpg",
+      "description": "No esperes más y adquiere los mejores accesorios para Playstation 5 en Ripley.com. Disfruta de una experiencia sonora perfecta con estos audífonos ajustados para audio 3D en las consolas PS5. Los auriculares inalámbricos PULSE 3D tienen un diseño elegante con micrófonos dobles con reducción de ruido, carga a través de USB Type-C® y una variedad de controles de fácil acceso.",
+      "principalFeature1": "Modelo 3D Wireless Headset",
+      "principalFeature2": "Peso: 0.60 kg",
+      "principalFeature3": "Micrófono integrado",
+      "id": 4
+    }
+  ],
   "direction": [
     {
       "name": "Sebastian Alejandro",
@@ -431,118 +345,15 @@
       "id": 1
     },
     {
-      "name": "dfasdf",
-      "lastname": "asgasdfg",
-      "phone": "987654321",
-      "direction1": "asdgfasdfg",
-      "district": "asdgasdgf",
-      "province": "asdgfasdfg",
-      "departament": "asdgasdfgas",
-      "dni": "45454545",
+      "name": "Edgar Alexander",
+      "lastname": "Malca Rojas",
+      "phone": "987456123",
+      "direction1": "los jazmines 1258 ",
+      "district": "san miguel",
+      "province": "Municipalidad Metropolitana de Lima",
+      "departament": "lima",
+      "dni": "12345678",
       "id": 2
-    },
-    {
-      "name": "Sebastian ",
-      "lastname": "Montes",
-      "phone": "924773421",
-      "direction1": "av universitaria 6107",
-      "district": "Comas",
-      "province": "Lima metropolitana",
-      "departament": "Lima",
-      "dni": "72372975",
-      "id": 3
-    }
-  ],
-  "productsWholesale": [
-    {
-      "name": "IPHONE 11 PRO MAX",
-      "quantity": 10,
-      "price": 5749,
-      "picture": "https://ripleype.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fimagenes-sellers-mercado-ripley%2F2022%2F01%2F20185223%2FLD0005886467_1_0005886512_0005886538.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=90d19f0e13418fbeb9656f4e7661d1fb",
-      "description": "DIMENSIONES Y PESO: 160,8 x 78,1 x 7,6 mm 238 gramos PANTALLA: Super Retina XDR 6,7 pulgadas ProMotion 120 Hz 2.778 x 1.284 px, 458 ppp 1.000 nits, contraste 2.000.000:1 PROCESADOR: Apple A15 Bionic RAM: 6GB. ALMACENAMIENTO: 128GB/1 TB CÁMARAS TRASERAS Telefoto: 12 MP f/2.8, 77mm, 3x óptico Ultrawide: 12 MP f/1.8, 6P, 120º Principal: 12 MP f/1.5, 1,9um CÁMARA FRONTAL: 12 MP f/2.2 BATERÍA: Carga rápida 20 W Carga MagSafe de 15 W Carga Qi de 7,5 W SISTEMA OPERATIVO: iOS 15 CONECTIVIDAD: 5G (sub-6 GHz) LTE Gigabit con MIMO 4x4 y LAA Wifi 802.11ax (6.ª gen.) con MIMO 2x2 Bluetooth 5.0 Chip de banda ultraancha NFC OTROS IP68 Sonido estéreo FaceID NO INCLUYE CARGADOR",
-      "principalFeature1": "DIMENSIONES: 160,8 x 78,1 x 7,6 mm",
-      "principalFeature2": "PESO: 238 gramos",
-      "principalFeature3": "ALMACENAMIENTO: 128GB/1 TB",
-      "id": 1
-    },
-    {
-      "name": "Laptop Hp",
-      "quantity": 10,
-      "price": 1500,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2004293408701/2004293408701-1.jpg",
-      "description": "Diseñada para tu productividad y entretenimiento desde cualquier lugar. Procesador Intel Core i3-1115G4. Batería de larga duración. Pantalla HD de 1366 x 768 px de resolución. Almacenamiento: 512GB SSD. Diseño delgado y portable con pantalla de micro borde.",
-      "principalFeature1": "Procesador: Intel Core i3",
-      "principalFeature2": "Memoria RAM: 4GB",
-      "principalFeature3": "Disco duro: 128GB",
-      "id": 2
-    },
-    {
-      "name": "MANDO GAMER PARA CELULAR",
-      "quantity": 8,
-      "price": 150,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2065281206808/2065281206808-6.jpg",
-      "description": "Función telescópica: Para diferentes tamaños de dispositivos. Longitud horizontal ajustable: De 13.5 a 25 cm. Función de Turbo: Velocidad de 2 a 3 veces mayor que los estándar. El controlador derecho es desmontable. El controlador izquierdo se puede utilizar como game pad de una sola mano. Conectividad Bluetooth v4.0. Compatibilidad: Android 6.0 o superior / iOS 11 o superior. Batería de litio incorporada. Tiempo de carga: 3 horas. Duración de la batería: Hasta 15 horas.",
-      "principalFeature1": "Tiempo de carga: 3 horas.",
-      "principalFeature2": "Duración de la batería: Hasta 15 horas.",
-      "principalFeature3": "El controlador derecho es desmontable.",
-      "id": 3
-    },
-    {
-      "name": "AUDIFONOS INALÁMBRICOS PULSE 3D (PS5)",
-      "quantity": 3,
-      "price": 520,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2031255300407/2031255300407_2.jpg",
-      "description": "No esperes más y adquiere los mejores accesorios para Playstation 5 en Ripley.com. Disfruta de una experiencia sonora perfecta con estos audífonos ajustados para audio 3D en las consolas PS5. Los auriculares inalámbricos PULSE 3D tienen un diseño elegante con micrófonos dobles con reducción de ruido, carga a través de USB Type-C® y una variedad de controles de fácil acceso.",
-      "principalFeature1": "Modelo 3D Wireless Headset",
-      "principalFeature2": "Peso: 0.60 kg",
-      "principalFeature3": "Micrófono integrado",
-      "id": 4
-    }
-  ],
-  "productsWholesale": [
-    {
-      "name": "IPHONE 11 PRO MAX",
-      "quantity": 10,
-      "price": 5749,
-      "picture": "https://ripleype.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fimagenes-sellers-mercado-ripley%2F2022%2F01%2F20185223%2FLD0005886467_1_0005886512_0005886538.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=90d19f0e13418fbeb9656f4e7661d1fb",
-      "description": "DIMENSIONES Y PESO: 160,8 x 78,1 x 7,6 mm 238 gramos PANTALLA: Super Retina XDR 6,7 pulgadas ProMotion 120 Hz 2.778 x 1.284 px, 458 ppp 1.000 nits, contraste 2.000.000:1 PROCESADOR: Apple A15 Bionic RAM: 6GB. ALMACENAMIENTO: 128GB/1 TB CÁMARAS TRASERAS Telefoto: 12 MP f/2.8, 77mm, 3x óptico Ultrawide: 12 MP f/1.8, 6P, 120º Principal: 12 MP f/1.5, 1,9um CÁMARA FRONTAL: 12 MP f/2.2 BATERÍA: Carga rápida 20 W Carga MagSafe de 15 W Carga Qi de 7,5 W SISTEMA OPERATIVO: iOS 15 CONECTIVIDAD: 5G (sub-6 GHz) LTE Gigabit con MIMO 4x4 y LAA Wifi 802.11ax (6.ª gen.) con MIMO 2x2 Bluetooth 5.0 Chip de banda ultraancha NFC OTROS IP68 Sonido estéreo FaceID NO INCLUYE CARGADOR",
-      "principalFeature1": "DIMENSIONES: 160,8 x 78,1 x 7,6 mm",
-      "principalFeature2": "PESO: 238 gramos",
-      "principalFeature3": "ALMACENAMIENTO: 128GB/1 TB",
-      "id": 1
-    },
-    {
-      "name": "Laptop Hp",
-      "quantity": 10,
-      "price": 1500,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2004293408701/2004293408701-1.jpg",
-      "description": "Diseñada para tu productividad y entretenimiento desde cualquier lugar. Procesador Intel Core i3-1115G4. Batería de larga duración. Pantalla HD de 1366 x 768 px de resolución. Almacenamiento: 512GB SSD. Diseño delgado y portable con pantalla de micro borde.",
-      "principalFeature1": "Procesador: Intel Core i3",
-      "principalFeature2": "Memoria RAM: 4GB",
-      "principalFeature3": "Disco duro: 128GB",
-      "id": 2
-    },
-    {
-      "name": "MANDO GAMER PARA CELULAR",
-      "quantity": 8,
-      "price": 150,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2065281206808/2065281206808-6.jpg",
-      "description": "Función telescópica: Para diferentes tamaños de dispositivos. Longitud horizontal ajustable: De 13.5 a 25 cm. Función de Turbo: Velocidad de 2 a 3 veces mayor que los estándar. El controlador derecho es desmontable. El controlador izquierdo se puede utilizar como game pad de una sola mano. Conectividad Bluetooth v4.0. Compatibilidad: Android 6.0 o superior / iOS 11 o superior. Batería de litio incorporada. Tiempo de carga: 3 horas. Duración de la batería: Hasta 15 horas.",
-      "principalFeature1": "Tiempo de carga: 3 horas.",
-      "principalFeature2": "Duración de la batería: Hasta 15 horas.",
-      "principalFeature3": "El controlador derecho es desmontable.",
-      "id": 3
-    },
-    {
-      "name": "AUDIFONOS INALÁMBRICOS PULSE 3D (PS5)",
-      "quantity": 3,
-      "price": 520,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2031255300407/2031255300407_2.jpg",
-      "description": "No esperes más y adquiere los mejores accesorios para Playstation 5 en Ripley.com. Disfruta de una experiencia sonora perfecta con estos audífonos ajustados para audio 3D en las consolas PS5. Los auriculares inalámbricos PULSE 3D tienen un diseño elegante con micrófonos dobles con reducción de ruido, carga a través de USB Type-C® y una variedad de controles de fácil acceso.",
-      "principalFeature1": "Modelo 3D Wireless Headset",
-      "principalFeature2": "Peso: 0.60 kg",
-      "principalFeature3": "Micrófono integrado",
-      "id": 4
     }
   ]
 }

@@ -38,7 +38,6 @@ export class UrlorderService {
       .pipe(retry(2),
         catchError(this.handleError));
   }
-
   //get URLORDER by ID
   getById(id: any): Observable<Urlorder> {
     return this.http.get<Urlorder>(`${this.basePath}/${id}`, this.httpOptions)
