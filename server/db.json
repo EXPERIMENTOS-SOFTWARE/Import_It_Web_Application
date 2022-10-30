@@ -101,9 +101,20 @@
       "comision": "30",
       "dni": "72372975",
       "id": 5
+    },
+    {
+      "url": "https://amazon/iphone13.com",
+      "name": "iphone 13",
+      "tittle": "please buy iphone",
+      "weight": "0.01",
+      "amount": "1",
+      "price": "250",
+      "status": "new",
+      "comision": "50",
+      "dni": "12345678",
+      "id": 6
     }
   ],
-  "coupons": [],
   "domesticShipments": [
     {
       "id": 1,
@@ -187,22 +198,20 @@
       "description": ""
     }
   ],
-  "productCategories": [
+  "coupons": [],
+  "chats": [
     {
-      "name": "Technology",
-      "imageURL": "../../assets/images/productCategories/Technology.png"
-    },
-    {
-      "name": "Home & Furniture",
-      "imageURL": "../../assets/images/productCategories/Home and furniture.jpg"
-    },
-    {
-      "name": "Perfumes",
-      "imageURL": "../../assets/images/productCategories/Perfumes.jpg"
-    },
-    {
-      "name": "Clothing",
-      "imageURL": "../../assets/images/productCategories/Clothing.jpg"
+      "id": 1,
+      "user1": {
+        "id": 1,
+        "message": "Hola",
+        "date": "09/09/09"
+      },
+      "user2": {
+        "id": 2,
+        "message": "Hola",
+        "date": "09/09/09"
+      }
     }
   ],
   "storeProductsByCategory": [
@@ -260,38 +269,22 @@
       ]
     }
   ],
-  "direction": [
+  "productCategories": [
     {
-      "name": "Sebastian Alejandro",
-      "lastname": "Montes Molina",
-      "phone": "924773421",
-      "direction1": "av universitaria 6107",
-      "district": "Comas",
-      "province": "Lima (Departamento)",
-      "departament": "Lima",
-      "id": 1
+      "name": "Technology",
+      "imageURL": "../../assets/images/productCategories/Technology.png"
     },
     {
-      "name": "dfasdf",
-      "lastname": "asgasdfg",
-      "phone": "987654321",
-      "direction1": "asdgfasdfg",
-      "district": "asdgasdgf",
-      "province": "asdgfasdfg",
-      "departament": "asdgasdfgas",
-      "dni": "45454545",
-      "id": 2
+      "name": "Home & Furniture",
+      "imageURL": "../../assets/images/productCategories/Home and furniture.jpg"
     },
     {
-      "name": "Sebastian ",
-      "lastname": "Montes",
-      "phone": "924773421",
-      "direction1": "av universitaria 6107",
-      "district": "Comas",
-      "province": "Lima metropolitana",
-      "departament": "Lima",
-      "dni": "72372975",
-      "id": 3
+      "name": "Perfumes",
+      "imageURL": "../../assets/images/productCategories/Perfumes.jpg"
+    },
+    {
+      "name": "Clothing",
+      "imageURL": "../../assets/images/productCategories/Clothing.jpg"
     }
   ],
   "productsWholesale": [
@@ -340,5 +333,27 @@
       "id": 4
     }
   ],
-  "chats": []
+  "direction": [
+    {
+      "name": "Sebastian Alejandro",
+      "lastname": "Montes Molina",
+      "phone": "924773421",
+      "direction1": "av universitaria 6107",
+      "district": "Comas",
+      "province": "Lima (Departamento)",
+      "departament": "Lima",
+      "id": 1
+    },
+    {
+      "name": "Edgar Alexander",
+      "lastname": "Malca Rojas",
+      "phone": "987456123",
+      "direction1": "los jazmines 1258 ",
+      "district": "san miguel",
+      "province": "Municipalidad Metropolitana de Lima",
+      "departament": "lima",
+      "dni": "12345678",
+      "id": 2
+    }
+  ]
 }
