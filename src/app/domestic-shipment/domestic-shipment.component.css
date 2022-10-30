@@ -14,11 +14,10 @@
 
 .grid2c {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 0 20px;
-    margin-top: 40px;;
-    justify-items: center;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fill, 350px);
   }
 
 .dsc-card:hover {

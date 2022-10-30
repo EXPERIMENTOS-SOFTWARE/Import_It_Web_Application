@@ -14,11 +14,11 @@
 
 .grid2c {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 0 20px;
-    margin-top: 40px;;
-    justify-items: center;
+    gap: 50px;
+    padding: 20px 20px;
+    margin-top: 40px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, 350px);
   }
 
 .dsc-card:hover {
@@ -29,9 +29,11 @@
 .dsc-content {
     border-left: 1px solid rgba(0, 0, 0, 0.25);
     padding: 0.5rem;
+    
 }
 
 .discount-style h1{
     color: whitesmoke;
     font-size: 50px;
+    
 }
