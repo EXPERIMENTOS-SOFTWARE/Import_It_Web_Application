@@ -14,7 +14,7 @@
       <a mat-list-item routerLink="/profile">
         <mat-icon>person</mat-icon>Profile
       </a>
-      <a mat-list-item routerLink="/urlorder" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item routerLink="/urlorder">
         <mat-icon>shop</mat-icon> My Orders
       </a>
       <a mat-list-item routerLink="/customer-orders" *ngIf="authService.isTraveler$ | async">
