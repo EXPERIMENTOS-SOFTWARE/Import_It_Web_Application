@@ -10,6 +10,7 @@ import { AuthService } from '../services/auth.service';
 export class WelcomeComponent implements OnInit {
   isTraveler: boolean = false;
   constructor(private router: Router, private authService: AuthService) {
+    this.authService._isLoggedIn$.next(false);
   }
   redirectToLoginTraveler() {
     this.router.navigate(['/login']);

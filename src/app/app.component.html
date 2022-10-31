@@ -17,7 +17,7 @@
       <a mat-list-item routerLink="/urlorder" *ngIf="authService.isBuyer$ | async">
         <mat-icon>shop</mat-icon> My Orders
       </a>
-      <a mat-list-item routerLink="/customer-orders" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item routerLink="/customer-orders" *ngIf="authService.isTraveler$ | async">
         <mat-icon>shop</mat-icon> Customer Orders
       </a>
       <a mat-list-item routerLink="/buy-wholesale" *ngIf="authService.isBuyer$ | async">
@@ -47,7 +47,7 @@
       <a mat-list-item routerLink="/generateorder" *ngIf="authService.isBuyer$ | async">
         <mat-icon>code</mat-icon> URL Order
       </a>
-      <a mat-list-item routerLink="/login" (click)="isSidenavOpen=!isSidenavOpen">
+      <a mat-list-item routerLink="/welcome" (click)="isSidenavOpen=!isSidenavOpen">
         <mat-icon>power_settings_new</mat-icon> log out
       </a>
     </mat-nav-list>
