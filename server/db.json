@@ -125,7 +125,22 @@
       "url": "https://home.ripley.com.pe/Attachment/WOP_5/2065281206808/2065281206808-6.jpg",
       "weight": 20,
       "id": 7
+    },
+    {
+      "name": "Apple iPhone 11 Pro Max",
+      "tittle": "Apple iPhone 11 Pro Max",
+      "price": 2648,
+      "amount": 10,
+      "comision": "60",
+      "dni": "12345678",
+      "status": "tecnología",
+      "url": "https://www.amazon.com/-/es/Apple-iPhone-256GB-verde-medianoche/dp/B08BHFGJXF/ref=sr_1_1?adgrpid=82211619555&gclid=Cj0KCQjwwfiaBhC7ARIsAGvcPe68uPI_gPK2p_9Ga12fa3Ont68Q4oH4f8oiZeB6c1NNuPWAayRSl-saAi09EALw_wcB&hvadid=585479825180&hvdev=c&hvlocphy=9060925&hvnetw=g&hvqmt=e&hvrand=5347265486820424037&hvtargid=kwd-817391552835&hydadcr=29140_14573955&keywords=iphone+11+pro+max+amazon&qid=1667179740&qu=eyJxc2MiOiIyLjg0IiwicXNhIjoiMS44NyIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-1",
+      "weight": 20,
+      "id": 8
     }
+  ],
+  "travelerOrders": [
+    
   ],
   "domesticShipments": [
     {

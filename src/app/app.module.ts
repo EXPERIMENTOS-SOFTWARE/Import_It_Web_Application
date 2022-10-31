@@ -51,6 +51,8 @@ import { CustomerOrdersComponent } from './customer-orders/customer-orders.compo
 import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
+import { TravelerOrdersComponent } from './traveler-orders/traveler-orders.component';
+import { CustomerOrderDetailComponent } from './customer-orders/customer-order-detail/customer-order-detail.component';
 
 
 
@@ -82,7 +84,9 @@ import { ProductWholesaleComponent } from './product-wholesale/product-wholesale
     ProductWholesalePaymentComponent,
     ChatsComponent,
     CustomerOrdersComponent,
-    SingleProductComponent
+    SingleProductComponent,
+    TravelerOrdersComponent,
+    CustomerOrderDetailComponent
   ],
   imports: [
     BrowserModule,
