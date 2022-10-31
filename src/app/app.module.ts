@@ -25,6 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FastyComponent } from './fasty/fasty.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FastyComponent } from './fasty/fasty.component';
     LoginComponent,
     WelcomeComponent,
     UsersComponent,
-    FastyComponent
+    FastyComponent,
+    SingleProductComponent
   ],
   imports: [
     BrowserModule,

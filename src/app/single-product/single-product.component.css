@@ -1,0 +1,32 @@
+.page-container {
+  padding: 5%;
+}
+
+.product-card {
+  border: 3px solid #919AA9;
+  padding: 1%;
+  background-color: #F0F0F0;
+  border-radius: 15px;
+}
+
+.img-container {
+  width: 40%;
+  border: 3px solid #919AA9;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.product-name h1 {
+  font-size: 2rem;
+  color: #2B81B9;
+  font-weight: bold;
+}
+
+.product-name h2 {
+  color: #6194B5;
+  font-size: 1.5rem;
+}
