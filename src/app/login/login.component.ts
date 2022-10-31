@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
   loginImgSource: string = "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80";
 
   submitted: boolean = false;
+  isTraveler: boolean = false;
 
   loginForm: FormGroup = this.formBuilder.group({
     // here, we specified the name of all the fields that our form has
@@ -78,9 +79,6 @@ export class LoginComponent implements OnInit {
         alert("user not found");
       }
     });
-    /*if (this.loginForm.valid) {
-      return;
-    }*/
 
 
   }
