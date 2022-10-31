@@ -43,4 +43,15 @@ export class ChatsService {
             .pipe(retry(2),
                 catchError(this.handleError));
     }
+    getAll(): Observable<Chat[]> {
+        return this.http.get<any>(this.basePath, this.httpOptions)
+            .pipe(retry(2),
+                catchError(this.handleError));
+    }
+
+    getById(id: any): Observable<Chat> {
+        return this.http.get<Chat>(`${this.basePath}/${id}`, this.httpOptions)
+            .pipe(retry(2),
+                catchError(this.handleError));
+    }
 }
