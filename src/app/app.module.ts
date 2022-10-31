@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from "@angular/flex-layout";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatOptionModule } from '@angular/material/core';
+import { MatDividerModule } from "@angular/material/divider";
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatIconModule } from "@angular/material/icon";
@@ -21,35 +23,34 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
 import { ChatsComponent } from './chats/chats.component';
 import { CouponsComponent } from './coupons-components/coupons/coupons.component';
 import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
 import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
+import { DirectionComponent } from './direction/direction.component';
+import { DirectioninfoComponent } from './directioninfo/directioninfo.component';
+import { DirectionregisterComponent } from './directionregister/directionregister.component';
 import { DomesticShipmentComponent } from './domestic-shipment/domestic-shipment.component';
 import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domestic-shipments-info.component';
 import { FakeBackendProvider } from './fake-backend.interceptor';
 import { FastyComponent } from './fasty/fasty.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
-import { UsersComponent } from './users/pages/users/users.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { FlexLayoutModule } from "@angular/flex-layout";
-import { DirectionComponent } from './direction/direction.component';
-import { DirectioninfoComponent } from './directioninfo/directioninfo.component';
-import { DirectionregisterComponent } from './directionregister/directionregister.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 import { UrlorderComponent } from './urlorder/urlorder.component';
 import { UrlordermainComponent } from './urlordermain/urlordermain.component';
+import { UsersComponent } from './users/pages/users/users.component';
 import { WalletComponent } from './wallet/wallet.component';
-import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
-import { SingleProductComponent } from './single-product/single-product.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
-import {MatTabsModule} from '@angular/material/tabs';
-import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
 import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
-import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
+import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
 
 
 
@@ -112,7 +113,8 @@ import { CustomerOrdersComponent } from './customer-orders/customer-orders.compo
     AngularMaterialModule,
     MatTabsModule,
     MatAutocompleteModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDividerModule
   ],
   providers: [FakeBackendProvider],
   bootstrap: [AppComponent]
