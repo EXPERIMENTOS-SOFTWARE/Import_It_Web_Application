@@ -201,17 +201,18 @@
   "coupons": [],
   "chats": [
     {
-      "id": 1,
-      "user1": {
-        "id": 1,
-        "message": "Hola",
-        "date": "09/09/09"
-      },
-      "user2": {
-        "id": 2,
-        "message": "Hola",
-        "date": "09/09/09"
-      }
+      "userId1": 3,
+      "userId2": 6,
+      "userName1": "Edgar Alexander Malca Rojas",
+      "userName2": "Bell Larson",
+      "id": 1
+    },
+    {
+      "userId1": 3,
+      "userId2": 7,
+      "userName1": "Edgar Alexander Malca Rojas",
+      "userName2": "Sprint3",
+      "id": 2
     }
   ],
   "storeProductsByCategory": [
