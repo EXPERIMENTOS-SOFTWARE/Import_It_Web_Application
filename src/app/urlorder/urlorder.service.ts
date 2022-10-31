@@ -9,7 +9,7 @@ import { Urlorder } from './urlorder';
 })
 export class UrlorderService {
 
-  basePath = "http://localhost:3000/urlorder";
+  basePath = "http://localhost:3000/api/v1/urlorder";
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -38,6 +38,7 @@ export class UrlorderService {
       .pipe(retry(2),
         catchError(this.handleError));
   }
+
   //get URLORDER by ID
   getById(id: any): Observable<Urlorder> {
     return this.http.get<Urlorder>(`${this.basePath}/${id}`, this.httpOptions)
