@@ -30,7 +30,7 @@ export class CalculatorComponent implements OnInit {
   productCategories: ProductCategory[] = [];
 
   getApproximatedCost(subtotal: string, comission:string) {
-    return Number(subtotal) + Number(comission);
+    return ((Number(subtotal) + Number(comission)) * 1.1).toFixed(2);
   }
 
   getSelectedValue(category: string) {
