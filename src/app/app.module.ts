@@ -35,7 +35,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-//import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from "@angular/flex-layout";
 import { DirectionComponent } from './direction/direction.component';
 import { DirectioninfoComponent } from './directioninfo/directioninfo.component';
 import { DirectionregisterComponent } from './directionregister/directionregister.component';
@@ -43,6 +43,7 @@ import { UrlorderComponent } from './urlorder/urlorder.component';
 import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 
 import {MatTabsModule} from '@angular/material/tabs';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
@@ -79,7 +80,8 @@ import { CustomerOrdersComponent } from './customer-orders/customer-orders.compo
     ProductWholesaleDetailComponent,
     ProductWholesalePaymentComponent,
     ChatsComponent,
-    CustomerOrdersComponent
+    CustomerOrdersComponent,
+    SingleProductComponent
   ],
   imports: [
     BrowserModule,
@@ -109,7 +111,8 @@ import { CustomerOrdersComponent } from './customer-orders/customer-orders.compo
     MatProgressBarModule,
     AngularMaterialModule,
     MatTabsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    FlexLayoutModule
   ],
   providers: [FakeBackendProvider],
   bootstrap: [AppComponent]

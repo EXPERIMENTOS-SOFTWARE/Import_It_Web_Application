@@ -24,7 +24,7 @@ import { ProductWholesaleDetailComponent } from './product-wholesale-detail/prod
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
 import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
-
+import { SingleProductComponent } from "./single-product/single-product.component";
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -60,6 +60,7 @@ const routes: Routes = [
   },
   { path: 'chats', component: ChatsComponent },
   { path: 'customer-orders', component: CustomerOrdersComponent},
+  { path: 'singleProduct/:category/:id', component: SingleProductComponent}
 ];
 
 @NgModule({

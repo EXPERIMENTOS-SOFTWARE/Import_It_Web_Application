@@ -232,16 +232,19 @@
       "name": "Technology",
       "productList": [
         {
+          "id": 1,
           "name": "Samsung Smart Watch Series 3",
           "imgURL": "../../assets/images/fastyProducts/Smart%20Watch.jpg",
           "price": 120
         },
         {
+          "id": 2,
           "name": "Samsung Z Flip 3",
           "imgURL": "../../assets/images/fastyProducts/Z%20Flip.jpg",
           "price": 655
         },
         {
+          "id": 3,
           "name": "Iphone 13 Pro",
           "imgURL": "../../assets/images/fastyProducts/Iphone%2013.jpg",
           "price": 799
@@ -252,16 +255,19 @@
       "name": "Home and Furniture",
       "productList": [
         {
+          "id": 1,
           "name": "Luxury Sofa",
           "imgURL": "../../assets/images/fastyProducts/sofa.jpg",
           "price": 120
         },
         {
+          "id": 2,
           "name": "Bunch of chairs",
           "imgURL": "../../assets/images/fastyProducts/chairs.jpg",
           "price": 655
         },
         {
+          "id": 3,
           "name": "Beautiful Lamp",
           "imgURL": "../../assets/images/fastyProducts/lamp.jpg",
           "price": 799
