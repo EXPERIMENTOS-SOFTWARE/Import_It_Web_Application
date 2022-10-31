@@ -6,8 +6,17 @@
     width: 300px;
 }
 
-.mat-grid-list-products{
+.mat-grid-list-products {
     overflow: hidden;
 }
 
+div {
+    text-align: center;
+    height: 300px;
+    margin-bottom: 15px;
+}
 
+.image-buy-wholesale-product {
+    height: 100%;
+    width: 100%;
+}
