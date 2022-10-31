@@ -72,7 +72,7 @@ export class ProductWholesalePaymentComponent implements OnInit {
   constructor(private productUrlOrderService: UrlorderService, private productWholesalePayment: ApiService, private route: ActivatedRoute, private formBuilder: FormBuilder) { 
     this.productData = {} as ProductWholesale;
     this.orderTransformed = {} as Urlorder;
-    this.recuperar_localstorage();
+    this.catch_localstorage();
   }
 
   ngOnInit(): void {
@@ -101,7 +101,7 @@ export class ProductWholesalePaymentComponent implements OnInit {
     });
   }
 
-  recuperar_localstorage(){
+  catch_localstorage(){
     this.dniData = localStorage.getItem("dni") ?? '';
     console.log(this.dniData);
   }
