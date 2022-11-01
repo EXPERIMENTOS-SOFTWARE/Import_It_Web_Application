@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppComponent } from '../app.component';
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -8,21 +9,25 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./welcome.component.css'],
 })
 export class WelcomeComponent implements OnInit {
-  isTraveler: boolean = false;
-  constructor(private router: Router, private authService: AuthService) {
-    this.authService._isLoggedIn$.next(false);
+  constructor(private router: Router, private authService: AuthService, private appComponent: AppComponent) {
+    localStorage.clear();
+    this.appComponent._isLoged$.next(false);
+    this.appComponent._isTraveler$.next(false);
+    this.appComponent._isBuyer$.next(false);
   }
   redirectToLoginTraveler() {
     this.router.navigate(['/login']);
-    this.authService._isTraveler$.next(true);
+    localStorage.setItem('userType', 'traveler');
+    this.appComponent._isTraveler$.next(true);
   }
   redirectToLoginBuyer() {
     this.router.navigate(['/login']);
-    this.authService._isBuyer$.next(true);
+    localStorage.setItem('userType', 'buyer');
+    this.appComponent._isBuyer$.next(true);
   }
-  redirectToLogin() {
+  /*redirectToLogin() {
     this.router.navigate(['/login']);
-  }
+  }*/
   ngOnInit(): void {
   }
   welcomeImgSource: string = "https://i.imgur.com/h4SfzQU.jpg";

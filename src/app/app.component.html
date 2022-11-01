@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <button mat-icon-button (click)="isSidenavOpen=!isSidenavOpen" *ngIf="authService.isLoggedIn$ | async">
+    <button mat-icon-button (click)="isSidenavOpen=!isSidenavOpen" *ngIf="isLoged$ | async">
       <mat-icon>menu</mat-icon>
     </button>
     <a href="https://mirai-open-source-sw52-grupo-3.github.io/Landing-Page-Import-It/public/">
@@ -14,16 +14,16 @@
       <a mat-list-item routerLink="/profile">
         <mat-icon>person</mat-icon>Profile
       </a>
-      <a mat-list-item routerLink="/urlorder" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item routerLink="/urlorder" *ngIf="isBuyer$ | async">
         <mat-icon>shop</mat-icon> My Orders
       </a>
-      <a mat-list-item routerLink="/traveler-orders" *ngIf="authService.isTraveler$ | async">
+      <a mat-list-item routerLink="/traveler-orders" *ngIf="isTraveler$ | async">
         <mat-icon>shop</mat-icon> My Orders
       </a>
-      <a mat-list-item routerLink="/customer-orders" *ngIf="authService.isTraveler$ | async">
+      <a mat-list-item routerLink="/customer-orders" *ngIf="isTraveler$ | async">
         <mat-icon>shop</mat-icon> Customer Orders
       </a>
-      <a mat-list-item routerLink="/buy-wholesale" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item routerLink="/buy-wholesale" *ngIf="isBuyer$ | async">
         <mat-icon>shop_two</mat-icon> Buy Wholesale
       </a>
       <a mat-list-item routerLink="/wallet">
@@ -35,19 +35,19 @@
       <a mat-list-item routerLink="/direction">
         <mat-icon>room</mat-icon> Directions
       </a>
-      <a mat-list-item [routerLink]="'/calculator'" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item [routerLink]="'/calculator'" *ngIf="isBuyer$ | async">
         <mat-icon> monetization_on</mat-icon> Calculator
       </a>
-      <a mat-list-item routerLink="{{asa}}" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item routerLink="{{asa}}" *ngIf="isBuyer$ | async">
         <mat-icon>style</mat-icon> Coupons
       </a>
-      <a mat-list-item routerLink="/domestic-shipment" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item routerLink="/domestic-shipment" *ngIf="isBuyer$ | async">
         <mat-icon> local_shipping</mat-icon> Domestic Shipments
       </a>
-      <a mat-list-item routerLink="/fasty" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item routerLink="/fasty" *ngIf="isBuyer$ | async">
         <mat-icon> local_offer</mat-icon> Fasty
       </a>
-      <a mat-list-item routerLink="/generateorder" *ngIf="authService.isBuyer$ | async">
+      <a mat-list-item routerLink="/generateorder" *ngIf="isBuyer$ | async">
         <mat-icon>code</mat-icon> URL Order
       </a>
       <a mat-list-item routerLink="/welcome" (click)="isSidenavOpen=!isSidenavOpen">

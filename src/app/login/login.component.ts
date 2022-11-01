@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from '@angular/router';
+import { AppComponent } from '../app.component';
 import { AuthService } from '../services/auth.service';
 import { UsersService } from '../users/services/users.service';
 
@@ -11,20 +12,16 @@ import { UsersService } from '../users/services/users.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router, private authService: AuthService) {
-    this.reset_login();
-    this.authService._isLoggedIn$.next(false);
+  constructor(private formBuilder: FormBuilder, private usersService: UsersService, private router: Router, private authService: AuthService, private appComponent: AppComponent) {
   }
 
   ngOnInit(): void {
     this.setDNIValidation();
-
   }
 
   loginImgSource: string = "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80";
 
   submitted: boolean = false;
-  isTraveler: boolean = false;
 
   loginForm: FormGroup = this.formBuilder.group({
     // here, we specified the name of all the fields that our form has
@@ -47,6 +44,8 @@ export class LoginComponent implements OnInit {
   }
   grabar_localstorage() {
     localStorage.setItem('dni', this.loginForm.value.dni);
+    localStorage.setItem('isLoged', 'true');
+    this.appComponent._isLoged$.next(true);
   }
 
   setDNIValidation() {

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from "@angular/material/table";
+import { ActivatedRoute, Router } from "@angular/router";
+import { Observable } from 'rxjs';
+import { TravelerOrder } from '../traveler-orders/model/traveler-order';
+import { TravelerOrderService } from '../traveler-orders/services/traveler-order.service';
 import { Urlorder } from '../urlorder/urlorder';
 import { UrlorderService } from '../urlorder/urlorder.service';
-import {ActivatedRoute, Router} from "@angular/router";
-import { MatTableDataSource } from "@angular/material/table";
-import { TravelerOrderService } from '../traveler-orders/services/traveler-order.service';
-import { TravelerOrder } from '../traveler-orders/model/traveler-order';
-import { Observable, take } from 'rxjs';
 
 @Component({
   selector: 'app-customer-orders',
@@ -14,15 +14,14 @@ import { Observable, take } from 'rxjs';
 })
 export class CustomerOrdersComponent implements OnInit {
 
-  urlOrders: Urlorder[]=[];
+  urlOrders: Urlorder[] = [];
   dataSource = new MatTableDataSource();
   isFiltering = false;
   orderTransformed: TravelerOrder;
   urlOrder$: Observable<Urlorder> | undefined;
   dniData: string = "";
 
-
-  constructor(private OrderService: UrlorderService, private TravelerOrderService: TravelerOrderService, private route: ActivatedRoute, private router: Router ) { 
+  constructor(private OrderService: UrlorderService, private TravelerOrderService: TravelerOrderService, private route: ActivatedRoute, private router: Router) {
     this.orderTransformed = {} as Urlorder;
     this.catch_localstorage();
   }
@@ -31,8 +30,8 @@ export class CustomerOrdersComponent implements OnInit {
     this.getAllOrders();
   }
 
-  getAllOrders(){
-    this.OrderService.getAll().subscribe((response:any)=>{
+  getAllOrders() {
+    this.OrderService.getAll().subscribe((response: any) => {
       this.urlOrders = response;
     })
   }
@@ -44,35 +43,35 @@ export class CustomerOrdersComponent implements OnInit {
       this.dataSource.paginator.firstPage();
   }
 
-  getApproximatedCost(subtotal: number, comission:string) {
+  getApproximatedCost(subtotal: number, comission: string) {
     return Number(subtotal) + Number(comission);
   }
 
-  catch_localstorage(){
+  catch_localstorage() {
     this.dniData = localStorage.getItem("dni") ?? '';
     console.log(this.dniData);
   }
 
-  submit(id: number){
+  submit(id: number) {
     this.urlOrder$ = this.OrderService.getById(id);
 
     this.urlOrder$.subscribe((value: Urlorder) => {
-      this.orderTransformed.dni= this.dniData;
+      this.orderTransformed.dni = this.dniData;
       this.orderTransformed.name = value.name;
       this.orderTransformed.tittle = value.tittle;
       this.orderTransformed.price = value.price;
       this.orderTransformed.amount = value.amount;
-      this.orderTransformed.comision = value.comision; 
+      this.orderTransformed.comision = value.comision;
       this.orderTransformed.status = value.status;
       this.orderTransformed.url = value.url;
       this.orderTransformed.weight = value.weight;
     });
-    this.TravelerOrderService.create(this.orderTransformed).subscribe(response=> {
+    this.TravelerOrderService.create(this.orderTransformed).subscribe(response => {
       alert("Order attached");
     });
   }
 
-  addOrder(){
+  addOrder() {
     this.TravelerOrderService.create(this.orderTransformed).subscribe(response => {
       alert("Order attached");
     });
