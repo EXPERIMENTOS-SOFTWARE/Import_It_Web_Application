@@ -7,3 +7,4 @@ export interface StoreProducts {
     price: number
   }>;
 }
+
