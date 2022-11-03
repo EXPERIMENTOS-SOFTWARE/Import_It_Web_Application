@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Injectable } from '@angular/core';
 import { BaseService } from 'src/app/services/base.servicesa.service';
 import { Coupon } from '../model/coupon';
 
@@ -8,7 +8,7 @@ import { Coupon } from '../model/coupon';
 })
 export class Coupon2Service extends BaseService<Coupon>{
 
-  endPoint = '/coupons2';
+  endPoint = '/coupon';
 
   constructor(http: HttpClient) {
     super(http);

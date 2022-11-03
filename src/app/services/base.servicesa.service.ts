@@ -1,9 +1,9 @@
-import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
-import {catchError, Observable, retry, throwError} from "rxjs";
+import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http";
+import { catchError, Observable, retry, throwError } from "rxjs";
 
 export class BaseService<T> {
   // Resource Endpoint
-  basePath = 'http://localhost:3000';
+  basePath = 'http://localhost:9090';
 
   // Common options
   httpOptions = {

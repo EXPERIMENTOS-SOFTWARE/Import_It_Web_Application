@@ -9,7 +9,7 @@ import { Urlorder } from './urlorder';
 })
 export class UrlorderService {
 
-  basePath = "http://localhost:3000/api/v1/urlorder";
+  basePath = "http://localhost:9090/api/orders";
 
   httpOptions = {
     headers: new HttpHeaders({
