@@ -1,0 +1,29 @@
+<h1>Orders</h1>
+
+
+    <div class="order-card" *ngFor="let order of urlOrders">
+        <div class="title-content">
+            <div class="title">
+                <h2>{{order.name}}</h2>
+            </div>
+        </div>
+        <div class = "grid2c">
+            <div class="dsc-card">
+            <div class="dsc-image">
+                <img class="image" src="https://i.imgur.com/JVdarAP.png" alt="">
+            </div>
+            <div class="dsc-content">
+                <h2>{{order.tittle}}</h2>
+            <h4>Price: {{order.price}}</h4>
+            <h4>Comission: {{order.comision}}</h4>
+            <h4>Weight: {{order.weight}}</h4>
+            </div>
+            <div class="right-content">
+                <h4>Total Income: ${{getApproximatedCost(order.price, order.comision)}}</h4>
+                <button mat-raised-button class="button-style" [routerLink]="['/customer-order-info', order.id]"><span>See only</span></button>
+           </div>      
+    </div>
+    
+    </div>
+    
+

@@ -1,6 +1,6 @@
 .dsc-card {
-    height: 200px;
-    max-width: 350px;
+    height: 600px;
+    max-width: 800px;
     border: 1px solid Orgba(0, 0, 0, 0.25);
     border-radius: 10px;
     box-shadow: 0px epx Gpx 1px Orgba(e, e, e, e.15);
@@ -12,33 +12,40 @@
     background-color: #3498DB;
 }
 
-.grid2c {
-    display: grid;
-    gap: 20px;
-    padding: 0 20px;
-    margin-top: 40px;
-    grid-template-columns: repeat(auto-fill, 350px);
-  }
-
-.dsc-card:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 .dsc-image {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 300px;
     padding: 0.5ren;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image {
     width: 100%;
     height: 100%;
-    border-radius: 100%;
     box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15);
 }
 
 .dsc-content {
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
-    padding: 0.5rem;
+    padding: 20px;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-button{
+    background-color:whitesmoke;
+}
+
+.center-button{
+    text-align: center;
+}
+h3{
+    text-align: center;
 }

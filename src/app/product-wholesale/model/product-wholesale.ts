@@ -4,6 +4,7 @@ export interface ProductWholesale {
     quantity: number;
     price: number;
     picture: string;
+    urlWeb: string;
     description: string;
     principalFeature1: string;
     principalFeature2: string;

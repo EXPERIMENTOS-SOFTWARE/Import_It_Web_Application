@@ -113,7 +113,34 @@
       "comision": "50",
       "dni": "12345678",
       "id": 6
+    },
+    {
+      "name": "MANDO GAMER PARA CELULAR",
+      "tittle": "MANDO GAMER PARA CELULAR",
+      "price": 150,
+      "amount": 8,
+      "comision": "60",
+      "dni": "45454545",
+      "status": "tecnología",
+      "url": "https://home.ripley.com.pe/Attachment/WOP_5/2065281206808/2065281206808-6.jpg",
+      "weight": 20,
+      "id": 7
+    },
+    {
+      "name": "Apple iPhone 11 Pro Max",
+      "tittle": "Apple iPhone 11 Pro Max",
+      "price": 2648,
+      "amount": 10,
+      "comision": "60",
+      "dni": "12345678",
+      "status": "tecnología",
+      "url": "https://www.amazon.com/-/es/Apple-iPhone-256GB-verde-medianoche/dp/B08BHFGJXF/ref=sr_1_1?adgrpid=82211619555&gclid=Cj0KCQjwwfiaBhC7ARIsAGvcPe68uPI_gPK2p_9Ga12fa3Ont68Q4oH4f8oiZeB6c1NNuPWAayRSl-saAi09EALw_wcB&hvadid=585479825180&hvdev=c&hvlocphy=9060925&hvnetw=g&hvqmt=e&hvrand=5347265486820424037&hvtargid=kwd-817391552835&hydadcr=29140_14573955&keywords=iphone+11+pro+max+amazon&qid=1667179740&qu=eyJxc2MiOiIyLjg0IiwicXNhIjoiMS44NyIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-1",
+      "weight": 20,
+      "id": 8
     }
+  ],
+  "travelerOrders": [
+    
   ],
   "domesticShipments": [
     {
@@ -201,17 +228,18 @@
   "coupons": [],
   "chats": [
     {
-      "id": 1,
-      "user1": {
-        "id": 1,
-        "message": "Hola",
-        "date": "09/09/09"
-      },
-      "user2": {
-        "id": 2,
-        "message": "Hola",
-        "date": "09/09/09"
-      }
+      "userId1": 3,
+      "userId2": 6,
+      "userName1": "Edgar Alexander Malca Rojas",
+      "userName2": "Bell Larson",
+      "id": 1
+    },
+    {
+      "userId1": 3,
+      "userId2": 7,
+      "userName1": "Edgar Alexander Malca Rojas",
+      "userName2": "Sprint3",
+      "id": 2
     }
   ],
   "storeProductsByCategory": [
@@ -232,16 +260,19 @@
       "name": "Technology",
       "productList": [
         {
+          "id": 1,
           "name": "Samsung Smart Watch Series 3",
           "imgURL": "../../assets/images/fastyProducts/Smart%20Watch.jpg",
           "price": 120
         },
         {
+          "id": 2,
           "name": "Samsung Z Flip 3",
           "imgURL": "../../assets/images/fastyProducts/Z%20Flip.jpg",
           "price": 655
         },
         {
+          "id": 3,
           "name": "Iphone 13 Pro",
           "imgURL": "../../assets/images/fastyProducts/Iphone%2013.jpg",
           "price": 799
@@ -252,16 +283,19 @@
       "name": "Home and Furniture",
       "productList": [
         {
+          "id": 1,
           "name": "Luxury Sofa",
           "imgURL": "../../assets/images/fastyProducts/sofa.jpg",
           "price": 120
         },
         {
+          "id": 2,
           "name": "Bunch of chairs",
           "imgURL": "../../assets/images/fastyProducts/chairs.jpg",
           "price": 655
         },
         {
+          "id": 3,
           "name": "Beautiful Lamp",
           "imgURL": "../../assets/images/fastyProducts/lamp.jpg",
           "price": 799
@@ -289,47 +323,51 @@
   ],
   "productsWholesale": [
     {
-      "name": "IPHONE 11 PRO MAX",
+      "name": "Apple iPhone 11 Pro Max",
       "quantity": 10,
-      "price": 5749,
-      "picture": "https://ripleype.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fimagenes-sellers-mercado-ripley%2F2022%2F01%2F20185223%2FLD0005886467_1_0005886512_0005886538.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=90d19f0e13418fbeb9656f4e7661d1fb",
-      "description": "DIMENSIONES Y PESO: 160,8 x 78,1 x 7,6 mm 238 gramos PANTALLA: Super Retina XDR 6,7 pulgadas ProMotion 120 Hz 2.778 x 1.284 px, 458 ppp 1.000 nits, contraste 2.000.000:1 PROCESADOR: Apple A15 Bionic RAM: 6GB. ALMACENAMIENTO: 128GB/1 TB CÁMARAS TRASERAS Telefoto: 12 MP f/2.8, 77mm, 3x óptico Ultrawide: 12 MP f/1.8, 6P, 120º Principal: 12 MP f/1.5, 1,9um CÁMARA FRONTAL: 12 MP f/2.2 BATERÍA: Carga rápida 20 W Carga MagSafe de 15 W Carga Qi de 7,5 W SISTEMA OPERATIVO: iOS 15 CONECTIVIDAD: 5G (sub-6 GHz) LTE Gigabit con MIMO 4x4 y LAA Wifi 802.11ax (6.ª gen.) con MIMO 2x2 Bluetooth 5.0 Chip de banda ultraancha NFC OTROS IP68 Sonido estéreo FaceID NO INCLUYE CARGADOR",
-      "principalFeature1": "DIMENSIONES: 160,8 x 78,1 x 7,6 mm",
-      "principalFeature2": "PESO: 238 gramos",
-      "principalFeature3": "ALMACENAMIENTO: 128GB/1 TB",
+      "price": 2648,
+      "picture": "https://m.media-amazon.com/images/I/51bvOBgFHGS._AC_SL1500_.jpg",
+      "urlWeb": "https://www.amazon.com/-/es/Apple-iPhone-256GB-verde-medianoche/dp/B08BHFGJXF/ref=sr_1_1?adgrpid=82211619555&gclid=Cj0KCQjwwfiaBhC7ARIsAGvcPe68uPI_gPK2p_9Ga12fa3Ont68Q4oH4f8oiZeB6c1NNuPWAayRSl-saAi09EALw_wcB&hvadid=585479825180&hvdev=c&hvlocphy=9060925&hvnetw=g&hvqmt=e&hvrand=5347265486820424037&hvtargid=kwd-817391552835&hydadcr=29140_14573955&keywords=iphone+11+pro+max+amazon&qid=1667179740&qu=eyJxc2MiOiIyLjg0IiwicXNhIjoiMS44NyIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-1",
+      "description": "DIMENSIONS AND WEIGHT: 160.8 x 78.1 x 7.6 mm 238 grams SCREEN: Super Retina XDR 6.7 inches ProMotion 120 Hz 2,778 x 1,284 px, 458 dpi 1,000 nits, 2,000,000:1 contrast PROCESSOR: Apple A15 BionicRAM: 6GB. STORAGE: 128GB/1TB REAR CAMERAS Telephoto: 12 MP f/2.8, 77mm, 3x optical Ultrawide: 12 MP f/1.8, 6P, 120º Main: 12 MP f/1.5, 1.9um FRONT CAMERA: 12 MP f/2.2 BATTERY: 20W fast charging 15W MagSafe charging 7.5W Qi charging OPERATING SYSTEM: iOS 15 CONNECTIVITY: 5G (sub-6GHz) LTE Gigabit with 4x4 MIMO and LAA Wi-Fi 802.11ax (6th gen) with MIMO 2x2 Bluetooth 5.0 Ultra-wideband chip NFC OTHERS IP68 Stereo sound FaceID NO CHARGER INCLUDED",
+      "principalFeature1": "DIMENSIONS: 160.8 x 78.1 x 7.6mm",
+      "principalFeature2": "WEIGHT: 238 grams",
+      "principalFeature3": "STORAGE: 128GB/1TB",
       "id": 1
     },
     {
-      "name": "Laptop Hp",
+      "name": "Hp 15 Laptop",
       "quantity": 10,
-      "price": 1500,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2004293408701/2004293408701-1.jpg",
-      "description": "Diseñada para tu productividad y entretenimiento desde cualquier lugar. Procesador Intel Core i3-1115G4. Batería de larga duración. Pantalla HD de 1366 x 768 px de resolución. Almacenamiento: 512GB SSD. Diseño delgado y portable con pantalla de micro borde.",
-      "principalFeature1": "Procesador: Intel Core i3",
-      "principalFeature2": "Memoria RAM: 4GB",
-      "principalFeature3": "Disco duro: 128GB",
+      "price": 1950,
+      "picture": "https://m.media-amazon.com/images/I/71rmymgVWVL._AC_SL1500_.jpg",
+      "urlWeb": "https://www.amazon.com/pantalla-pulgadas-procesador-gr%C3%A1ficos-Ethernet/dp/B09SZPSTN1/ref=sr_1_1_sspa?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2FDRA2VEBWHZS&keywords=laptop+hp&qid=1667181058&qu=eyJxc2MiOiI3Ljc3IiwicXNhIjoiNy4zNiIsInFzcCI6IjYuNjgifQ%3D%3D&refinements=p_89%3AHP%2Cp_36%3A1253507011&rnid=386442011&s=electronics&sprefix=laptop+hp%2Caps%2C200&sr=1-1-spons&psc=1",
+      "description": "Designed for your productivity and entertainment from anywhere. Intel Core i3-1115G4 processor. Long duration battery. HD screen with 1366 x 768 px resolution. Storage: 512GB SSD. Slim and portable design with micro-edge display.",
+      "principalFeature1": "Processor: Intel Core i3",
+      "principalFeature2": "RAM Memory: 4GB",
+      "principalFeature3": "Hard drive: 128GB",
       "id": 2
     },
     {
-      "name": "MANDO GAMER PARA CELULAR",
+      "name": "GameSir X2",
       "quantity": 8,
       "price": 150,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2065281206808/2065281206808-6.jpg",
-      "description": "Función telescópica: Para diferentes tamaños de dispositivos. Longitud horizontal ajustable: De 13.5 a 25 cm. Función de Turbo: Velocidad de 2 a 3 veces mayor que los estándar. El controlador derecho es desmontable. El controlador izquierdo se puede utilizar como game pad de una sola mano. Conectividad Bluetooth v4.0. Compatibilidad: Android 6.0 o superior / iOS 11 o superior. Batería de litio incorporada. Tiempo de carga: 3 horas. Duración de la batería: Hasta 15 horas.",
-      "principalFeature1": "Tiempo de carga: 3 horas.",
-      "principalFeature2": "Duración de la batería: Hasta 15 horas.",
-      "principalFeature3": "El controlador derecho es desmontable.",
+      "picture": "https://m.media-amazon.com/images/I/610e3i+4p4L._AC_SL1000_.jpg",
+      "urlWeb": "https://www.amazon.com/-/es/Controlador-X2-controlador-inal%C3%A1mbrico-Bluetooth/dp/B07WNWVZ7T/ref=sr_1_2?keywords=gamer%2Bcontroller%2Bfor%2Bcell%2Bphone&qid=1667181180&refinements=p_36%3A2422979011&rnid=386453011&s=videogames&sprefix=mando%2Bgamer%2Bpara%2Bcel%2Caps%2C203&sr=1-2&th=1",
+      "description": "Telescopic function: For different sizes of devices. Adjustable horizontal length: From 13.5 to 25 cm. Turbo function: Speed 2 to 3 times higher than the standard ones. The right controller is detachable. The left controller can be used as a one-handed game pad. Bluetooth v4.0 connectivity. Compatibility: Android 6.0 or higher / iOS 11 or higher. Built-in lithium battery. Charging time: 3 hours. Battery life: Up to 15 hours.",
+      "principalFeature1": "Charging time: 3 hours.",
+      "principalFeature2": "Battery life: Up to 15 hours.",
+      "principalFeature3": "The right controller is detachable.",
       "id": 3
     },
     {
-      "name": "AUDIFONOS INALÁMBRICOS PULSE 3D (PS5)",
+      "name": "PlayStation PULSE 3D Wireless Headset",
       "quantity": 3,
-      "price": 520,
-      "picture": "https://home.ripley.com.pe/Attachment/WOP_5/2031255300407/2031255300407_2.jpg",
-      "description": "No esperes más y adquiere los mejores accesorios para Playstation 5 en Ripley.com. Disfruta de una experiencia sonora perfecta con estos audífonos ajustados para audio 3D en las consolas PS5. Los auriculares inalámbricos PULSE 3D tienen un diseño elegante con micrófonos dobles con reducción de ruido, carga a través de USB Type-C® y una variedad de controles de fácil acceso.",
-      "principalFeature1": "Modelo 3D Wireless Headset",
-      "principalFeature2": "Peso: 0.60 kg",
-      "principalFeature3": "Micrófono integrado",
+      "price": 390,
+      "picture": "https://m.media-amazon.com/images/I/610SsJ5aAQL._SL1393_.jpg",
+      "urlWeb": "https://www.amazon.com/-/es/Auriculares-Bluetooth-inal%C3%A1mbricos-cancelaci%C3%B3n-conducci%C3%B3n-compatible/dp/B08FC6QLKN/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LJFFOTIHRU2E&keywords=PULSE+3D+%28PS5%29&qid=1667181397&sprefix=pulse+3d+ps5+%2Caps%2C191&sr=8-3&language=en_US",
+      "description": "Don't wait any longer and buy the best Playstation 5 accessories at Ripley.com. Get the perfect sound experience with these headphones tuned for 3D audio on PS5 consoles. The PULSE 3D Wireless Headphones feature a sleek design with dual noise-reducing microphones, USB Type-C® charging, and a variety of easy-to-reach controls.",
+      "principalFeature1": "Wireless Headset 3D Model",
+      "principalFeature2": "Weight: 0.60kg",
+      "principalFeature3": "Integrated microphone",
       "id": 4
     }
   ],

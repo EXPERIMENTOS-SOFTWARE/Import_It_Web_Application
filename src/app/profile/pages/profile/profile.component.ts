@@ -15,11 +15,14 @@ export class ProfileComponent implements OnInit {
   profileData: Userprofile;
   user: User[] = [];
   dniData: string = '';
+  isLogedData: string = "";
+  userTypeData: string = "";
 
   constructor(private profilesService: ProfileService, private authService: AuthService, private userService: UsersService) {
     this.profileData = {} as Userprofile;
     this.recuperar_localstorage();
     this.getAllUser();
+    this.isLogedData = 'true';
   }
 
   ngOnInit(): void {
@@ -34,6 +37,8 @@ export class ProfileComponent implements OnInit {
   }
   recuperar_localstorage() {
     this.dniData = localStorage.getItem('dni') ?? '';
+    this.isLogedData = localStorage.getItem("isLoged") ?? '';
+    this.userTypeData = localStorage.getItem("userType") ?? '';
     console.log(this.dniData);
   }
   /*

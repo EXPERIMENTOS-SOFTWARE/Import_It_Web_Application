@@ -10,7 +10,7 @@ import { User } from '../model/user';
 export class UsersService {
 
   //Students Endpoint
-  basePath = "http://localhost:3000/users";
+  basePath = "http://localhost:9090/api/users";
 
   httpOptions = {
     headers: new HttpHeaders({

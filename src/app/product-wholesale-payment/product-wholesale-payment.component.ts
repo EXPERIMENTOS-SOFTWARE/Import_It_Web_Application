@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, take } from 'rxjs';
 import { ProductWholesale } from '../product-wholesale/model/product-wholesale';
+import { Urlorder } from '../urlorder/urlorder';
+import { UrlorderService } from '../urlorder/urlorder.service';
 import { ApiService } from './services/api.service';
 
 interface FinancialInstitution {
@@ -22,6 +24,8 @@ interface Month {
 })
 export class ProductWholesalePaymentComponent implements OnInit {
 
+  dniData: string = "";
+  orderTransformed: Urlorder;
   productData: ProductWholesale;
 
   payment$: Observable<ProductWholesale> | undefined;
@@ -65,8 +69,10 @@ export class ProductWholesalePaymentComponent implements OnInit {
     expiryYear: ['', {validators: [Validators.required, Validators.minLength(4), Validators.maxLength(4), Validators.pattern('^[0-9]*$')], updatedOn: 'change'}],
   });
 
-  constructor(private productWholesalePayment: ApiService, private route: ActivatedRoute, private formBuilder: FormBuilder) { 
+  constructor(private productUrlOrderService: UrlorderService, private productWholesalePayment: ApiService, private route: ActivatedRoute, private formBuilder: FormBuilder) { 
     this.productData = {} as ProductWholesale;
+    this.orderTransformed = {} as Urlorder;
+    this.catch_localstorage();
   }
 
   ngOnInit(): void {
@@ -74,28 +80,38 @@ export class ProductWholesalePaymentComponent implements OnInit {
       const id = params['id'];
       this.productParticularId = id;
       this.payment$ = this.productWholesalePayment.getById(id);
+
+      this.payment$.subscribe((value: ProductWholesale) => {
+        this.orderTransformed.name = value.name;
+        this.orderTransformed.tittle = value.name;
+        this.orderTransformed.price = value.price;
+        this.orderTransformed.amount = value.quantity;
+        this.orderTransformed.comision = "60";
+        this.orderTransformed.dni = this.dniData;
+        this.orderTransformed.status = "tecnología";
+        this.orderTransformed.url = value.urlWeb;
+        this.orderTransformed.weight = 20;
+      })
     });
   }
 
-  get paymentMethod(){
-    return this.registerForm.get('paymentMethod');
-  }
-  
-  get cardNumber(){
-    return this.registerForm.get('cardNumber');
+  addToOrderList(){
+    this.productUrlOrderService.create(this.orderTransformed).subscribe(response => {
+      alert("Order registered");
+    });
   }
 
-  get cvv(){
-    return this.registerForm.get('cvv');
+  catch_localstorage(){
+    this.dniData = localStorage.getItem("dni") ?? '';
+    console.log(this.dniData);
   }
 
-  get expiryMonth(){
-    return this.registerForm.get('expiryMonth');
-  }
+  get paymentMethod(){ return this.registerForm.get('paymentMethod');}
+  get cardNumber(){return this.registerForm.get('cardNumber');}
+  get cvv(){return this.registerForm.get('cvv');}
+  get expiryMonth(){return this.registerForm.get('expiryMonth');}
+  get expiryYear(){return this.registerForm.get('expiryYear');}
 
-  get expiryYear(){
-    return this.registerForm.get('expiryYear');
-  }
 
 
 }

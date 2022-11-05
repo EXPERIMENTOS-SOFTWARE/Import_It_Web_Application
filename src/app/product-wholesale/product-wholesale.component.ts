@@ -21,7 +21,7 @@ export class ProductWholesaleComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllProductsWholesale();
-    this.numberOfColumns = (window.innerWidth <= 900) ? 1 : 3; 
+    this.numberOfColumns = (window.innerWidth <= 1200) ? 1 : 3; 
     /*this.route.params.pipe( take(1)).subscribe((params) => {
       this.sectionNavBar = params['type'];
     });*/
@@ -34,7 +34,7 @@ export class ProductWholesaleComponent implements OnInit {
   }
 
   onResize(event:Event) { 
-    this.numberOfColumns = ((<Window>event.target).innerWidth <= 900) ? 1: 3; 
+    this.numberOfColumns = ((<Window>event.target).innerWidth <= 1200) ? 1: 3; 
   }
 
   

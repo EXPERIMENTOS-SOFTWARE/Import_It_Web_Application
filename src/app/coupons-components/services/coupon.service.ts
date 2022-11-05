@@ -10,7 +10,7 @@ import { Coupon } from '../model/coupon';
 export class CouponService {
 
   //Students Endpoint
-  basePath = "http://localhost:3000/api/v1/coupons2";
+  basePath = "http://localhost:9090/api/coupon";
 
   httpOptions = {
     headers: new HttpHeaders({

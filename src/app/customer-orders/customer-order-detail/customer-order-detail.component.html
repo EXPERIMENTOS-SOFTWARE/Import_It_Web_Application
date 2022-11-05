@@ -1,0 +1,25 @@
+<p>customer-order-detail works!</p>
+<div  *ngIf="urlOrder$ | async as UrlOrder">
+    <h1>Customer Orders</h1>
+    <div class="nav-back">
+        <mat-icon [routerLink]="'/customer-orders'">keyboard_arrow_left</mat-icon>
+        
+      </div>
+      <div class="card">
+<div class="dsc-card">
+    <div class="dsc-image">
+        <img class="image" src="https://i.imgur.com/JVdarAP.png" alt="">
+    </div>
+    <div >
+        <div class="dsc-content">
+        <h2><strong>{{UrlOrder.name}}</strong></h2>
+            <h4>{{UrlOrder.tittle}}</h4>
+            <h4>Price: {{UrlOrder.price}}</h4>
+            <h4>Comission: {{UrlOrder.comision}}</h4>
+            <h4>Weight: {{UrlOrder.weight}}</h4>
+        <div class="center-button">
+        <button mat-raised-button class="card-button" (click)="addOrder()">Select Order</button>
+    </div>
+    </div>
+    </div>
+</div>

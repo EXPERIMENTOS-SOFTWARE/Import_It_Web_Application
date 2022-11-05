@@ -11,6 +11,11 @@ export class AuthService {
     public _isLoggedIn$ = new BehaviorSubject<boolean>(false);
     isLoggedIn$ = this._isLoggedIn$.asObservable();
     currentID = 0;
+    currentName = "";
+    public _isTraveler$ = new BehaviorSubject<boolean>(false);
+    isTraveler$ = this._isTraveler$.asObservable();
+    public _isBuyer$ = new BehaviorSubject<boolean>(false);
+    isBuyer$ = this._isBuyer$.asObservable();
 
     constructor(private apiService: ApiService) {
         const token = localStorage.getItem('importIt_auth');
@@ -23,10 +28,14 @@ export class AuthService {
             tap((response: any) => {
                 this._isLoggedIn$.next(true);
                 localStorage.setItem('importIt_auth', response.token);
+
             })
         );
     }
     currentUserID() {
         return this.currentID;
+    }
+    currentUserName() {
+        return this.currentName;
     }
 }

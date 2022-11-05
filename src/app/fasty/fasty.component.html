@@ -14,18 +14,18 @@
         <div class="product-img">
           <img alt="Product image" [src]="product.imgURL">
         </div>
-
         <div class="product-name">
           <h2>{{product.name}}</h2>
         </div>
-
         <div class="product-price">
           <h2>$ {{product.price}}</h2>
         </div>
 
+
         <div class="button-container">
-          <button mat-flat-button color="primary" type="submit">See more</button>
+          <button mat-flat-button color="primary" type="submit" routerLink="/singleProduct/{{category.name.toLowerCase()}}/{{product.id}}">See more</button>
         </div>
+
 
       </div>
 

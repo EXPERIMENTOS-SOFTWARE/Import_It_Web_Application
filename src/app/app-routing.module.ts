@@ -23,7 +23,10 @@ import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
-
+import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
+import { SingleProductComponent } from "./single-product/single-product.component";
+import { TravelerOrdersComponent } from './traveler-orders/traveler-orders.component';
+import { CustomerOrderDetailComponent } from './customer-orders/customer-order-detail/customer-order-detail.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -58,6 +61,10 @@ const routes: Routes = [
     ]
   },
   { path: 'chats', component: ChatsComponent },
+  { path: 'customer-orders', component: CustomerOrdersComponent},
+  { path: 'singleProduct/:category/:id', component: SingleProductComponent},
+  { path: 'traveler-orders', component: TravelerOrdersComponent},
+  { path: 'customer-order-info/:id', component: CustomerOrderDetailComponent}
 ];
 
 @NgModule({
