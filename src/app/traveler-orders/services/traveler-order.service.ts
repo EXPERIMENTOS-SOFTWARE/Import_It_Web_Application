@@ -9,7 +9,7 @@ import { TravelerOrder } from '../model/traveler-order';
 })
 export class TravelerOrderService {
 
-  basePath = "http://localhost:3000/api/v1/travelerOrders";
+  basePath = "http://localhost:9090/api/travelerOrders";
 
   httpOptions = {
     headers: new HttpHeaders({
