@@ -8,7 +8,7 @@ import { ProductWholesale } from 'src/app/product-wholesale/model/product-wholes
 })
 export class ApiService {
 
-  basePath = 'http://localhost:3000/api/v1/productsWholesale';
+  basePath = 'http://localhost:9090/api/productWholesale';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -29,17 +29,17 @@ export class ApiService {
     // Return Observable with Error Message to Client
     return throwError(() => new Error('Something happened with request, please try again later'));
   }
-/*
-  getAll(): Observable<ProductWholesale> {
-    return this.http.get<ProductWholesale>(this.basePath, this.httpOptions)
-      .pipe(retry(2), catchError(this.handleError));
-  }
-*/
+  /*
+    getAll(): Observable<ProductWholesale> {
+      return this.http.get<ProductWholesale>(this.basePath, this.httpOptions)
+        .pipe(retry(2), catchError(this.handleError));
+    }
+  */
 
   getById(id: any): Observable<ProductWholesale> {
-    return this.http.get<ProductWholesale>(`${this.basePath}/${id}`,this.httpOptions)
-      .pipe(retry(2),catchError(this.handleError));
+    return this.http.get<ProductWholesale>(`${this.basePath}/${id}`, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
   }
-  
+
 }
 

@@ -8,7 +8,7 @@ import { ProductWholesale } from 'src/app/product-wholesale/model/product-wholes
 })
 export class ApiService {
 
-  basePath = 'http://localhost:3000/api/v1/productsWholesale';
+  basePath = 'http://localhost:9090/api/productWholesale';
 
   httpOptions = {
     headers: new HttpHeaders({
