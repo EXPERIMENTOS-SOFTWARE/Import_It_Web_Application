@@ -10,7 +10,7 @@ import { ProductCategory } from "../model/product-category";
 export class CalculatorService {
 
 //Students Endpoint
-  basePath = 'http://localhost:3000/api/v1/productCategories';
+  basePath = 'http://localhost:9090/api/storeProducts';
 
   httpOptions = {
     headers: new HttpHeaders({

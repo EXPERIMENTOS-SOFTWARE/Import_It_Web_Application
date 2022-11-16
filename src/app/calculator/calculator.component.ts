@@ -35,18 +35,9 @@ export class CalculatorComponent implements OnInit {
 
   getSelectedValue(category: string) {
     this.selectedValue = category;
-    this.getImageUrl();
   }
 
-  getImageUrl() {
-    for (let product of this.productCategories) {
-      if (product.name == this.selectedValue) {
-        this.imgURL = product.imgURL;
-      }
-    }
-    return;
-  }
-
+  
   getCategories() {
     this.calculatorService.getAll().subscribe((response: any) => {
       this.productCategories = response;
