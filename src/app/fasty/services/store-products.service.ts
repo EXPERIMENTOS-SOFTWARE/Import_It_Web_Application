@@ -9,7 +9,7 @@ import { StoreProducts } from "../model/store-products";
 })
 export class StoreProductsService {
 
-  basePath = "http://localhost:9090/api/storeProducts";
+  basePath = "http://importidbackend.herokuapp.com/api/storeProducts";
 
   httpOptions = {
     headers: new HttpHeaders({

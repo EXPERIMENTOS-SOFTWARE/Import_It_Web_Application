@@ -10,7 +10,7 @@ import { Direction } from './direction';
 })
 export class DirectionregisterService {
 
-  basePath = "http://localhost:9090/api/directions"
+  basePath = "http://importidbackend.herokuapp.com/api/directions"
 
   httpOptions = {
     headers: new HttpHeaders({

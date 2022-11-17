@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 import { CalculatorComponent } from "./calculator/calculator.component";
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
 import { ChatsComponent } from './chats/chats.component';
 import { CouponsComponent } from './coupons-components/coupons/coupons.component';
 import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
 import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
+import { CustomerOrderDetailComponent } from './customer-orders/customer-order-detail/customer-order-detail.component';
+import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
 import { DirectionComponent } from './direction/direction.component';
 import { DirectioninfoComponent } from './directioninfo/directioninfo.component';
 import { DirectionregisterComponent } from './directionregister/directionregister.component';
@@ -13,20 +16,17 @@ import { DomesticShipmentComponent } from './domestic-shipment/domestic-shipment
 import { DomesticShipmentsInfoComponent } from './domestic-shipments-info/domestic-shipments-info.component';
 import { FastyComponent } from "./fasty/fasty.component";
 import { LoginComponent } from './login/login.component';
+import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
+import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
+import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
 import { ProfileComponent } from './profile/pages/profile/profile.component';
+import { SingleProductComponent } from "./single-product/single-product.component";
+import { TravelerOrdersComponent } from './traveler-orders/traveler-orders.component';
 import { UrlorderComponent } from './urlorder/urlorder.component';
 import { UrlordermainComponent } from './urlordermain/urlordermain.component';
 import { UsersComponent } from './users/pages/users/users.component';
 import { WalletComponent } from './wallet/wallet.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
-import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
-import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
-import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
-import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
-import { SingleProductComponent } from "./single-product/single-product.component";
-import { TravelerOrdersComponent } from './traveler-orders/traveler-orders.component';
-import { CustomerOrderDetailComponent } from './customer-orders/customer-order-detail/customer-order-detail.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -61,10 +61,10 @@ const routes: Routes = [
     ]
   },
   { path: 'chats', component: ChatsComponent },
-  { path: 'customer-orders', component: CustomerOrdersComponent},
-  { path: 'singleProduct/:category/:id', component: SingleProductComponent},
-  { path: 'traveler-orders', component: TravelerOrdersComponent},
-  { path: 'customer-order-info/:id', component: CustomerOrderDetailComponent}
+  { path: 'customer-orders', component: CustomerOrdersComponent },
+  { path: 'singleProduct/:category/:id', component: SingleProductComponent },
+  { path: 'traveler-orders', component: TravelerOrdersComponent },
+  { path: 'customer-order-info/:id', component: CustomerOrderDetailComponent }
 ];
 
 @NgModule({

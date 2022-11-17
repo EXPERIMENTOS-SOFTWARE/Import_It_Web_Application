@@ -9,7 +9,7 @@ import { Userprofile } from '../model/userprofile';
 export class ProfileService {
 
   //Students Endpoint
-  basePath = 'http://localhost:3000/api/v1/userprofile';
+  basePath = 'http://importidbackend.herokuapp.com/api/v1/userprofile';
 
   httpOptions = {
     headers: new HttpHeaders({

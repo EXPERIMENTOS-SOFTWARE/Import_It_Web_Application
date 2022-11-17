@@ -10,7 +10,7 @@ import { ProductCategory } from "../model/product-category";
 export class CalculatorService {
 
 //Students Endpoint
-  basePath = 'http://localhost:9090/api/storeProducts';
+  basePath = 'http://importidbackend.herokuapp.com/api/storeProducts';
 
   httpOptions = {
     headers: new HttpHeaders({

@@ -3,7 +3,7 @@ import { catchError, Observable, retry, throwError } from "rxjs";
 
 export class BaseService<T> {
   // Resource Endpoint
-  basePath = 'http://localhost:9090';
+  basePath = 'http://importidbackend.herokuapp.com';
 
   // Common options
   httpOptions = {

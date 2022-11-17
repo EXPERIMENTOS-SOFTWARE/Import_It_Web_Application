@@ -10,7 +10,7 @@ import { Coupon } from '../model/coupon';
 export class CouponService {
 
   //Students Endpoint
-  basePath = "http://localhost:9090/api/coupon";
+  basePath = "http://importidbackend.herokuapp.com/api/coupon";
 
   httpOptions = {
     headers: new HttpHeaders({
