@@ -9,7 +9,7 @@ import { ProductWholesale } from '../model/product-wholesale';
 
 export class ApiService {
 
-  basePath = 'http://localhost:9090/api/productWholesale';
+  basePath = 'http://importidbackend.herokuapp.com/api/productWholesale';
 
   httpOptions = {
     headers: new HttpHeaders({

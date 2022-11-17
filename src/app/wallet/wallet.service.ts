@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { Wallet } from './wallet';
 import { catchError, retry } from 'rxjs/operators';
+import { Wallet } from './wallet';
 
 
 
@@ -11,7 +11,7 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class WalletService {
 
-  basePath = "http://localhost:8000/wallet";
+  basePath = "http://importidbackend.herokuapp.com/wallet";
 
   httpOptions = {
     headers: new HttpHeaders({
