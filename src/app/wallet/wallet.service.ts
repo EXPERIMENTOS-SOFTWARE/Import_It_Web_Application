@@ -11,7 +11,7 @@ import { Wallet } from './wallet';
 })
 export class WalletService {
 
-  basePath = "http://importidbackend.herokuapp.com/wallet";
+  basePath = "https.herokuapp.com/wallet";
 
   httpOptions = {
     headers: new HttpHeaders({

@@ -10,7 +10,7 @@ import { User } from '../model/user';
 export class UsersService {
 
   //Students Endpoint
-  basePath = "http://importidbackend.herokuapp.com/api/users";
+  basePath = "https://importidbackend.herokuapp.com/api/users";
 
   httpOptions = {
     headers: new HttpHeaders({

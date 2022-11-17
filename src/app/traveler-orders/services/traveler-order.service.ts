@@ -9,7 +9,7 @@ import { TravelerOrder } from '../model/traveler-order';
 })
 export class TravelerOrderService {
 
-  basePath = "http://importidbackend.herokuapp.com/api/travelerOrders";
+  basePath = "https://importidbackend.herokuapp.com/api/travelerOrders";
 
   httpOptions = {
     headers: new HttpHeaders({

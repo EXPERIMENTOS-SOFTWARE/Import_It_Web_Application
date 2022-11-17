@@ -8,7 +8,7 @@ import { ProductWholesale } from 'src/app/product-wholesale/model/product-wholes
 })
 export class ApiService {
 
-  basePath = 'http://importidbackend.herokuapp.com/api/productWholesale';
+  basePath = 'https://importidbackend.herokuapp.com/api/productWholesale';
 
   httpOptions = {
     headers: new HttpHeaders({

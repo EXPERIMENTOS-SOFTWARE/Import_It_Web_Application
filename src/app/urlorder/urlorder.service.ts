@@ -9,7 +9,7 @@ import { Urlorder } from './urlorder';
 })
 export class UrlorderService {
 
-  basePath = "http://importidbackend.herokuapp.com/api/orders";
+  basePath = "https://importidbackend.herokuapp.com/api/orders";
 
   httpOptions = {
     headers: new HttpHeaders({
