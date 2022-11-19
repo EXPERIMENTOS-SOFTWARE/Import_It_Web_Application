@@ -26,7 +26,6 @@ import { AppComponent } from './app.component';
 import { BuyWholesaleComponent } from './buy-wholesale/buy-wholesale.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ChangePasswordFormComponent } from './change-password-form/change-password-form.component';
-import { ChatsComponent } from './chats/chats.component';
 import { CouponsComponent } from './coupons-components/coupons/coupons.component';
 import { EnterCouponComponent } from './coupons-components/enter-coupon/enter-coupon.component';
 import { ValidateCouponComponent } from './coupons-components/validate-coupon/validate-coupon.component';
@@ -47,12 +46,12 @@ import { WalletComponent } from './wallet/wallet.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 import { MatTabsModule } from '@angular/material/tabs';
+import { CustomerOrderDetailComponent } from './customer-orders/customer-order-detail/customer-order-detail.component';
 import { CustomerOrdersComponent } from './customer-orders/customer-orders.component';
 import { ProductWholesaleDetailComponent } from './product-wholesale-detail/product-wholesale-detail.component';
 import { ProductWholesalePaymentComponent } from './product-wholesale-payment/product-wholesale-payment.component';
 import { ProductWholesaleComponent } from './product-wholesale/product-wholesale.component';
 import { TravelerOrdersComponent } from './traveler-orders/traveler-orders.component';
-import { CustomerOrderDetailComponent } from './customer-orders/customer-order-detail/customer-order-detail.component';
 
 
 
@@ -82,7 +81,6 @@ import { CustomerOrderDetailComponent } from './customer-orders/customer-order-d
     ProductWholesaleComponent,
     ProductWholesaleDetailComponent,
     ProductWholesalePaymentComponent,
-    ChatsComponent,
     CustomerOrdersComponent,
     SingleProductComponent,
     TravelerOrdersComponent,
