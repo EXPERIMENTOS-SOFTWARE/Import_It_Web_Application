@@ -139,9 +139,7 @@
       "id": 8
     }
   ],
-  "travelerOrders": [
-    
-  ],
+  "travelerOrders": [],
   "domesticShipments": [
     {
       "id": 1,
@@ -226,22 +224,6 @@
     }
   ],
   "coupons": [],
-  "chats": [
-    {
-      "userId1": 3,
-      "userId2": 6,
-      "userName1": "Edgar Alexander Malca Rojas",
-      "userName2": "Bell Larson",
-      "id": 1
-    },
-    {
-      "userId1": 3,
-      "userId2": 7,
-      "userName1": "Edgar Alexander Malca Rojas",
-      "userName2": "Sprint3",
-      "id": 2
-    }
-  ],
   "storeProductsByCategory": [
     {
       "category": "Technology",
