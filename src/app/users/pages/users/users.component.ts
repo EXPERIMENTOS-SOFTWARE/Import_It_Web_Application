@@ -30,7 +30,7 @@ export class UsersComponent implements OnInit {
     year: ['', { validators: [Validators.required, Validators.pattern('^[0-9]*$')], updateOn: 'change' }],
     //role: ['jobSeeker', {validators: [Validators.required], updateOn: 'change'}],
     email: ['', { validators: [Validators.required, Validators.email], updatedOn: 'change' }],
-    password: ['', { validators: [Validators.required, Validators.minLength(5)], updatedOn: 'change' }],
+    password: ['', { validators: [Validators.required, Validators.minLength(8)], updatedOn: 'change' }],
     //birthday: ['', {validators: [Validators.required], updatedOn: 'change'}],
     genre: ['', { updatedOn: 'change' }],
     address: ['', { validators: [Validators.required], updateOn: 'change' }]
