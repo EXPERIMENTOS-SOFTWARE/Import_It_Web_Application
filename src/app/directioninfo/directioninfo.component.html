@@ -1,7 +1,9 @@
 <main class="directioninfocontainer">
-  <img class="directionimg" src="https://i.imgur.com/weXt435.png">
-  <div *ngIf="directions$ | async as Direction">
-    <mat-card class="directionform">
+  <div class="direction-img-container">
+    <img alt="Directions image" class="directionimg" src="https://i.imgur.com/weXt435.png">
+  </div>
+  <div class="info-container" *ngIf="directions$ | async as Direction">
+    <div class="directionform">
       <h3><b>Principal Name: </b>{{Direction.name}}</h3>
       <h3><b>Last Name: </b>{{Direction.lastname}}</h3>
       <h3><b>Phone Client: </b>{{Direction.phone}}</h3>
@@ -14,6 +16,6 @@
         <button (click)="deleteDirection(Direction.id)" mat-flat-button color="primary" type="see more"
           routerLink="/direction">delete</button>
       </div>
-    </mat-card>
+    </div>
   </div>
 </main>
