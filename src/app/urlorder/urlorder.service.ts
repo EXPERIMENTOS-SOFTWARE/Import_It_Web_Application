@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { Urlorder } from './urlorder';
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UrlorderService {
 
-  basePath = "https://importidbackend.herokuapp.com/api/orders";
+  basePath = `${environment.base_path}/api/orders`;
 
   httpOptions = {
     headers: new HttpHeaders({

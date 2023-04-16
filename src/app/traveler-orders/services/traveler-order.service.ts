@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { TravelerOrder } from '../model/traveler-order';
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class TravelerOrderService {
 
-  basePath = "https://importidbackend.herokuapp.com/api/travelerOrders";
+  basePath = `${environment.base_path}/api/travelerOrders`;
 
   httpOptions = {
     headers: new HttpHeaders({

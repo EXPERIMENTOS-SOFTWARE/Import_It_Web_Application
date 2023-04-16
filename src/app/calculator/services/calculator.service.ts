@@ -2,6 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Injectable } from '@angular/core';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { ProductCategory } from "../model/product-category";
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { ProductCategory } from "../model/product-category";
 export class CalculatorService {
 
 //Students Endpoint
-  basePath = 'https://importidbackend.herokuapp.com/api/storeProducts';
+  basePath = `${environment.base_path}/api/storeProducts`;
 
   httpOptions = {
     headers: new HttpHeaders({

@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { StoreProducts } from "../model/store-products";
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class StoreProductsService {
 
-  basePath = "https://importidbackend.herokuapp.com/api/storeProducts";
+  basePath = `${environment.base_path}/api/storeProducts`;
 
   httpOptions = {
     headers: new HttpHeaders({

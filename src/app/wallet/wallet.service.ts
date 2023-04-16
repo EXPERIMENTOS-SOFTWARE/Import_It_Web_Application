@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { Wallet } from './wallet';
+import {environment} from "../../environments/environment";
 
 
 
@@ -11,7 +12,7 @@ import { Wallet } from './wallet';
 })
 export class WalletService {
 
-  basePath = "https.herokuapp.com/wallet";
+  basePath = `${environment.base_path}/wallet`;
 
   httpOptions = {
     headers: new HttpHeaders({

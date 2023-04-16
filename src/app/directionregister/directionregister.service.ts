@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { Direction } from './direction';
+import {environment} from "../../environments/environment";
 
 
 @Injectable({
@@ -10,7 +11,7 @@ import { Direction } from './direction';
 })
 export class DirectionregisterService {
 
-  basePath = "https://importidbackend.herokuapp.com/api/directions"
+  basePath = `${environment.base_path}/api/directions`
 
   httpOptions = {
     headers: new HttpHeaders({

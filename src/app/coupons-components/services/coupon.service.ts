@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { Coupon } from '../model/coupon';
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { Coupon } from '../model/coupon';
 export class CouponService {
 
   //Students Endpoint
-  basePath = "https://importidbackend.herokuapp.com/api/coupon";
+  basePath = `${environment.base_path}/api/coupon`;
 
   httpOptions = {
     headers: new HttpHeaders({

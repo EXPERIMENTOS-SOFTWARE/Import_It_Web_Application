@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { User } from '../model/user';
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { User } from '../model/user';
 export class UsersService {
 
   //Students Endpoint
-  basePath = "https://importidbackend.herokuapp.com/api/users";
+  basePath = `${environment.base_path}/api/users`;
 
   httpOptions = {
     headers: new HttpHeaders({

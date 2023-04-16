@@ -2,6 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Injectable } from '@angular/core';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { ProductWholesale } from '../model/product-wholesale';
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { ProductWholesale } from '../model/product-wholesale';
 
 export class ApiService {
 
-  basePath = 'https://importidbackend.herokuapp.com/api/productWholesale';
+  basePath = `${environment.base_path}/api/productWholesale`;
 
   httpOptions = {
     headers: new HttpHeaders({

@@ -2,6 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Injectable } from '@angular/core';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Userprofile } from '../model/userprofile';
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { Userprofile } from '../model/userprofile';
 export class ProfileService {
 
   //Students Endpoint
-  basePath = 'https://importidbackend.herokuapp.com/api/v1/userprofile';
+  basePath = `${environment.base_path}/api/v1/userprofile`;
 
   httpOptions = {
     headers: new HttpHeaders({
